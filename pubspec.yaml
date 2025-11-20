@@ -43,6 +43,8 @@ dependencies:
   
   # UI glassmorphism helper
   glass: ^2.0.0
+  # Service locator
+  get_it: ^7.2.0
 
 dev_dependencies:
   flutter_test:
