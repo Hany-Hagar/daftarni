@@ -40,6 +40,9 @@ dependencies:
   # BLoC state management
   bloc: ^8.1.0
   flutter_bloc: ^8.1.1
+  
+  # UI glassmorphism helper
+  glass: ^2.0.0
 
 dev_dependencies:
   flutter_test:
