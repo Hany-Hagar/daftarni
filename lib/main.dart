@@ -1,10 +1,18 @@
 import 'theme.dart';
 import 'generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'Core/services/hive_services.dart';
+import 'Core/utils/my_bloc_observer.dart';
+import 'Core/services/service_locator.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'Features/splash/presentation/views/pages/splash_view.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  ServiceLocator.init();
+  await HiveServices.init();
+  Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }
 
