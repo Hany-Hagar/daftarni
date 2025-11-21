@@ -1,1 +1,47 @@
-{}
+{
+    "@@locale": "en",
+
+
+    "appTitle": "Daftarni",
+    "@appTitle": {
+        "description": "Title of the application"
+    },
+    "skip": "Skip",
+    "@skip": {
+        "description": "Text for the skip button on the onboarding screen"
+    },
+    "next": "Next",
+    "@next": {
+        "description": "Text for the next button on the onboarding screen"
+    },
+    "onBoardingTitle1": "Welcome to Budget Planner",
+    "@onBoardingTitle1": {
+        "description": "Title of the first onboarding screen"
+    },
+    "onBoardingSubTitle1": "Take control of your money and save by tracking your expenses",
+    "@onBoardingSubTitle1": {
+        "description": "Subtitle of the first onboarding screen"
+    },
+    "onBoardingTitle2": "Save money easily",
+    "@onBoardingTitle2": {
+        "description": "Title of the second onboarding screen"
+    },
+    "onBoardingSubTitle2": "Create budgets easily and see our suggestions based on your spending",
+    "@onBoardingSubTitle2": {
+        "description": "Subtitle of the second onboarding screen"
+    },
+    "onBoardingTitle3": "Track your bills like never before",
+    "@onBoardingTitle3": {
+        "description": "Title of the third onboarding screen"
+    },
+    "onBoardingSubTitle3": "Build a custom budget based on your income, bills, and goals",
+    "@onBoardingSubTitle3": {
+        "description": "Subtitle of the third onboarding screen"
+    },
+    "getStarted": "Get Started",
+    "@getStarted": {
+        "description": "Text for the get started button on the onboarding screen"
+    }
+
+    
+}

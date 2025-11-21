@@ -49,6 +49,106 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Daftarni`
+  String get appTitle {
+    return Intl.message(
+      'Daftarni',
+      name: 'appTitle',
+      desc: 'Title of the application',
+      args: [],
+    );
+  }
+
+  /// `Skip`
+  String get skip {
+    return Intl.message(
+      'Skip',
+      name: 'skip',
+      desc: 'Text for the skip button on the onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get next {
+    return Intl.message(
+      'Next',
+      name: 'next',
+      desc: 'Text for the next button on the onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Welcome to Budget Planner`
+  String get onBoardingTitle1 {
+    return Intl.message(
+      'Welcome to Budget Planner',
+      name: 'onBoardingTitle1',
+      desc: 'Title of the first onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Take control of your money and save by tracking your expenses`
+  String get onBoardingSubTitle1 {
+    return Intl.message(
+      'Take control of your money and save by tracking your expenses',
+      name: 'onBoardingSubTitle1',
+      desc: 'Subtitle of the first onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Save money easily`
+  String get onBoardingTitle2 {
+    return Intl.message(
+      'Save money easily',
+      name: 'onBoardingTitle2',
+      desc: 'Title of the second onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Create budgets easily and see our suggestions based on your spending`
+  String get onBoardingSubTitle2 {
+    return Intl.message(
+      'Create budgets easily and see our suggestions based on your spending',
+      name: 'onBoardingSubTitle2',
+      desc: 'Subtitle of the second onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Track your bills like never before`
+  String get onBoardingTitle3 {
+    return Intl.message(
+      'Track your bills like never before',
+      name: 'onBoardingTitle3',
+      desc: 'Title of the third onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Build a custom budget based on your income, bills, and goals`
+  String get onBoardingSubTitle3 {
+    return Intl.message(
+      'Build a custom budget based on your income, bills, and goals',
+      name: 'onBoardingSubTitle3',
+      desc: 'Subtitle of the third onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Get Started`
+  String get getStarted {
+    return Intl.message(
+      'Get Started',
+      name: 'getStarted',
+      desc: 'Text for the get started button on the onboarding screen',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

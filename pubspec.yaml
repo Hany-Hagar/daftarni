@@ -50,6 +50,9 @@ dependencies:
   hive_flutter: ^1.1.0
   # Functional programming helpers
   dartz: ^0.10.1
+  flutter_screenutil: ^5.6.0
+  lottie: ^3.3.1
+  smooth_page_indicator: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -103,6 +106,7 @@ flutter:
   assets:
     - assets/images/
     - assets/fonts/
+    - assets/lotties/
   fonts:
     - family: Lateef
       fonts:

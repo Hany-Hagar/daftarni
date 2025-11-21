@@ -21,5 +21,22 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "appTitle": MessageLookupByLibrary.simpleMessage("دفترني"),
+        "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
+        "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
+            "Take control of your money and save by tracking your expenses"),
+        "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
+            "Create budgets easily and see our suggestions based on your spending"),
+        "onBoardingSubTitle3": MessageLookupByLibrary.simpleMessage(
+            "Build a custom budget based on your income, bills, and goals"),
+        "onBoardingTitle1":
+            MessageLookupByLibrary.simpleMessage("Welcome to Budget Planner"),
+        "onBoardingTitle2":
+            MessageLookupByLibrary.simpleMessage("Save money easily"),
+        "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
+            "Track your bills like never before"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطي")
+      };
 }
