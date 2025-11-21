@@ -3,42 +3,121 @@
     "appTitle": "دفترني",
     
     "@appTitle": {
-        "description": "Title of the application"
+        "description": "عنوان التطبيق"
     },
     "skip": "تخطي",
     "@skip": {
-        "description": "Text for the skip button on the onboarding screen"
+        "description": "نص زر التخطي في شاشة التوجيه"
     },
     "next": "التالي",
     "@next": {
-        "description": "Text for the next button on the onboarding screen"
+        "description": "نص زر التالي في شاشة التوجيه"
     },
-    "onBoardingTitle1": "Welcome to Budget Planner",
+    "onBoardingTitle1": "مرحبًا بك في مخطط الميزانية",
     "@onBoardingTitle1": {
-        "description": "Title of the first onboarding screen"
+        "description": "عنوان الشاشة الأولى في التوجيه"
     },
-    "onBoardingSubTitle1": "Take control of your money and save by tracking your expenses",
+    "onBoardingSubTitle1": "تحكم في أموالك وادخر من خلال تتبع نفقاتك",
     "@onBoardingSubTitle1": {
-        "description": "Subtitle of the first onboarding screen"
+        "description": "العنوان الفرعي للشاشة الأولى في التوجيه"
     },
-    "onBoardingTitle2": "Save money easily",
+    "onBoardingTitle2": "وفر المال بسهولة",
     "@onBoardingTitle2": {
-        "description": "Title of the second onboarding screen"
+        "description": "عنوان الشاشة الثانية في التوجيه"
     },
-    "onBoardingSubTitle2": "Create budgets easily and see our suggestions based on your spending",
+    "onBoardingSubTitle2": "قم بإنشاء ميزانيات بسهولة وشاهد اقتراحاتنا بناءً على إنفاقك",
     "@onBoardingSubTitle2": {
-        "description": "Subtitle of the second onboarding screen"
+        "description": "العنوان الفرعي للشاشة الثانية في التوجيه"
     },
-    "onBoardingTitle3": "Track your bills like never before",
+    "onBoardingTitle3": "تتبع فواتيرك كما لم يحدث من قبل",
     "@onBoardingTitle3": {
-        "description": "Title of the third onboarding screen"
+        "description": "عنوان الشاشة الثالثة في التوجيه"
     },
-    "onBoardingSubTitle3": "Build a custom budget based on your income, bills, and goals",
+    "onBoardingSubTitle3": "قم بإنشاء ميزانية مخصصة بناءً على دخلك وفواتيرك وأهدافك",
     "@onBoardingSubTitle3": {
-        "description": "Subtitle of the third onboarding screen"
+        "description": "العنوان الفرعي للشاشة الثالثة في التوجيه"
     },
-    "getStarted": "Get Started",
+    "getStarted": "ابدأ الآن",
     "@getStarted": {
-        "description": "Text for the get started button on the onboarding screen"
+        "description": "نص زر ابدأ الآن في شاشة التوجيه"
+    },
+
+
+    
+    "configureYourInfo": "قم بإضافة معلوماتك",
+    "@configureYourInfo": {
+        "description": "عنوان شاشة تكوين معلوماتك"
+    },
+    "userName": "اسم المستخدم",
+    "@userName": {
+        "description": "تسمية حقل إدخال اسم المستخدم"
+    },
+    "userNameHint": "أدخل اسم المستخدم الخاص بك",
+    "@userNameHint": {
+        "description": "نص العنصر النائب لحقل إدخال اسم المستخدم"
+    },
+    "salary": "الراتب",
+    "@salary": {
+        "description": "تسمية حقل إدخال الراتب"
+    },
+    "salaryHint": "أدخل راتبك الشهري",
+    "@salaryHint": {
+        "description": "نص العنصر النائب لحقل إدخال الراتب"
+    },
+    "SalaryDay": "يوم الراتب",
+    "@SalaryDay": {
+        "description": "تسمية حقل إدخال يوم الراتب"
+    },
+    "salaryDayHint": "أدخل يوم راتبك",
+    "@salaryDayHint": {
+        "description": "نص العنصر النائب لحقل إدخال يوم الراتب"
+    },
+    "SideIncome": "دخل جانبي",
+    "@SideIncome": {
+        "description": "تسمية حقل إدخال الدخل الجانبي"
+    },
+    "Optional": "اختياري",
+    "@Optional": {
+        "description": "تسمية الحقل الاختياري"
+    },
+    "sideIncomeHint": "أدخل دخلك الجانبي",
+    "@sideIncomeHint": {
+        "description": "نص العنصر النائب لحقل إدخال الدخل الجانبي"
+    },
+    "appSettings": " --- إعدادات التطبيق --- ",
+    "@appSettings": {
+        "description": "عنوان شاشة الإعدادات"
+    },
+    "Theme": "المظهر",
+    "@Theme": {
+        "description": "تسمية قسم اختيار المظهر"
+    },
+    "lightTheme": "الوضع الفاتح",
+    "@lightTheme": {
+        "description": "النص الخاص بالوضع الفاتح في إعدادات تخصيص المظهر"
+    },
+    "darkTheme": "الوضع الداكن",
+    "@darkTheme": {
+        "description": "النص الخاص بالوضع الداكن في إعدادات تخصيص المظهر"
+    },
+    "systemTheme": "وضع النظام",
+    "@systemTheme": {
+        "description": "النص الخاص بوضع النظام في إعدادات تخصيص المظهر"
+    },
+    "Language": "اللغة",
+    "@Language": {
+        "description": "تسمية قسم اختيار اللغة"
+    },
+    "arabic": "العربية",
+    "@arabic": {
+        "description": "النص الخاص باللغة العربية في إعدادات اللغة"
+    },
+    "english": "الإنجليزية",
+    "@english": {
+        "description": "النص الخاص باللغة الإنجليزية في إعدادات اللغة"
+    },
+    "continueButton": "استمر",
+    "@continueButton": {
+        "description": "نص زر الاستمرار في شاشة التوجيه"
     }
 }

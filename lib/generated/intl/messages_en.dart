@@ -22,8 +22,22 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Language": MessageLookupByLibrary.simpleMessage("Language"),
+        "Optional": MessageLookupByLibrary.simpleMessage("Optional"),
+        "SalaryDay": MessageLookupByLibrary.simpleMessage("Salary Day"),
+        "SideIncome": MessageLookupByLibrary.simpleMessage("Side Income"),
+        "Theme": MessageLookupByLibrary.simpleMessage("Theme"),
+        "appSettings":
+            MessageLookupByLibrary.simpleMessage(" --- App Settings --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("Daftarni"),
+        "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
+        "configureYourInfo":
+            MessageLookupByLibrary.simpleMessage("Configure your information"),
+        "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
+        "darkTheme": MessageLookupByLibrary.simpleMessage("Dark Theme"),
+        "english": MessageLookupByLibrary.simpleMessage("English"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "lightTheme": MessageLookupByLibrary.simpleMessage("Light Theme"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Take control of your money and save by tracking your expenses"),
@@ -37,6 +51,17 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Save money easily"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Track your bills like never before"),
-        "skip": MessageLookupByLibrary.simpleMessage("Skip")
+        "salary": MessageLookupByLibrary.simpleMessage("Salary"),
+        "salaryDayHint":
+            MessageLookupByLibrary.simpleMessage("Enter your salary day"),
+        "salaryHint":
+            MessageLookupByLibrary.simpleMessage("Enter your monthly salary"),
+        "sideIncomeHint":
+            MessageLookupByLibrary.simpleMessage("Enter your side income"),
+        "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "systemTheme": MessageLookupByLibrary.simpleMessage("System Theme"),
+        "userName": MessageLookupByLibrary.simpleMessage("User Name"),
+        "userNameHint":
+            MessageLookupByLibrary.simpleMessage("Enter your user name")
       };
 }

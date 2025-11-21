@@ -41,6 +41,84 @@
     "getStarted": "Get Started",
     "@getStarted": {
         "description": "Text for the get started button on the onboarding screen"
+    },
+
+
+    "configureYourInfo": "Configure your information",
+    "@configureYourInfo": {
+        "description": "Title of the configure your information screen"
+    },
+    "userName": "User Name",
+    "@userName": {
+        "description": "Label for the user name input field"
+    },
+    "userNameHint": "Enter your user name",
+    "@userNameHint": {
+        "description": "Placeholder text for the user name input field"
+    },
+    "salary": "Salary",
+    "@salary": {
+        "description": "Label for the salary input field"
+    },
+    "salaryHint": "Enter your monthly salary",
+    "@salaryHint": {
+        "description": "Placeholder text for the salary input field"
+    },
+    "SalaryDay": "Salary Day",
+    "@SalaryDay": {
+        "description": "Label for the salary day input field"
+    },
+    "salaryDayHint": "Enter your salary day",
+    "@salaryDayHint": {
+        "description": "Placeholder text for the salary day input field"
+    },
+    "SideIncome": "Side Income",
+    "@SideIncome": {
+        "description": "Label for the side income input field"
+    },
+    "Optional": "Optional",
+    "@Optional": {
+        "description": "Label for the optional field"
+    },
+    "sideIncomeHint": "Enter your side income",
+    "@sideIncomeHint": {
+        "description": "Placeholder text for the side income input field"
+    },
+    "appSettings": " --- App Settings --- ",
+    "@appSettings": {
+        "description": "Title of the app settings screen"
+    },
+    "Theme": "Theme",
+    "@Theme": {
+        "description": "Label for the theme selection section"
+    },
+    "lightTheme": "Light Theme",
+    "@lightTheme": {
+        "description": "Label for the light theme option in appearance customization settings"
+    },
+    "darkTheme": "Dark Theme",
+    "@darkTheme": {
+        "description": "Label for the dark theme option in appearance customization settings"
+    },
+    "systemTheme": "System Theme",
+    "@systemTheme": {
+        "description": "Label for the system theme option in appearance customization settings"
+    },
+    "Language": "Language",
+    "@Language": {
+        "description": "Label for the language selection section"
+    },
+    "arabic": "Arabic",
+    "@arabic": {
+        "description": "Text for the Arabic language option in language settings"
+    },
+    "english": "English",
+    "@english": {
+        "description": "Text for the English language option in language settings"
+    },
+    "continueButton": "Continue",
+    "@continueButton": {
+        "description": "Text for the continue button on the onboarding screen"
     }
 
     

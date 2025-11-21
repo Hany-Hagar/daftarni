@@ -19,17 +19,23 @@ class PreferencesModelAdapter extends TypeAdapter<PreferencesModel> {
     return PreferencesModel(
       themeMode: fields[0] as String,
       languageCode: fields[1] as String,
+      themeI: fields[2] as int,
+      langI: fields[3] as int,
     );
   }
 
   @override
   void write(BinaryWriter writer, PreferencesModel obj) {
     writer
-      ..writeByte(2)
+      ..writeByte(4)
       ..writeByte(0)
       ..write(obj.themeMode)
       ..writeByte(1)
-      ..write(obj.languageCode);
+      ..write(obj.languageCode)
+      ..writeByte(2)
+      ..write(obj.themeI)
+      ..writeByte(3)
+      ..write(obj.langI);
   }
 
   @override

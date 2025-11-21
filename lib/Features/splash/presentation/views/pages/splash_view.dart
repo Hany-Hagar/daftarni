@@ -7,7 +7,7 @@ import '../../../data/repo/splash_repo_impl.dart';
 import 'package:daftarni/Core/widgets/back_ground.dart';
 import '../../../../../Core/utils/navigator_methods.dart';
 import '../../../../../Core/services/service_locator.dart';
-import '../../../../onBoarding/presentation/view/pages/on_boarding_view.dart';
+import '../../../../onBoarding/presentation/pages/on_boarding_view.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});

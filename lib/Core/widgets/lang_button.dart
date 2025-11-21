@@ -1,0 +1,54 @@
+import 'custom_text.dart';
+import 'toggle_button.dart';
+import '../../generated/l10n.dart';
+import 'package:flutter/material.dart';
+import '../services/service_locator.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class LangButton extends StatelessWidget {
+  final double? width;
+  final bool isInDropDown;
+  final dynamic Function(int)? onPressed;
+
+  const LangButton({
+    super.key,
+    this.isInDropDown = false,
+    this.width,
+    this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final s = S.of(context);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (!isInDropDown) CustomText(isHead: true, title: s.language),
+        if (!isInDropDown) SizedBox(height: 5.h),
+        Align(
+          alignment: Alignment.center,
+          child: _Button(width: width, onPressed: onPressed),
+        ),
+      ],
+    );
+  }
+}
+
+class _Button extends StatelessWidget {
+  final double? width;
+  final dynamic Function(int)? onPressed;
+  const _Button({required this.width, this.onPressed});
+
+  @override
+  Widget build(BuildContext context) {
+    final s = S.of(context);
+    List<String> data = [s.english, s.arabic];
+    return MToggleButton(
+      width: width,
+      texts: data,
+      currentSelect: ServiceLocator.getDataModel().preferences.langI,
+      onPressed: onPressed,
+    );
+  }
+}

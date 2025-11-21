@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import '../../../../generated/l10n.dart';
 import '../widgets/on_boarding_body.dart';
-import '../../../../../generated/l10n.dart';
-import '../../../data/model/on_boarding.dart';
-import '../../../../../Core/widgets/custom_text.dart';
-import '../../../../../core/widgets/back_ground.dart';
+import '../../data/model/on_boarding.dart';
+import '../../../../Core/widgets/custom_text.dart';
+import '../../../../core/widgets/back_ground.dart';
+import '../../../../Core/utils/navigator_methods.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import '../../../configuration/presentation/views/pages/configuration_view.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({super.key});
@@ -50,7 +52,12 @@ class _Bottom extends StatelessWidget {
       child: Row(
         children: [
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              NavTo.pushReplacement(
+                context: context,
+                nextPage: ConfigurationView(),
+              );
+            },
             child: CustomText(isHead: false, title: s.skip, fontSize: 20.sp),
           ),
           Spacer(),
@@ -73,7 +80,12 @@ class _Bottom extends StatelessWidget {
                   curve: Curves.easeInOut,
                 );
                 currentPage++;
-              } else {}
+              } else {
+                NavTo.pushReplacement(
+                  context: context,
+                  nextPage: ConfigurationView(),
+                );
+              }
             },
             child: CustomText(
               isHead: true,

@@ -22,21 +22,44 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Language": MessageLookupByLibrary.simpleMessage("اللغة"),
+        "Optional": MessageLookupByLibrary.simpleMessage("اختياري"),
+        "SalaryDay": MessageLookupByLibrary.simpleMessage("يوم الراتب"),
+        "SideIncome": MessageLookupByLibrary.simpleMessage("دخل جانبي"),
+        "Theme": MessageLookupByLibrary.simpleMessage("المظهر"),
+        "appSettings":
+            MessageLookupByLibrary.simpleMessage(" --- إعدادات التطبيق --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("دفترني"),
-        "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
+        "configureYourInfo":
+            MessageLookupByLibrary.simpleMessage("قم بإضافة معلوماتك"),
+        "continueButton": MessageLookupByLibrary.simpleMessage("استمر"),
+        "darkTheme": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
+        "english": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
+        "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+        "lightTheme": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
-            "Take control of your money and save by tracking your expenses"),
+            "تحكم في أموالك وادخر من خلال تتبع نفقاتك"),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
-            "Create budgets easily and see our suggestions based on your spending"),
+            "قم بإنشاء ميزانيات بسهولة وشاهد اقتراحاتنا بناءً على إنفاقك"),
         "onBoardingSubTitle3": MessageLookupByLibrary.simpleMessage(
-            "Build a custom budget based on your income, bills, and goals"),
+            "قم بإنشاء ميزانية مخصصة بناءً على دخلك وفواتيرك وأهدافك"),
         "onBoardingTitle1":
-            MessageLookupByLibrary.simpleMessage("Welcome to Budget Planner"),
+            MessageLookupByLibrary.simpleMessage("مرحبًا بك في مخطط الميزانية"),
         "onBoardingTitle2":
-            MessageLookupByLibrary.simpleMessage("Save money easily"),
+            MessageLookupByLibrary.simpleMessage("وفر المال بسهولة"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
-            "Track your bills like never before"),
-        "skip": MessageLookupByLibrary.simpleMessage("تخطي")
+            "تتبع فواتيرك كما لم يحدث من قبل"),
+        "salary": MessageLookupByLibrary.simpleMessage("الراتب"),
+        "salaryDayHint": MessageLookupByLibrary.simpleMessage("أدخل يوم راتبك"),
+        "salaryHint": MessageLookupByLibrary.simpleMessage("أدخل راتبك الشهري"),
+        "sideIncomeHint":
+            MessageLookupByLibrary.simpleMessage("أدخل دخلك الجانبي"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "systemTheme": MessageLookupByLibrary.simpleMessage("وضع النظام"),
+        "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
+        "userNameHint":
+            MessageLookupByLibrary.simpleMessage("أدخل اسم المستخدم الخاص بك")
       };
 }
