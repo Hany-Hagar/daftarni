@@ -1,3 +1,4 @@
+import 'profile_model.dart';
 import 'preferences_model.dart';
 import 'package:hive/hive.dart';
 
@@ -9,13 +10,17 @@ class DataModel extends HiveObject {
   final PreferencesModel preferences;
 
   @HiveField(1)
-  final bool isFirstOpen;
+  final ProfileModel profile;
 
   @HiveField(2)
+  final bool isFirstOpen;
+
+  @HiveField(3)
   final bool isLoggedIn;
 
   DataModel({
     required this.preferences,
+    required this.profile,
     required this.isFirstOpen,
     required this.isLoggedIn,
   });
@@ -23,8 +28,23 @@ class DataModel extends HiveObject {
   factory DataModel.defaultData() {
     return DataModel(
       preferences: PreferencesModel.defaultData(),
+      profile: ProfileModel.defaultProfile(),
       isFirstOpen: true,
       isLoggedIn: false,
+    );
+  }
+
+  DataModel copyWith({
+    PreferencesModel? preferences,
+    ProfileModel? profile,
+    bool? isFirstOpen,
+    bool? isLoggedIn,
+  }) {
+    return DataModel(
+      preferences: preferences ?? this.preferences,
+      profile: profile ?? this.profile,
+      isFirstOpen: isFirstOpen ?? this.isFirstOpen,
+      isLoggedIn: isLoggedIn ?? this.isLoggedIn,
     );
   }
 }

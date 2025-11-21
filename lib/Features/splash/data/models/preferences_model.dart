@@ -33,21 +33,17 @@ class PreferencesModel extends HiveObject {
     );
   }
 
-  Map<String, dynamic> toMap() {
-    return {
-      'ThemeModeIndex': themeMode,
-      'LanguageCode': languageCode,
-      'ThemeModeIndexI': themeI,
-      'LanguageIndexI': langI,
-    };
-  }
-
-  factory PreferencesModel.fromMap(Map<String, dynamic> map) {
+  PreferencesModel copyWith({
+    String? themeMode,
+    String? languageCode,
+    int? themeI,
+    int? langI,
+  }) {
     return PreferencesModel(
-      themeMode: map['ThemeModeIndex'] ?? lightTheme,
-      languageCode: map['LanguageCode'] ?? enCode,
-      themeI: map['ThemeModeIndexI'] ?? 0,
-      langI: map['LanguageIndexI'] ?? 0,
+      themeMode: themeMode ?? this.themeMode,
+      languageCode: languageCode ?? this.languageCode,
+      themeI: themeI ?? this.themeI,
+      langI: langI ?? this.langI,
     );
   }
 }

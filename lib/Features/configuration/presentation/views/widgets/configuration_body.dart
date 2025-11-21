@@ -1,10 +1,12 @@
-import 'package:daftarni/Core/widgets/custom_button.dart';
 import 'package:flutter/widgets.dart';
 import '../../../../../generated/l10n.dart';
-import '../../../../../Core/widgets/userForm.dart';
+import 'configuration_body_app_settings.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../manager/configuration_cubit.dart';
+import '../../manager/configuration_states.dart';
+import '../../../../../Core/widgets/user_form.dart';
 import '../../../../../Core/widgets/custom_text.dart';
-import '../../../../../Core/widgets/lang_button.dart';
-import '../../../../../Core/widgets/theme_button.dart';
+import '../../../../../Core/widgets/custom_button.dart';
 
 class ConfigurationBody extends StatelessWidget {
   const ConfigurationBody({super.key});
@@ -12,30 +14,30 @@ class ConfigurationBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final s = S.of(context);
+    var cubit = ConfigurationCubit.get(context);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CustomText(isHead: true, title: s.configureYourInfo),
         SizedBox(height: 20),
         UserForm(
-          userNameController: TextEditingController(),
-          salaryController: TextEditingController(),
-          salaryDay: 1,
-          sideIncomeController: TextEditingController(),
-          onChanged: () {},
-          onChangedDay: (value) {},
+          userNameController: cubit.userNameController,
+          salaryController: cubit.salaryController,
+          salaryDay: cubit.salaryDay,
+          sideIncomeController: cubit.sideIncomeController,
+          onChanged: () => cubit.validate(),
+          onChangedDay: (p0) => cubit.changeSalaryDay(p0 ?? 1),
         ),
         SizedBox(height: 10),
-        CustomText(isHead: true, title: s.appSettings),
-        LangButton(),
-        SizedBox(height: 5),
-        ThemeButton(),
-        SizedBox(height: 20),
-        CustomLoadingButton(
-          isEnabled: true,
-          isLoading: false,
-          title: s.continueButton,
-          onTap: () {},
+        ConfigurationBodyAppSettings(),
+        BlocBuilder<ConfigurationCubit, ConfigurationStates>(
+          builder:
+              (context, state) => CustomLoadingButton(
+                isEnabled: !cubit.emptyAddData,
+                isLoading: false,
+                title: s.continueButton,
+                onTap: () => cubit.configureInfo(),
+              ),
         ),
       ],
     );

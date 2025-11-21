@@ -1,7 +1,8 @@
 import 'dart:async';
-import 'package:daftarni/Core/services/hive_services.dart';
+import 'hive_services.dart';
 import 'package:get_it/get_it.dart';
 import '../../Features/splash/data/models/data_model.dart';
+import '../../Features/splash/data/models/preferences_model.dart';
 
 class ServiceLocator {
   static final sl = GetIt.instance;
@@ -19,13 +20,26 @@ class ServiceLocator {
   static Stream<DataModel> modelStream = _controller.stream;
 
   static void setDataModel(DataModel dataModel) {
-    sl.unregister<DataModel>();
-    sl.registerLazySingleton<DataModel>(() => dataModel);
+    if (sl.isRegistered<DataModel>()) {
+      sl.unregister<DataModel>();
+    }
+
+    sl.registerSingleton<DataModel>(dataModel);
+
     _controller.add(dataModel);
   }
 
-  static void updateDataModel({String? name, int? value}) {
-    final model = sl<DataModel>();
-    _controller.add(model);
+  static void updateDataModel(PreferencesModel? preferences) {
+    final oldModel = sl<DataModel>();
+
+    final newModel = oldModel.copyWith(preferences: preferences);
+
+    if (sl.isRegistered<DataModel>()) {
+      sl.unregister<DataModel>();
+    }
+
+    sl.registerSingleton<DataModel>(newModel);
+
+    _controller.add(newModel);
   }
 }

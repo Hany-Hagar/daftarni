@@ -1,41 +1,41 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'data_model.dart';
+part of 'balance_model.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
 // **************************************************************************
 
-class DataModelAdapter extends TypeAdapter<DataModel> {
+class BalanceModelAdapter extends TypeAdapter<BalanceModel> {
   @override
-  final int typeId = 1;
+  final int typeId = 3;
 
   @override
-  DataModel read(BinaryReader reader) {
+  BalanceModel read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return DataModel(
-      preferences: fields[0] as PreferencesModel,
-      profile: fields[1] as ProfileModel,
-      isFirstOpen: fields[2] as bool,
-      isLoggedIn: fields[3] as bool,
+    return BalanceModel(
+      income: fields[0] as double,
+      expense: fields[1] as double,
+      progress: fields[2] as double,
+      currentBalance: fields[3] as double,
     );
   }
 
   @override
-  void write(BinaryWriter writer, DataModel obj) {
+  void write(BinaryWriter writer, BalanceModel obj) {
     writer
       ..writeByte(4)
       ..writeByte(0)
-      ..write(obj.preferences)
+      ..write(obj.income)
       ..writeByte(1)
-      ..write(obj.profile)
+      ..write(obj.expense)
       ..writeByte(2)
-      ..write(obj.isFirstOpen)
+      ..write(obj.progress)
       ..writeByte(3)
-      ..write(obj.isLoggedIn);
+      ..write(obj.currentBalance);
   }
 
   @override
@@ -44,7 +44,7 @@ class DataModelAdapter extends TypeAdapter<DataModel> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is DataModelAdapter &&
+      other is BalanceModelAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
