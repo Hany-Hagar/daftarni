@@ -1,7 +1,14 @@
 {
     "@@locale": "ar",
-    "appTitle": "دفترني",
     
+    "emptyList":"لا توجد عناصر متاحة",
+    "@emptyList": {
+        "description": "النص المعروض عندما تكون القائمة فارغة"
+    },
+
+
+
+    "appTitle": "دفترني",
     "@appTitle": {
         "description": "عنوان التطبيق"
     },
@@ -43,7 +50,7 @@
     },
 
 
-    
+
     "configureYourInfo": "قم بإضافة معلوماتك",
     "@configureYourInfo": {
         "description": "عنوان شاشة تكوين معلوماتك"
@@ -119,5 +126,182 @@
     "continueButton": "استمر",
     "@continueButton": {
         "description": "نص زر الاستمرار في شاشة التوجيه"
+    },
+
+
+
+    "settings": "الإعدادات",
+    "@settings": {
+        "description": "عنوان شاشة الإعدادات"
+    },
+    "notSignedIn": "غير مسجل الدخول",
+    "@notSignedIn": {
+        "description": "النص المعروض عندما لا يكون المستخدم مسجل الدخول"
+    },
+       "personal": "شخصية",
+    "@personal": {
+        "description": "تسمية القسم الشخصي في الإعدادات"
+    },
+    "personalInfo": "معلومات شخصية",
+    "@personalInfo": {
+        "description": "تسمية قسم المعلومات الشخصية في الإعدادات"
+    },
+    "general": "عامة",
+    "@general": {
+        "description": "تسمية القسم العام في الإعدادات"
+    },
+    "Notifications": "الإشعارات",
+    "@Notifications": {
+        "description": "تسمية قسم الإشعارات في الإعدادات"
+    },
+    "notificationsHint":"إدارة تفضيلات الاشعارات",
+    "@notificationsHint": {
+        "description": "العنوان الفرعي لقسم الإشعارات في الإعدادات"
+    },
+    "PrivacyPolicy": "سياسة الخصوصية",
+    "@PrivacyPolicy": {
+        "description": "تسمية قسم سياسة الخصوصية في الإعدادات"
+    },
+    "privacyPolicyHint":"راجع ممارسات الخصوصية ",
+    "@privacyPolicyHint": {
+        "description": "العنوان الفرعي لقسم سياسة الخصوصية في الإعدادات"
+    },
+    "support": "الدعم",
+    "@support": {
+        "description": "تسمية قسم الدعم في الإعدادات"
+    },
+    "supportHint": "احصل على المساعدة والدعم",
+    "@supportHint": {
+        "description": "العنوان الفرعي لقسم الدعم في الإعدادات"
+    },
+
+
+
+    "privacySecurityTitle": "الخصوصية والأمان",
+    "@privacySecurityTitle": {
+        "description": "عنوان شاشة الخصوصية والأمان"
+    },
+    "privacyPolicySubtitle": "اقرأ سياسة الخصوصية الخاصة بنا",
+    "@privacyPolicySubtitle": {
+        "description": "العنوان الفرعي لقسم سياسة الخصوصية في الإعدادات"
+    },
+    "privacySecurityIntro": "نحن في تطبيق مدير النفقات نقدر خصوصيتك وأمان بياناتك المالية والشخصية. باستخدام التطبيق، فإنك توافق على سياسة الخصوصية التالية:",
+    "@privacySecurityIntro": {
+        "description": "نص المقدمة لشاشة الخصوصية والأمان"
+    },
+    "privacySecurityFirstTitle": "1. البيانات التي نجمعها",
+    "@privacySecurityFirstTitle": {
+        "description": "عنوان القسم الأول من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFirstText": "• المعلومات التي تدخلها يدويًا في التطبيق (مثل النفقات، الفئات، الدخل...)\n• معلومات حساب المستخدم (الاسم، البريد الإلكتروني، كلمة المرور) إذا قمت بإنشاء حساب.\n• نحن لا نجمع أي بيانات أخرى بدون علمك أو موافقتك.",
+    "@privacySecurityFirstText": {
+        "description": "نص القسم الأول من شاشة الخصوصية والأمان"
+    },
+    "privacySecuritySecondTitle": "2. موقع تخزين البيانات",
+    "@privacySecuritySecondTitle": {
+        "description": "عنوان القسم الثاني من شاشة الخصوصية والأمان"
+    },
+    "privacySecuritySecondText": "• إذا لم يكن لديك حساب: يتم تخزين بياناتك محليًا على جهازك فقط.\n• إذا قمت بإنشاء حساب: يتم تخزين نسخة آمنة من بياناتك عبر الإنترنت لتمكين المزامنة والاسترداد من أجهزة أخرى.\n• يتم تشفير البيانات أثناء النقل والتخزين من أجل سلامتك.",
+    "@privacySecuritySecondText": {
+        "description": "نص القسم الثاني من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityThirdTitle": "3. كيفية استخدامنا للبيانات الخاصة بك",
+    "@privacySecurityThirdTitle": {
+        "description": "عنوان القسم الثالث من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityThirdText": "• يتم استخدام بياناتك فقط لعرض وإدارة نفقاتك الشخصية.\n• نحن لا نشارك بياناتك مع أطراف ثالثة.\n• نحن لا نستخدم بياناتك لأغراض الإعلان أو التسويق.",
+    "@privacySecurityThirdText": {
+        "description": "نص القسم الثالث من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFourthTitle": "4. الأمان",
+    "@privacySecurityFourthTitle": {
+        "description": "عنوان القسم الرابع من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFourthText": "• يتم حماية جميع البيانات المخزنة، محليًا أو على الخادم، باستخدام تقنيات التشفير.\n• يمكنك تغيير كلمة المرور في أي وقت من إعدادات الحساب.\n• يمكنك حذف حسابك وجميع البيانات المرتبطة به بشكل دائم.\n• يمكن حماية الوصول إلى التطبيق باستخدام رمز PIN أو بصمة الإصبع (إذا كان مدعومًا).",
+    "@privacySecurityFourthText": {
+        "description": "نص القسم الرابع من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFifthTitle": "5. حقوق المستخدم",
+    "@privacySecurityFifthTitle": {
+        "description": "عنوان القسم الخامس من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFifthText": "• لديك كامل الحقوق للوصول إلى بياناتك وتعديلها أو حذفها.\n• يمكنك استخدام ميزة 'حذف الحساب' لمحو جميع البيانات من التطبيق والخادم بشكل دائم.",
+    "@privacySecurityFifthText": {
+        "description": "نص القسم الخامس من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityContactTitle": "اتصل بنا",
+    "@privacySecurityContactTitle": {
+        "description": "عنوان قسم الاتصال في شاشة الخصوصية والأمان"
+    },
+    "privacySecurityContactText": "إذا كان لديك أي أسئلة بخصوص الخصوصية أو الأمان، يمكنك الاتصال بنا عبر البريد الإلكتروني:\nsupport@yourapp.com",
+    "@privacySecurityContactText": {
+        "description": "نص قسم الاتصال في شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFooter": "مدير نفقات دفترني. جميع الحقوق محفوظة",
+    "@privacySecurityFooter": {
+        "description": "نص التذييل لشاشة الخصوصية والأمان"
+    },
+
+
+
+    "contactUsTitle": "اتصل بنا",
+    "@contactUsTitle": {
+        "description": "عنوان قسم اتصل بنا في الدعم"
+    },
+    "contactUsHint": "للمساعدة، يرجى التواصل مع فريق الدعم الخاص بنا",
+    "@contactUsHint": {
+        "description": "العنوان الفرعي لقسم اتصل بنا في الدعم"
+    },
+    "supportPhoneTitle": "مكالمة هاتفية",
+    "@supportPhoneTitle": {
+        "description": "عنوان خيار المكالمة الهاتفية"
+    },
+    "supportPhoneHint":"اضغط للاتصال بفريق الدعم",
+    "@supportPhoneHint": {
+        "description": "العنوان الفرعي لخيار المكالمة الهاتفية"
+    },
+    "supportWhatsappTitle": "واتساب",
+    "@supportWhatsappTitle": {
+        "description": "عنوان خيار الاتصال عبر واتساب"
+    },
+    "supportWhatsappHint": "اضغط للدردشة مع فريق الدعم على واتساب",
+    "@supportWhatsappHint": {
+        "description": "العنوان الفرعي لخيار الاتصال عبر واتساب"
+    },
+    "supportEmailTitle": "البريد الإلكتروني",
+    "@supportEmailTitle": {
+        "description": "عنوان خيار دعم البريد الإلكتروني"
+    },
+    "supportEmailHint": "اضغط لإرسال بريد إلكتروني إلى فريق الدعم",
+    "@supportEmailHint": {
+        "description": "العنوان الفرعي لخيار دعم البريد الإلكتروني"
+    },
+    "faqTitle":"----- الأسئلة المتكررة -----",
+    "@faqTitle": {
+        "description": "عنوان قسم الأسئلة المتكررة في صفحة الدعم"
+    },
+    "faqQuestion1":"كيف يمكنني استعادة بياناتي بعد حذف التطبيق؟",
+    "@faqQuestion1": {
+        "description": "زوج السؤال والجواب الأول في قسم الأسئلة المتكررة"
+    },
+    "faqAnswer1":"يمكنك استعادة بياناتك عن طريق تسجيل الدخول مرة أخرى إلى حسابك باستخدام نفس البريد الإلكتروني وكلمة المرور.",
+      "@faqAnswer1": {
+          "description": "الإجابة على السؤال الأول في قسم الأسئلة المتكررة"
+    },
+    "faqQuestion2": "هل يمكنني استخدام التطبيق بدون إنشاء حساب؟",
+    "@faqQuestion2": {
+        "description": "زوج السؤال والجواب الثاني في قسم الأسئلة المتكررة"
+    },
+    "faqAnswer2": "نعم، يمكنك استخدام التطبيق بدون حساب، ولكن سيتم حفظ بياناتك فقط على جهازك.",
+    "@faqAnswer2": {
+        "description": "الإجابة على السؤال الثاني في قسم الأسئلة المتكررة"
+    },
+    "faqQuestion3": "هل يمكنني حذف حسابي نهائيًا؟",
+    "@faqQuestion3": {
+        "description": "السؤال الثالث في قسم الأسئلة المتكررة"
+    },
+    "faqAnswer3": "نعم، يمكنك حذف حسابك وجميع بياناتك من الإعدادات > حذف الحساب.",
+    "@faqAnswer3": {
+        "description": "الإجابة على السؤال الثالث في قسم الأسئلة المتكررة"
     }
 }

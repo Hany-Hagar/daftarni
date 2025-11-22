@@ -7,6 +7,7 @@ import '../../../data/repo/splash_repo_impl.dart';
 import 'package:daftarni/Core/widgets/back_ground.dart';
 import '../../../../../Core/utils/navigator_methods.dart';
 import '../../../../../Core/services/service_locator.dart';
+import '../../../../settings/presentation/view/pages/settings_view.dart';
 import '../../../../onBoarding/presentation/pages/on_boarding_view.dart';
 
 class SplashView extends StatelessWidget {
@@ -24,7 +25,9 @@ class SplashView extends StatelessWidget {
           if (state is FirstOpenSplashState) {
             NavTo.pushReplacement(context: context, nextPage: OnBoardingView());
           }
-          if (state is SuccessSplashState) {}
+          if (state is SuccessSplashState) {
+            NavTo.pushReplacement(context: context, nextPage: SettingsView());
+          }
           if (state is FailureSplashState) {}
         },
         child: const BackGround(body: SplashBody()),

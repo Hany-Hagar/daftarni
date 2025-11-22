@@ -17,15 +17,20 @@ class PreferencesModel extends HiveObject {
   @HiveField(3)
   final int langI;
 
+  @HiveField(4)
+  final bool enableNotifications;
+
   PreferencesModel({
     required this.themeMode,
     required this.languageCode,
     required this.themeI,
     required this.langI,
+    required this.enableNotifications,
   });
 
   factory PreferencesModel.defaultData() {
     return PreferencesModel(
+      enableNotifications: true,
       themeMode: lightTheme,
       languageCode: enCode,
       themeI: 0,
@@ -38,12 +43,14 @@ class PreferencesModel extends HiveObject {
     String? languageCode,
     int? themeI,
     int? langI,
+    bool? enableNotifications,
   }) {
     return PreferencesModel(
       themeMode: themeMode ?? this.themeMode,
       languageCode: languageCode ?? this.languageCode,
       themeI: themeI ?? this.themeI,
       langI: langI ?? this.langI,
+      enableNotifications: enableNotifications ?? this.enableNotifications,
     );
   }
 }

@@ -23,7 +23,9 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Language": MessageLookupByLibrary.simpleMessage("Language"),
+        "Notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "Optional": MessageLookupByLibrary.simpleMessage("Optional"),
+        "PrivacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "SalaryDay": MessageLookupByLibrary.simpleMessage("Salary Day"),
         "SideIncome": MessageLookupByLibrary.simpleMessage("Side Income"),
         "Theme": MessageLookupByLibrary.simpleMessage("Theme"),
@@ -33,12 +35,34 @@ class MessageLookup extends MessageLookupByLibrary {
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("Configure your information"),
+        "contactUsHint": MessageLookupByLibrary.simpleMessage(
+            "For assistance, please reach out to our support team"),
+        "contactUsTitle": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("Dark Theme"),
+        "emptyList": MessageLookupByLibrary.simpleMessage("No items available"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
+        "faqAnswer1": MessageLookupByLibrary.simpleMessage(
+            "You can restore your data by logging back into your account using the same email and password."),
+        "faqAnswer2": MessageLookupByLibrary.simpleMessage(
+            "Yes, you can use the app without an account, but your data will be saved only on your device."),
+        "faqAnswer3": MessageLookupByLibrary.simpleMessage(
+            "Yes, you can delete your account and all your data from Settings > Delete Account."),
+        "faqQuestion1": MessageLookupByLibrary.simpleMessage(
+            "How can I restore my data after deleting the app?"),
+        "faqQuestion2": MessageLookupByLibrary.simpleMessage(
+            "Can I use the app without creating an account?"),
+        "faqQuestion3": MessageLookupByLibrary.simpleMessage(
+            "Can I permanently delete my account?"),
+        "faqTitle": MessageLookupByLibrary.simpleMessage(
+            "----- Frequently Asked Questions -----"),
+        "general": MessageLookupByLibrary.simpleMessage("General"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
         "lightTheme": MessageLookupByLibrary.simpleMessage("Light Theme"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
+        "notSignedIn": MessageLookupByLibrary.simpleMessage("Not Signed In"),
+        "notificationsHint": MessageLookupByLibrary.simpleMessage(
+            "Manage your notification preferences"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Take control of your money and save by tracking your expenses"),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -51,14 +75,66 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Save money easily"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Track your bills like never before"),
+        "personal": MessageLookupByLibrary.simpleMessage("Personal"),
+        "personalInfo":
+            MessageLookupByLibrary.simpleMessage("Personal Information"),
+        "privacyPolicyHint": MessageLookupByLibrary.simpleMessage(
+            "Review our privacy practices"),
+        "privacyPolicySubtitle":
+            MessageLookupByLibrary.simpleMessage("Read our privacy policy"),
+        "privacySecurityContactText": MessageLookupByLibrary.simpleMessage(
+            "If you have any questions regarding privacy or security, you can contact us via email:\nsupport@yourapp.com"),
+        "privacySecurityContactTitle":
+            MessageLookupByLibrary.simpleMessage("Contact"),
+        "privacySecurityFifthText": MessageLookupByLibrary.simpleMessage(
+            "• You have full rights to access, modify, or delete your data.\n• You can use the \'Delete Account\' feature to permanently erase all data from the app and the server."),
+        "privacySecurityFifthTitle":
+            MessageLookupByLibrary.simpleMessage("5. User Rights"),
+        "privacySecurityFirstText": MessageLookupByLibrary.simpleMessage(
+            "• Information you manually enter into the app (such as expenses, categories, income...)\n• User account information (name, email, password) if you create an account.\n• We do not collect any other data without your knowledge or consent."),
+        "privacySecurityFirstTitle":
+            MessageLookupByLibrary.simpleMessage("1. Data We Collect"),
+        "privacySecurityFooter": MessageLookupByLibrary.simpleMessage(
+            "Daftarny Expense Manager. All rights reserved"),
+        "privacySecurityFourthText": MessageLookupByLibrary.simpleMessage(
+            "• All stored data, locally or on the server, is protected using encryption technologies.\n• You can change your password anytime from account settings.\n• You can permanently delete your account and all related data.\n• App access can be protected using a PIN or fingerprint (if supported)."),
+        "privacySecurityFourthTitle":
+            MessageLookupByLibrary.simpleMessage("4. Security"),
+        "privacySecurityIntro": MessageLookupByLibrary.simpleMessage(
+            "We at the Expense Manager app value your privacy and the security of your financial and personal data. By using the app, you agree to the following privacy policy:"),
+        "privacySecuritySecondText": MessageLookupByLibrary.simpleMessage(
+            "• If you don’t have an account: your data is stored locally on your device only.\n• If you create an account: a secure copy of your data is stored online to enable synchronization and recovery from other devices.\n• Data is encrypted during transfer and storage for your safety."),
+        "privacySecuritySecondTitle":
+            MessageLookupByLibrary.simpleMessage("2. Data Storage Location"),
+        "privacySecurityThirdText": MessageLookupByLibrary.simpleMessage(
+            "• Your data is only used to display and manage your personal expenses.\n• We do not share your data with third parties.\n• We do not use your data for advertising or marketing purposes."),
+        "privacySecurityThirdTitle":
+            MessageLookupByLibrary.simpleMessage("3. How We Use Data"),
+        "privacySecurityTitle":
+            MessageLookupByLibrary.simpleMessage("Privacy and Security"),
         "salary": MessageLookupByLibrary.simpleMessage("Salary"),
         "salaryDayHint":
             MessageLookupByLibrary.simpleMessage("Enter your salary day"),
         "salaryHint":
             MessageLookupByLibrary.simpleMessage("Enter your monthly salary"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("Enter your side income"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "support": MessageLookupByLibrary.simpleMessage("Support"),
+        "supportEmailHint": MessageLookupByLibrary.simpleMessage(
+            "Press to send an email to the support team"),
+        "supportEmailTitle":
+            MessageLookupByLibrary.simpleMessage("Email Support"),
+        "supportHint":
+            MessageLookupByLibrary.simpleMessage("Get help and support"),
+        "supportPhoneHint": MessageLookupByLibrary.simpleMessage(
+            "Press to call the support team"),
+        "supportPhoneTitle": MessageLookupByLibrary.simpleMessage("Phone Call"),
+        "supportWhatsappHint": MessageLookupByLibrary.simpleMessage(
+            "Press to chat with the support team on WhatsApp"),
+        "supportWhatsappTitle":
+            MessageLookupByLibrary.simpleMessage("WhatsApp"),
         "systemTheme": MessageLookupByLibrary.simpleMessage("System Theme"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
         "userNameHint":

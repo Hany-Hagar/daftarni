@@ -36,6 +36,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  intl: ^0.18.1
 
   # BLoC state management
   bloc: ^8.1.0
@@ -50,9 +51,12 @@ dependencies:
   hive_flutter: ^1.1.0
   # Functional programming helpers
   dartz: ^0.10.1
-  flutter_screenutil: ^5.6.0
   lottie: ^3.3.1
+  flutter_screenutil: ^5.6.0
+  cached_network_image: ^3.2.3
   smooth_page_indicator: ^1.1.0
+  # To open URLs, mail, phone links
+  url_launcher: ^6.1.7
 
 dev_dependencies:
   flutter_test:

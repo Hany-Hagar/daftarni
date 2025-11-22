@@ -1,3 +1,7 @@
+import 'package:flutter/material.dart';
+
+const String appEMail = "daftarniapp@gmail.com";
+
 // Preferences
 
 /// Language Codes
@@ -14,3 +18,10 @@ const String systemTheme = 'system';
 /// Hive
 const String dataBoxName = 'data_box';
 const String dataKey = 'data_key';
+
+// Transaction Data
+
+const String incomeType = 'income';
+const String expenseType = 'expense';
+const Color incomeColor = Color.fromARGB(255, 9, 190, 15);
+const Color expenseColor = Colors.red;

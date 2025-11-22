@@ -21,13 +21,14 @@ class PreferencesModelAdapter extends TypeAdapter<PreferencesModel> {
       languageCode: fields[1] as String,
       themeI: fields[2] as int,
       langI: fields[3] as int,
+      enableNotifications: (fields[4] as bool?) ?? true,
     );
   }
 
   @override
   void write(BinaryWriter writer, PreferencesModel obj) {
     writer
-      ..writeByte(4)
+      ..writeByte(5)
       ..writeByte(0)
       ..write(obj.themeMode)
       ..writeByte(1)
@@ -35,7 +36,9 @@ class PreferencesModelAdapter extends TypeAdapter<PreferencesModel> {
       ..writeByte(2)
       ..write(obj.themeI)
       ..writeByte(3)
-      ..write(obj.langI);
+      ..write(obj.langI)
+      ..writeByte(4)
+      ..write(obj.enableNotifications);
   }
 
   @override

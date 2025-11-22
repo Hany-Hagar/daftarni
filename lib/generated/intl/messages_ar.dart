@@ -23,7 +23,9 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Language": MessageLookupByLibrary.simpleMessage("اللغة"),
+        "Notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
         "Optional": MessageLookupByLibrary.simpleMessage("اختياري"),
+        "PrivacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "SalaryDay": MessageLookupByLibrary.simpleMessage("يوم الراتب"),
         "SideIncome": MessageLookupByLibrary.simpleMessage("دخل جانبي"),
         "Theme": MessageLookupByLibrary.simpleMessage("المظهر"),
@@ -33,12 +35,35 @@ class MessageLookup extends MessageLookupByLibrary {
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("قم بإضافة معلوماتك"),
+        "contactUsHint": MessageLookupByLibrary.simpleMessage(
+            "للمساعدة، يرجى التواصل مع فريق الدعم الخاص بنا"),
+        "contactUsTitle": MessageLookupByLibrary.simpleMessage("اتصل بنا"),
         "continueButton": MessageLookupByLibrary.simpleMessage("استمر"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
+        "emptyList":
+            MessageLookupByLibrary.simpleMessage("لا توجد عناصر متاحة"),
         "english": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
+        "faqAnswer1": MessageLookupByLibrary.simpleMessage(
+            "يمكنك استعادة بياناتك عن طريق تسجيل الدخول مرة أخرى إلى حسابك باستخدام نفس البريد الإلكتروني وكلمة المرور."),
+        "faqAnswer2": MessageLookupByLibrary.simpleMessage(
+            "نعم، يمكنك استخدام التطبيق بدون حساب، ولكن سيتم حفظ بياناتك فقط على جهازك."),
+        "faqAnswer3": MessageLookupByLibrary.simpleMessage(
+            "نعم، يمكنك حذف حسابك وجميع بياناتك من الإعدادات > حذف الحساب."),
+        "faqQuestion1": MessageLookupByLibrary.simpleMessage(
+            "كيف يمكنني استعادة بياناتي بعد حذف التطبيق؟"),
+        "faqQuestion2": MessageLookupByLibrary.simpleMessage(
+            "هل يمكنني استخدام التطبيق بدون إنشاء حساب؟"),
+        "faqQuestion3": MessageLookupByLibrary.simpleMessage(
+            "هل يمكنني حذف حسابي نهائيًا؟"),
+        "faqTitle": MessageLookupByLibrary.simpleMessage(
+            "----- الأسئلة المتكررة -----"),
+        "general": MessageLookupByLibrary.simpleMessage("عامة"),
         "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "lightTheme": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
+        "notSignedIn": MessageLookupByLibrary.simpleMessage("غير مسجل الدخول"),
+        "notificationsHint":
+            MessageLookupByLibrary.simpleMessage("إدارة تفضيلات الاشعارات"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "تحكم في أموالك وادخر من خلال تتبع نفقاتك"),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -51,12 +76,63 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("وفر المال بسهولة"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "تتبع فواتيرك كما لم يحدث من قبل"),
+        "personal": MessageLookupByLibrary.simpleMessage("شخصية"),
+        "personalInfo": MessageLookupByLibrary.simpleMessage("معلومات شخصية"),
+        "privacyPolicyHint":
+            MessageLookupByLibrary.simpleMessage("راجع ممارسات الخصوصية "),
+        "privacyPolicySubtitle": MessageLookupByLibrary.simpleMessage(
+            "اقرأ سياسة الخصوصية الخاصة بنا"),
+        "privacySecurityContactText": MessageLookupByLibrary.simpleMessage(
+            "إذا كان لديك أي أسئلة بخصوص الخصوصية أو الأمان، يمكنك الاتصال بنا عبر البريد الإلكتروني:\nsupport@yourapp.com"),
+        "privacySecurityContactTitle":
+            MessageLookupByLibrary.simpleMessage("اتصل بنا"),
+        "privacySecurityFifthText": MessageLookupByLibrary.simpleMessage(
+            "• لديك كامل الحقوق للوصول إلى بياناتك وتعديلها أو حذفها.\n• يمكنك استخدام ميزة \'حذف الحساب\' لمحو جميع البيانات من التطبيق والخادم بشكل دائم."),
+        "privacySecurityFifthTitle":
+            MessageLookupByLibrary.simpleMessage("5. حقوق المستخدم"),
+        "privacySecurityFirstText": MessageLookupByLibrary.simpleMessage(
+            "• المعلومات التي تدخلها يدويًا في التطبيق (مثل النفقات، الفئات، الدخل...)\n• معلومات حساب المستخدم (الاسم، البريد الإلكتروني، كلمة المرور) إذا قمت بإنشاء حساب.\n• نحن لا نجمع أي بيانات أخرى بدون علمك أو موافقتك."),
+        "privacySecurityFirstTitle":
+            MessageLookupByLibrary.simpleMessage("1. البيانات التي نجمعها"),
+        "privacySecurityFooter": MessageLookupByLibrary.simpleMessage(
+            "مدير نفقات دفترني. جميع الحقوق محفوظة"),
+        "privacySecurityFourthText": MessageLookupByLibrary.simpleMessage(
+            "• يتم حماية جميع البيانات المخزنة، محليًا أو على الخادم، باستخدام تقنيات التشفير.\n• يمكنك تغيير كلمة المرور في أي وقت من إعدادات الحساب.\n• يمكنك حذف حسابك وجميع البيانات المرتبطة به بشكل دائم.\n• يمكن حماية الوصول إلى التطبيق باستخدام رمز PIN أو بصمة الإصبع (إذا كان مدعومًا)."),
+        "privacySecurityFourthTitle":
+            MessageLookupByLibrary.simpleMessage("4. الأمان"),
+        "privacySecurityIntro": MessageLookupByLibrary.simpleMessage(
+            "نحن في تطبيق مدير النفقات نقدر خصوصيتك وأمان بياناتك المالية والشخصية. باستخدام التطبيق، فإنك توافق على سياسة الخصوصية التالية:"),
+        "privacySecuritySecondText": MessageLookupByLibrary.simpleMessage(
+            "• إذا لم يكن لديك حساب: يتم تخزين بياناتك محليًا على جهازك فقط.\n• إذا قمت بإنشاء حساب: يتم تخزين نسخة آمنة من بياناتك عبر الإنترنت لتمكين المزامنة والاسترداد من أجهزة أخرى.\n• يتم تشفير البيانات أثناء النقل والتخزين من أجل سلامتك."),
+        "privacySecuritySecondTitle":
+            MessageLookupByLibrary.simpleMessage("2. موقع تخزين البيانات"),
+        "privacySecurityThirdText": MessageLookupByLibrary.simpleMessage(
+            "• يتم استخدام بياناتك فقط لعرض وإدارة نفقاتك الشخصية.\n• نحن لا نشارك بياناتك مع أطراف ثالثة.\n• نحن لا نستخدم بياناتك لأغراض الإعلان أو التسويق."),
+        "privacySecurityThirdTitle": MessageLookupByLibrary.simpleMessage(
+            "3. كيفية استخدامنا للبيانات الخاصة بك"),
+        "privacySecurityTitle":
+            MessageLookupByLibrary.simpleMessage("الخصوصية والأمان"),
         "salary": MessageLookupByLibrary.simpleMessage("الراتب"),
         "salaryDayHint": MessageLookupByLibrary.simpleMessage("أدخل يوم راتبك"),
         "salaryHint": MessageLookupByLibrary.simpleMessage("أدخل راتبك الشهري"),
+        "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("أدخل دخلك الجانبي"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "support": MessageLookupByLibrary.simpleMessage("الدعم"),
+        "supportEmailHint": MessageLookupByLibrary.simpleMessage(
+            "اضغط لإرسال بريد إلكتروني إلى فريق الدعم"),
+        "supportEmailTitle":
+            MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "supportHint":
+            MessageLookupByLibrary.simpleMessage("احصل على المساعدة والدعم"),
+        "supportPhoneHint":
+            MessageLookupByLibrary.simpleMessage("اضغط للاتصال بفريق الدعم"),
+        "supportPhoneTitle":
+            MessageLookupByLibrary.simpleMessage("مكالمة هاتفية"),
+        "supportWhatsappHint": MessageLookupByLibrary.simpleMessage(
+            "اضغط للدردشة مع فريق الدعم على واتساب"),
+        "supportWhatsappTitle": MessageLookupByLibrary.simpleMessage("واتساب"),
         "systemTheme": MessageLookupByLibrary.simpleMessage("وضع النظام"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "userNameHint":

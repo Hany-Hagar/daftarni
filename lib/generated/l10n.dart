@@ -50,6 +50,16 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `No items available`
+  String get emptyList {
+    return Intl.message(
+      'No items available',
+      name: 'emptyList',
+      desc: 'Text displayed when a list is empty',
+      args: [],
+    );
+  }
+
   /// `Daftarni`
   String get appTitle {
     return Intl.message(
@@ -339,6 +349,426 @@ class S {
       'Continue',
       name: 'continueButton',
       desc: 'Text for the continue button on the onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: 'Title of the settings screen',
+      args: [],
+    );
+  }
+
+  /// `Not Signed In`
+  String get notSignedIn {
+    return Intl.message(
+      'Not Signed In',
+      name: 'notSignedIn',
+      desc: 'Text displayed when the user is not signed in',
+      args: [],
+    );
+  }
+
+  /// `Personal`
+  String get personal {
+    return Intl.message(
+      'Personal',
+      name: 'personal',
+      desc: 'Label for the personal section in settings',
+      args: [],
+    );
+  }
+
+  /// `Personal Information`
+  String get personalInfo {
+    return Intl.message(
+      'Personal Information',
+      name: 'personalInfo',
+      desc: 'Label for the personal information section in settings',
+      args: [],
+    );
+  }
+
+  /// `General`
+  String get general {
+    return Intl.message(
+      'General',
+      name: 'general',
+      desc: 'Label for the general section in settings',
+      args: [],
+    );
+  }
+
+  /// `Notifications`
+  String get Notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'Notifications',
+      desc: 'Label for the notifications section in settings',
+      args: [],
+    );
+  }
+
+  /// `Manage your notification preferences`
+  String get notificationsHint {
+    return Intl.message(
+      'Manage your notification preferences',
+      name: 'notificationsHint',
+      desc: 'Subtitle for the notifications section in settings',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get PrivacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'PrivacyPolicy',
+      desc: 'Label for the privacy policy section in settings',
+      args: [],
+    );
+  }
+
+  /// `Review our privacy practices`
+  String get privacyPolicyHint {
+    return Intl.message(
+      'Review our privacy practices',
+      name: 'privacyPolicyHint',
+      desc: 'Subtitle for the privacy policy section in settings',
+      args: [],
+    );
+  }
+
+  /// `Support`
+  String get support {
+    return Intl.message(
+      'Support',
+      name: 'support',
+      desc: 'Label for the support section in settings',
+      args: [],
+    );
+  }
+
+  /// `Get help and support`
+  String get supportHint {
+    return Intl.message(
+      'Get help and support',
+      name: 'supportHint',
+      desc: 'Subtitle for the support section in settings',
+      args: [],
+    );
+  }
+
+  /// `Privacy and Security`
+  String get privacySecurityTitle {
+    return Intl.message(
+      'Privacy and Security',
+      name: 'privacySecurityTitle',
+      desc: 'Title for the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `Read our privacy policy`
+  String get privacyPolicySubtitle {
+    return Intl.message(
+      'Read our privacy policy',
+      name: 'privacyPolicySubtitle',
+      desc: 'Subtitle for the privacy policy section in settings',
+      args: [],
+    );
+  }
+
+  /// `We at the Expense Manager app value your privacy and the security of your financial and personal data. By using the app, you agree to the following privacy policy:`
+  String get privacySecurityIntro {
+    return Intl.message(
+      'We at the Expense Manager app value your privacy and the security of your financial and personal data. By using the app, you agree to the following privacy policy:',
+      name: 'privacySecurityIntro',
+      desc: 'Introduction text for the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `1. Data We Collect`
+  String get privacySecurityFirstTitle {
+    return Intl.message(
+      '1. Data We Collect',
+      name: 'privacySecurityFirstTitle',
+      desc: 'Title for the first section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `• Information you manually enter into the app (such as expenses, categories, income...)\n• User account information (name, email, password) if you create an account.\n• We do not collect any other data without your knowledge or consent.`
+  String get privacySecurityFirstText {
+    return Intl.message(
+      '• Information you manually enter into the app (such as expenses, categories, income...)\n• User account information (name, email, password) if you create an account.\n• We do not collect any other data without your knowledge or consent.',
+      name: 'privacySecurityFirstText',
+      desc: 'Text for the first section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `2. Data Storage Location`
+  String get privacySecuritySecondTitle {
+    return Intl.message(
+      '2. Data Storage Location',
+      name: 'privacySecuritySecondTitle',
+      desc: 'Title for the second section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `• If you don’t have an account: your data is stored locally on your device only.\n• If you create an account: a secure copy of your data is stored online to enable synchronization and recovery from other devices.\n• Data is encrypted during transfer and storage for your safety.`
+  String get privacySecuritySecondText {
+    return Intl.message(
+      '• If you don’t have an account: your data is stored locally on your device only.\n• If you create an account: a secure copy of your data is stored online to enable synchronization and recovery from other devices.\n• Data is encrypted during transfer and storage for your safety.',
+      name: 'privacySecuritySecondText',
+      desc: 'Text for the second section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `3. How We Use Data`
+  String get privacySecurityThirdTitle {
+    return Intl.message(
+      '3. How We Use Data',
+      name: 'privacySecurityThirdTitle',
+      desc: 'Title for the third section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `• Your data is only used to display and manage your personal expenses.\n• We do not share your data with third parties.\n• We do not use your data for advertising or marketing purposes.`
+  String get privacySecurityThirdText {
+    return Intl.message(
+      '• Your data is only used to display and manage your personal expenses.\n• We do not share your data with third parties.\n• We do not use your data for advertising or marketing purposes.',
+      name: 'privacySecurityThirdText',
+      desc: 'Text for the third section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `4. Security`
+  String get privacySecurityFourthTitle {
+    return Intl.message(
+      '4. Security',
+      name: 'privacySecurityFourthTitle',
+      desc: 'Title for the fourth section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `• All stored data, locally or on the server, is protected using encryption technologies.\n• You can change your password anytime from account settings.\n• You can permanently delete your account and all related data.\n• App access can be protected using a PIN or fingerprint (if supported).`
+  String get privacySecurityFourthText {
+    return Intl.message(
+      '• All stored data, locally or on the server, is protected using encryption technologies.\n• You can change your password anytime from account settings.\n• You can permanently delete your account and all related data.\n• App access can be protected using a PIN or fingerprint (if supported).',
+      name: 'privacySecurityFourthText',
+      desc: 'Text for the fourth section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `5. User Rights`
+  String get privacySecurityFifthTitle {
+    return Intl.message(
+      '5. User Rights',
+      name: 'privacySecurityFifthTitle',
+      desc: 'Title for the fifth section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `• You have full rights to access, modify, or delete your data.\n• You can use the 'Delete Account' feature to permanently erase all data from the app and the server.`
+  String get privacySecurityFifthText {
+    return Intl.message(
+      '• You have full rights to access, modify, or delete your data.\n• You can use the \'Delete Account\' feature to permanently erase all data from the app and the server.',
+      name: 'privacySecurityFifthText',
+      desc: 'Text for the fifth section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `Contact`
+  String get privacySecurityContactTitle {
+    return Intl.message(
+      'Contact',
+      name: 'privacySecurityContactTitle',
+      desc: 'Title for the contact section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `If you have any questions regarding privacy or security, you can contact us via email:\nsupport@yourapp.com`
+  String get privacySecurityContactText {
+    return Intl.message(
+      'If you have any questions regarding privacy or security, you can contact us via email:\nsupport@yourapp.com',
+      name: 'privacySecurityContactText',
+      desc: 'Text for the contact section of the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `Daftarny Expense Manager. All rights reserved`
+  String get privacySecurityFooter {
+    return Intl.message(
+      'Daftarny Expense Manager. All rights reserved',
+      name: 'privacySecurityFooter',
+      desc: 'Footer text for the privacy and security screen',
+      args: [],
+    );
+  }
+
+  /// `Contact Us`
+  String get contactUsTitle {
+    return Intl.message(
+      'Contact Us',
+      name: 'contactUsTitle',
+      desc: 'Title for the contact us section in support',
+      args: [],
+    );
+  }
+
+  /// `For assistance, please reach out to our support team`
+  String get contactUsHint {
+    return Intl.message(
+      'For assistance, please reach out to our support team',
+      name: 'contactUsHint',
+      desc: 'Subtitle for the contact us section in support',
+      args: [],
+    );
+  }
+
+  /// `Phone Call`
+  String get supportPhoneTitle {
+    return Intl.message(
+      'Phone Call',
+      name: 'supportPhoneTitle',
+      desc: 'Title for the phone call option',
+      args: [],
+    );
+  }
+
+  /// `Press to call the support team`
+  String get supportPhoneHint {
+    return Intl.message(
+      'Press to call the support team',
+      name: 'supportPhoneHint',
+      desc: 'Subtitle for the phone call option',
+      args: [],
+    );
+  }
+
+  /// `WhatsApp`
+  String get supportWhatsappTitle {
+    return Intl.message(
+      'WhatsApp',
+      name: 'supportWhatsappTitle',
+      desc: 'Title for the WhatsApp contact option',
+      args: [],
+    );
+  }
+
+  /// `Press to chat with the support team on WhatsApp`
+  String get supportWhatsappHint {
+    return Intl.message(
+      'Press to chat with the support team on WhatsApp',
+      name: 'supportWhatsappHint',
+      desc: 'Subtitle for the WhatsApp contact option',
+      args: [],
+    );
+  }
+
+  /// `Email Support`
+  String get supportEmailTitle {
+    return Intl.message(
+      'Email Support',
+      name: 'supportEmailTitle',
+      desc: 'Title for the email contact option',
+      args: [],
+    );
+  }
+
+  /// `Press to send an email to the support team`
+  String get supportEmailHint {
+    return Intl.message(
+      'Press to send an email to the support team',
+      name: 'supportEmailHint',
+      desc: 'Subtitle for the email contact option',
+      args: [],
+    );
+  }
+
+  /// `----- Frequently Asked Questions -----`
+  String get faqTitle {
+    return Intl.message(
+      '----- Frequently Asked Questions -----',
+      name: 'faqTitle',
+      desc: 'Title for the FAQ section in the support page',
+      args: [],
+    );
+  }
+
+  /// `How can I restore my data after deleting the app?`
+  String get faqQuestion1 {
+    return Intl.message(
+      'How can I restore my data after deleting the app?',
+      name: 'faqQuestion1',
+      desc: 'The first question and answer pair in the FAQ section',
+      args: [],
+    );
+  }
+
+  /// `You can restore your data by logging back into your account using the same email and password.`
+  String get faqAnswer1 {
+    return Intl.message(
+      'You can restore your data by logging back into your account using the same email and password.',
+      name: 'faqAnswer1',
+      desc: 'The answer to the first question in the FAQ section',
+      args: [],
+    );
+  }
+
+  /// `Can I use the app without creating an account?`
+  String get faqQuestion2 {
+    return Intl.message(
+      'Can I use the app without creating an account?',
+      name: 'faqQuestion2',
+      desc: 'The second question and answer pair in the FAQ section',
+      args: [],
+    );
+  }
+
+  /// `Yes, you can use the app without an account, but your data will be saved only on your device.`
+  String get faqAnswer2 {
+    return Intl.message(
+      'Yes, you can use the app without an account, but your data will be saved only on your device.',
+      name: 'faqAnswer2',
+      desc: 'The answer to the second question in the FAQ section',
+      args: [],
+    );
+  }
+
+  /// `Can I permanently delete my account?`
+  String get faqQuestion3 {
+    return Intl.message(
+      'Can I permanently delete my account?',
+      name: 'faqQuestion3',
+      desc: 'The third question in the FAQ section',
+      args: [],
+    );
+  }
+
+  /// `Yes, you can delete your account and all your data from Settings > Delete Account.`
+  String get faqAnswer3 {
+    return Intl.message(
+      'Yes, you can delete your account and all your data from Settings > Delete Account.',
+      name: 'faqAnswer3',
+      desc: 'The answer to the third question in the FAQ section',
       args: [],
     );
   }

@@ -1,6 +1,12 @@
 {
     "@@locale": "en",
 
+    "emptyList":"No items available",
+    "@emptyList": {
+        "description": "Text displayed when a list is empty"
+    },
+
+
 
     "appTitle": "Daftarni",
     "@appTitle": {
@@ -44,6 +50,7 @@
     },
 
 
+    
     "configureYourInfo": "Configure your information",
     "@configureYourInfo": {
         "description": "Title of the configure your information screen"
@@ -119,7 +126,182 @@
     "continueButton": "Continue",
     "@continueButton": {
         "description": "Text for the continue button on the onboarding screen"
-    }
+    },
+
 
     
+    "settings": "Settings",
+    "@settings": {
+        "description": "Title of the settings screen"
+    },
+    "notSignedIn": "Not Signed In",
+    "@notSignedIn": {
+        "description": "Text displayed when the user is not signed in"
+    }, 
+    "personal": "Personal",
+    "@personal": {
+        "description": "Label for the personal section in settings"
+    },
+    "personalInfo": "Personal Information",
+    "@personalInfo": {
+        "description": "Label for the personal information section in settings"
+    },
+    "general": "General",
+    "@general": {
+        "description": "Label for the general section in settings"
+    },
+    "Notifications": "Notifications",
+    "@Notifications": {
+        "description": "Label for the notifications section in settings"
+    },
+    "notificationsHint": "Manage your notification preferences",
+    "@notificationsHint": {
+        "description": "Subtitle for the notifications section in settings"
+    },
+    "PrivacyPolicy": "Privacy Policy",
+    "@PrivacyPolicy": {
+        "description": "Label for the privacy policy section in settings"
+    },
+    "privacyPolicyHint": "Review our privacy practices",
+    "@privacyPolicyHint": {
+        "description": "Subtitle for the privacy policy section in settings"
+    },
+    "support": "Support",
+    "@support": {
+        "description": "Label for the support section in settings"
+    },
+    "supportHint": "Get help and support",
+    "@supportHint": {
+        "description": "Subtitle for the support section in settings"
+    },
+
+
+
+    "privacySecurityTitle": "Privacy and Security",
+    "@privacySecurityTitle": {
+        "description": "Title for the privacy and security screen"
+    },
+    "privacyPolicySubtitle": "Read our privacy policy",
+    "@privacyPolicySubtitle": {
+        "description": "Subtitle for the privacy policy section in settings"
+    },
+    "privacySecurityIntro": "We at the Expense Manager app value your privacy and the security of your financial and personal data. By using the app, you agree to the following privacy policy:",
+    "@privacySecurityIntro": {
+        "description": "Introduction text for the privacy and security screen"
+    },
+    "privacySecurityFirstTitle": "1. Data We Collect",
+    "@privacySecurityFirstTitle": {
+        "description": "Title for the first section of the privacy and security screen"
+    },
+    "privacySecurityFirstText": "• Information you manually enter into the app (such as expenses, categories, income...)\n• User account information (name, email, password) if you create an account.\n• We do not collect any other data without your knowledge or consent.",
+    "@privacySecurityFirstText": {
+        "description": "Text for the first section of the privacy and security screen"
+    },
+    "privacySecuritySecondTitle": "2. Data Storage Location",
+    "@privacySecuritySecondTitle": {
+        "description": "Title for the second section of the privacy and security screen"
+    },
+    "privacySecuritySecondText": "• If you don’t have an account: your data is stored locally on your device only.\n• If you create an account: a secure copy of your data is stored online to enable synchronization and recovery from other devices.\n• Data is encrypted during transfer and storage for your safety.",
+    "@privacySecuritySecondText": {
+        "description": "Text for the second section of the privacy and security screen"
+    },
+    "privacySecurityThirdTitle": "3. How We Use Data",
+    "@privacySecurityThirdTitle": {
+        "description": "Title for the third section of the privacy and security screen"
+    },
+    "privacySecurityThirdText": "• Your data is only used to display and manage your personal expenses.\n• We do not share your data with third parties.\n• We do not use your data for advertising or marketing purposes.",
+    "@privacySecurityThirdText": {
+        "description": "Text for the third section of the privacy and security screen"
+    },
+    "privacySecurityFourthTitle": "4. Security",
+    "@privacySecurityFourthTitle": {
+        "description": "Title for the fourth section of the privacy and security screen"
+    },
+    "privacySecurityFourthText": "• All stored data, locally or on the server, is protected using encryption technologies.\n• You can change your password anytime from account settings.\n• You can permanently delete your account and all related data.\n• App access can be protected using a PIN or fingerprint (if supported).",
+    "@privacySecurityFourthText": {
+        "description": "Text for the fourth section of the privacy and security screen"
+    },
+    "privacySecurityFifthTitle": "5. User Rights",
+    "@privacySecurityFifthTitle": {
+        "description": "Title for the fifth section of the privacy and security screen"
+    },
+    "privacySecurityFifthText": "• You have full rights to access, modify, or delete your data.\n• You can use the 'Delete Account' feature to permanently erase all data from the app and the server.",
+    "@privacySecurityFifthText": {
+        "description": "Text for the fifth section of the privacy and security screen"
+    },
+    "privacySecurityContactTitle": "Contact",
+    "@privacySecurityContactTitle": {
+        "description": "Title for the contact section of the privacy and security screen"
+    },
+    "privacySecurityContactText": "If you have any questions regarding privacy or security, you can contact us via email:\nsupport@yourapp.com",
+    "@privacySecurityContactText": {
+        "description": "Text for the contact section of the privacy and security screen"
+    },
+    "privacySecurityFooter": "Daftarny Expense Manager. All rights reserved",
+    "@privacySecurityFooter": {
+        "description": "Footer text for the privacy and security screen"
+    },
+
+
+
+    "contactUsTitle": "Contact Us",
+    "@contactUsTitle": {
+        "description": "Title for the contact us section in support"
+    },
+    "contactUsHint": "For assistance, please reach out to our support team",
+    "@contactUsHint": {
+        "description": "Subtitle for the contact us section in support"
+    },
+    "supportPhoneTitle": "Phone Call",
+    "@supportPhoneTitle": {
+        "description": "Title for the phone call option"
+    },
+    "supportPhoneHint":"Press to call the support team",
+    "@supportPhoneHint": {
+        "description": "Subtitle for the phone call option"
+    },
+    "supportWhatsappTitle": "WhatsApp",
+    "@supportWhatsappTitle": {
+        "description": "Title for the WhatsApp contact option"
+    },
+    "supportWhatsappHint": "Press to chat with the support team on WhatsApp",
+    "@supportWhatsappHint": {
+        "description": "Subtitle for the WhatsApp contact option"
+    },
+    "supportEmailTitle": "Email Support",
+    "@supportEmailTitle": {
+        "description": "Title for the email contact option"
+    },
+    "supportEmailHint": "Press to send an email to the support team",
+    "@supportEmailHint": {
+        "description": "Subtitle for the email contact option"
+    },
+    "faqTitle":"----- Frequently Asked Questions -----",
+    "@faqTitle": {
+        "description": "Title for the FAQ section in the support page"
+    },
+    "faqQuestion1":"How can I restore my data after deleting the app?",
+    "@faqQuestion1": {
+        "description": "The first question and answer pair in the FAQ section"
+    },
+    "faqAnswer1":"You can restore your data by logging back into your account using the same email and password.",
+      "@faqAnswer1": {
+          "description": "The answer to the first question in the FAQ section"
+    },
+    "faqQuestion2": "Can I use the app without creating an account?",
+    "@faqQuestion2": {
+        "description": "The second question and answer pair in the FAQ section"
+    },
+    "faqAnswer2": "Yes, you can use the app without an account, but your data will be saved only on your device.",
+    "@faqAnswer2": {
+        "description": "The answer to the second question in the FAQ section"
+    },
+    "faqQuestion3": "Can I permanently delete my account?",
+    "@faqQuestion3": {
+        "description": "The third question in the FAQ section"
+    },
+    "faqAnswer3": "Yes, you can delete your account and all your data from Settings > Delete Account.",
+    "@faqAnswer3": {
+        "description": "The answer to the third question in the FAQ section"
+    }
 }
