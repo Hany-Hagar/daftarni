@@ -52,5 +52,13 @@
 		<true/>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		
+		<!-- Permissions for camera and photo library (image picker) -->
+		<key>NSCameraUsageDescription</key>
+		<string>App needs camera access to take profile pictures.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>App needs photo library access to select profile pictures.</string>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+		<string>App needs permission to save photos to your library.</string>
 	</dict>
 </plist>
