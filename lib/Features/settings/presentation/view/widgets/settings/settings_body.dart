@@ -11,7 +11,7 @@ import '../../../../../../generated/l10n.dart';
 import '../../../../../../core/widgets/custom_text.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../core/utils/navigator_methods.dart';
-import '../../../../../../Core/services/service_locator.dart';
+import '../../../../../../core/services/service_locator.dart';
 
 class SettingsBody extends StatelessWidget {
   const SettingsBody({super.key});

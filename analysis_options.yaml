@@ -26,3 +26,8 @@ linter:
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
+
+# Exclude legacy / duplicate folders with different casing to avoid
+# duplicate type definitions on case-insensitive file systems.
+analyzer:
+  exclude: []

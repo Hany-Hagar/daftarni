@@ -4,7 +4,7 @@ import '../../../../../Const/app.dart';
 import '../../../../../generated/l10n.dart';
 import '../widgets/privacy/privacy_police_body.dart';
 import '../../../../../core/widgets/custom_text.dart';
-import '../../../../../Core/widgets/nav_pop_icon.dart';
+import '../../../../../core/widgets/nav_pop_icon.dart';
 
 class PrivacyPoliceView extends StatelessWidget {
   const PrivacyPoliceView({super.key});

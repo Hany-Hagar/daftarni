@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import '../../../../../generated/l10n.dart';
 import '../widgets/settings/settings_top.dart';
 import '../widgets/settings/settings_body.dart';
-import '../../../../../Core/widgets/custom_text.dart';
-import '../../../../../Core/widgets/back_ground.dart';
-import '../../../../../Core/widgets/custom_avatar.dart';
-import '../../../../../Core/services/service_locator.dart';
+import '../../../../../core/widgets/custom_text.dart';
+import '../../../../../core/widgets/back_ground.dart';
+import '../../../../../core/widgets/custom_avatar.dart';
+import '../../../../../core/services/service_locator.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SettingsView extends StatelessWidget {

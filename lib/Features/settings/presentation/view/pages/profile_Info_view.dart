@@ -1,5 +1,7 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/widgets.dart';
-import '../../../../../Core/widgets/back_ground.dart';
+import '../../../../../core/widgets/back_ground.dart';
 
 class ProfileInfoView extends StatelessWidget {
   const ProfileInfoView({super.key});

@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'hive_services.dart';
 import 'package:get_it/get_it.dart';
-import '../../Features/splash/data/models/data_model.dart';
-import '../../Features/splash/data/models/preferences_model.dart';
+import '../../features/splash/data/models/data_model.dart';
+import '../../features/splash/data/models/preferences_model.dart';
 
 class ServiceLocator {
   static final sl = GetIt.instance;

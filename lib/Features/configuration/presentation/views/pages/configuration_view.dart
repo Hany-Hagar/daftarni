@@ -3,9 +3,9 @@ import '../widgets/configuration_body.dart';
 import '../../manager/configuration_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../manager/configuration_states.dart';
-import '../../../../../Core/widgets/back_ground.dart';
+import '../../../../../core/widgets/back_ground.dart';
 import '../../../data/repo/configuration_repo_impl.dart';
-import '../../../../../Core/services/service_locator.dart';
+import '../../../../../core/services/service_locator.dart';
 
 class ConfigurationView extends StatelessWidget {
   const ConfigurationView({super.key});

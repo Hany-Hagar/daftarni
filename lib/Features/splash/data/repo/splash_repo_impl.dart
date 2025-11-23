@@ -1,8 +1,8 @@
 import 'splash_repo.dart';
 import 'package:dartz/dartz.dart';
 import '../models/data_model.dart';
-import '../../../../Core/Failures/failure.dart';
-import '../../../../Core/services/hive_services.dart';
+import '../../../../core/failures/failure.dart';
+import '../../../../core/services/hive_services.dart';
 
 class SplashRepoImpl implements SplashRepo {
   final HiveServices hiveServices;

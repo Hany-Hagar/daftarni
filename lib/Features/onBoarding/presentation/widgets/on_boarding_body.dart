@@ -4,7 +4,7 @@ import 'package:lottie/lottie.dart';
 import 'package:flutter/material.dart';
 import '../../../../generated/l10n.dart';
 import '../../data/model/on_boarding.dart';
-import '../../../../Core/widgets/custom_text.dart';
+import '../../../../core/widgets/custom_text.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoardingBody extends StatelessWidget {

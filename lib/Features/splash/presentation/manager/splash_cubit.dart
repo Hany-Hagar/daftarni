@@ -1,7 +1,7 @@
 import 'splash_states.dart';
 import '../../data/repo/splash_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../Core/services/service_locator.dart';
+import '../../../../core/services/service_locator.dart';
 
 class SplashCubit extends Cubit<SplashState> {
   final SplashRepo splashRepo;

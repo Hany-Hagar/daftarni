@@ -1,12 +1,12 @@
 import '../../Const/data.dart';
 import 'package:dartz/dartz.dart';
-import '../Failures/failure.dart';
-import '../Failures/hive_failure.dart';
+import '../failures/failure.dart';
+import '../failures/hive_failure.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import '../../Features/splash/data/models/data_model.dart';
-import '../../Features/splash/data/models/profile_model.dart';
-import '../../Features/splash/data/models/balance_model.dart';
-import '../../Features/splash/data/models/preferences_model.dart';
+import '../../features/splash/data/models/data_model.dart';
+import '../../features/splash/data/models/profile_model.dart';
+import '../../features/splash/data/models/balance_model.dart';
+import '../../features/splash/data/models/preferences_model.dart';
 
 class HiveServices {
   static Future<void> init() async {
@@ -57,6 +57,8 @@ class HiveServices {
     });
   }
 
+  // Prefernces Functions
+
   Either<Failure, DataModel> changeTheme({
     required String theme,
     required int themeI,
@@ -89,6 +91,25 @@ class HiveServices {
         final uPreferences = data!.preferences.copyWith(
           languageCode: language,
           langI: langI,
+        );
+        final uData = data.copyWith(preferences: uPreferences);
+        box.put(dataKey, uData);
+        return Right(uData);
+      } catch (e) {
+        return Left(HiveFailure.fromException(e));
+      }
+    });
+  }
+
+  Either<Failure, DataModel> changeNotificationsStates({
+    required bool notificationsEnabled,
+  }) {
+    final boxResult = _getDataBox();
+    return boxResult.fold((failure) => Left(failure), (box) {
+      try {
+        final data = box.get(dataKey, defaultValue: DataModel.defaultData());
+        final uPreferences = data!.preferences.copyWith(
+          enableNotifications: notificationsEnabled,
         );
         final uData = data.copyWith(preferences: uPreferences);
         box.put(dataKey, uData);

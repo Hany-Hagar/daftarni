@@ -1,8 +1,8 @@
 import 'configuration_repo.dart';
 import 'package:dartz/dartz.dart';
-import '../../../../Core/Failures/failure.dart';
+import '../../../../core/failures/failure.dart';
 import '../../../splash/data/models/data_model.dart';
-import '../../../../Core/services/hive_services.dart';
+import '../../../../core/services/hive_services.dart';
 
 class ConfigurationRepoImpl implements ConfigurationRepo {
   final HiveServices hiveServices;

@@ -3,8 +3,8 @@ import 'configuration_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../data/repo/configuration_repo.dart';
+import '../../../../../core/services/service_locator.dart';
 import '../../../splash/data/models/data_model.dart';
-import '../../../../Core/services/service_locator.dart';
 
 class ConfigurationCubit extends Cubit<ConfigurationStates> {
   final ConfigurationRepo configurationRepo;

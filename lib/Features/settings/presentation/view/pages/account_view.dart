@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import '../../../../../Core/widgets/back_ground.dart';
+import '../../../../../core/widgets/back_ground.dart';
 
 class AccountView extends StatelessWidget {
   const AccountView({super.key});

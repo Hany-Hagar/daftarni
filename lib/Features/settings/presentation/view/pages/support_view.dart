@@ -4,7 +4,7 @@ import '../../../../../generated/l10n.dart';
 import '../widgets/support/support_body.dart';
 import '../../../../../core/widgets/custom_text.dart';
 import '../../../../../core/widgets/back_ground.dart';
-import '../../../../../Core/widgets/nav_pop_icon.dart';
+import '../../../../../core/widgets/nav_pop_icon.dart';
 
 class SupportView extends StatelessWidget {
   const SupportView({super.key});

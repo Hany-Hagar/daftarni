@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../../generated/l10n.dart';
-import '../../../../../../Core/widgets/custom_text.dart';
-import '../../../../../../Core/widgets/nav_pop_icon.dart';
+import '../../../../../../core/widgets/custom_text.dart';
+import '../../../../../../core/widgets/nav_pop_icon.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SettingsTop extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import '../../../../Core/Failures/failure.dart';
+import '../../../../core/failures/failure.dart';
 import '../../../splash/data/models/data_model.dart';
 
 abstract class ConfigurationRepo {
