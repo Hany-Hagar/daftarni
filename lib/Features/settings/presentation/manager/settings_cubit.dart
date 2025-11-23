@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../splash/data/models/data_model.dart';
 import '../../../../core/services/service_locator.dart';
 
-class SettingsCubit extends Cubit<SettingsState> {
+class SettingsCubit extends Cubit<SettingsStates> {
   final SettingsRepo settingsRepo;
   SettingsCubit({required this.settingsRepo}) : super(SettingsInitial()) {
     ServiceLocator.modelStream.listen((event) {
@@ -26,34 +26,39 @@ class SettingsCubit extends Cubit<SettingsState> {
     ];
     return themes[dataModel.preferences.themeI];
   }
-  
 
   void changeLanguage({required int langI, required String langC}) async {
-    emit(LoadingState());
+    emit(SettingsLoading());
     final result = settingsRepo.changeLanguage(langI: langI, langC: langC);
-    result.fold((failure) => emit(FailureState(failure.errMessage)), (success) {
+    result.fold((failure) => emit(SettingsFailure(failure.errMessage)), (
+      success,
+    ) {
       ServiceLocator.updateDataModel(success.preferences);
-      emit(SuccessState());
+      emit(SettingsSuccess());
     });
   }
 
   void changeTheme({required int themeI, required String theme}) async {
-    emit(LoadingState());
+    emit(SettingsLoading());
     final result = settingsRepo.changeTheme(themeI: themeI, theme: theme);
-    result.fold((failure) => emit(FailureState(failure.errMessage)), (success) {
+    result.fold((failure) => emit(SettingsFailure(failure.errMessage)), (
+      success,
+    ) {
       ServiceLocator.updateDataModel(success.preferences);
-      emit(SuccessState());
+      emit(SettingsSuccess());
     });
   }
 
   void changeNotificationsState({required bool notificationsEnabled}) async {
-    emit(LoadingState());
+    emit(SettingsLoading());
     final result = settingsRepo.changeNotificationsStates(
       notificationsEnabled: notificationsEnabled,
     );
-    result.fold((failure) => emit(FailureState(failure.errMessage)), (success) {
+    result.fold((failure) => emit(SettingsFailure(failure.errMessage)), (
+      success,
+    ) {
       ServiceLocator.updateDataModel(success.preferences);
-      emit(SuccessState());
+      emit(SettingsSuccess());
     });
   }
 }

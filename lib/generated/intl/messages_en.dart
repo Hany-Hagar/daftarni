@@ -33,6 +33,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(" --- App Settings --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("Daftarni"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
+        "cancle": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "changeImageSuccess":
+            MessageLookupByLibrary.simpleMessage("Image changed successfully"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("Configure your information"),
         "contactUsHint": MessageLookupByLibrary.simpleMessage(
@@ -61,8 +64,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "lightTheme": MessageLookupByLibrary.simpleMessage("Light Theme"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "notSignedIn": MessageLookupByLibrary.simpleMessage("Not Signed In"),
-        "notificationsHint": MessageLookupByLibrary.simpleMessage(
-            "Manage your notification preferences"),
+        "notificationsHint":
+            MessageLookupByLibrary.simpleMessage("Manage your notification"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Take control of your money and save by tracking your expenses"),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -78,6 +81,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "personal": MessageLookupByLibrary.simpleMessage("Personal"),
         "personalInfo":
             MessageLookupByLibrary.simpleMessage("Personal Information"),
+        "pickImageTitle":
+            MessageLookupByLibrary.simpleMessage("Tap to Change Profile Image"),
         "privacyPolicyHint": MessageLookupByLibrary.simpleMessage(
             "Review our privacy practices"),
         "privacyPolicySubtitle":
@@ -117,6 +122,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter your salary day"),
         "salaryHint":
             MessageLookupByLibrary.simpleMessage("Enter your monthly salary"),
+        "saveChanges": MessageLookupByLibrary.simpleMessage("Save Changes"),
+        "saveChangesSuccess":
+            MessageLookupByLibrary.simpleMessage("Changes saved successfully"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("Enter your side income"),

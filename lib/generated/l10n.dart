@@ -60,6 +60,56 @@ class S {
     );
   }
 
+  /// `Cancel`
+  String get cancle {
+    return Intl.message(
+      'Cancel',
+      name: 'cancle',
+      desc: 'Button text to cancel an action',
+      args: [],
+    );
+  }
+
+  /// `Save Changes`
+  String get saveChanges {
+    return Intl.message(
+      'Save Changes',
+      name: 'saveChanges',
+      desc: 'Button text to save changes',
+      args: [],
+    );
+  }
+
+  /// `Tap to Change Profile Image`
+  String get pickImageTitle {
+    return Intl.message(
+      'Tap to Change Profile Image',
+      name: 'pickImageTitle',
+      desc: 'Title for the image picker dialog',
+      args: [],
+    );
+  }
+
+  /// `Image changed successfully`
+  String get changeImageSuccess {
+    return Intl.message(
+      'Image changed successfully',
+      name: 'changeImageSuccess',
+      desc: 'Success message when the image is changed',
+      args: [],
+    );
+  }
+
+  /// `Changes saved successfully`
+  String get saveChangesSuccess {
+    return Intl.message(
+      'Changes saved successfully',
+      name: 'saveChangesSuccess',
+      desc: 'Success message when changes are saved',
+      args: [],
+    );
+  }
+
   /// `Daftarni`
   String get appTitle {
     return Intl.message(
@@ -413,10 +463,10 @@ class S {
     );
   }
 
-  /// `Manage your notification preferences`
+  /// `Manage your notification`
   String get notificationsHint {
     return Intl.message(
-      'Manage your notification preferences',
+      'Manage your notification',
       name: 'notificationsHint',
       desc: 'Subtitle for the notifications section in settings',
       args: [],

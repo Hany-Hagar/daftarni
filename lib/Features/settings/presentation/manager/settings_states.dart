@@ -1,15 +1,18 @@
-abstract class SettingsState {}
+abstract class SettingsStates {}
 
-class SettingsInitial extends SettingsState {}
+class SettingsInitial extends SettingsStates {}
 
-class SetDataState extends SettingsState {}
+class SetDataState extends SettingsStates {}
 
-class LoadingState extends SettingsState {}
+class UserImagePickedSuccess extends SettingsStates {}
 
-class SuccessState extends SettingsState {}
+class SettingsLoading extends SettingsStates {}
 
-class FailureState extends SettingsState {
-  final String message;
+class SettingsSuccess extends SettingsStates {}
 
-  FailureState(this.message);
+class SettingsFailure extends SettingsStates {
+  final String error;
+
+  SettingsFailure(this.error);
 }
+

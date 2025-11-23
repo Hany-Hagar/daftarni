@@ -6,6 +6,7 @@ import 'settings_body_theme.dart';
 import '../../pages/support_view.dart';
 import 'package:flutter/material.dart';
 import 'settings_body_notifications.dart';
+import '../../pages/profile_info_view.dart';
 import '../../pages/privacy_police_view.dart';
 import '../../../../../../generated/l10n.dart';
 import '../../../../../../core/widgets/custom_text.dart';
@@ -42,7 +43,11 @@ class _Body extends StatelessWidget {
             title: data.profile.userName,
             leadingIcon: Icons.person_outlined,
             iconColor: Color(0xfff86889),
-            onTap: () {},
+            onTap:
+                () => NavTo.push(
+                  context: context,
+                  nextPage: const ProfileInfoView(),
+                ),
           ),
           SizedBox(height: 10.r),
           CustomText(isHead: true, fontSize: 25, title: s.general),

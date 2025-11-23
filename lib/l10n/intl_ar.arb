@@ -5,6 +5,26 @@
     "@emptyList": {
         "description": "النص المعروض عندما تكون القائمة فارغة"
     },
+    "cancle":"إلغاء",
+    "@cancle": {
+        "description": "نص زر إلغاء الإجراء"
+    },
+    "saveChanges":"حفظ التغييرات",
+    "@saveChanges": {
+        "description": "نص زر حفظ التغييرات"
+    },
+    "pickImageTitle":"اضغط لتغيير صورة الملف الشخصي",
+    "@pickImageTitle": {
+        "description": "عنوان مربع حوار اختيار الصورة"
+    },    
+    "changeImageSuccess":"تم تغيير الصورة بنجاح",
+    "@changeImageSuccess": {
+        "description": "رسالة النجاح عند تغيير الصورة"
+    },
+    "saveChangesSuccess":"تم حفظ التغييرات بنجاح",
+    "@saveChangesSuccess": {
+        "description": "رسالة النجاح عند حفظ التغييرات"
+    },
 
 
 

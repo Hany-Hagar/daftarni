@@ -33,6 +33,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(" --- إعدادات التطبيق --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("دفترني"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
+        "cancle": MessageLookupByLibrary.simpleMessage("إلغاء"),
+        "changeImageSuccess":
+            MessageLookupByLibrary.simpleMessage("تم تغيير الصورة بنجاح"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("قم بإضافة معلوماتك"),
         "contactUsHint": MessageLookupByLibrary.simpleMessage(
@@ -78,6 +81,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "تتبع فواتيرك كما لم يحدث من قبل"),
         "personal": MessageLookupByLibrary.simpleMessage("شخصية"),
         "personalInfo": MessageLookupByLibrary.simpleMessage("معلومات شخصية"),
+        "pickImageTitle": MessageLookupByLibrary.simpleMessage(
+            "اضغط لتغيير صورة الملف الشخصي"),
         "privacyPolicyHint":
             MessageLookupByLibrary.simpleMessage("راجع ممارسات الخصوصية "),
         "privacyPolicySubtitle": MessageLookupByLibrary.simpleMessage(
@@ -115,6 +120,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "salary": MessageLookupByLibrary.simpleMessage("الراتب"),
         "salaryDayHint": MessageLookupByLibrary.simpleMessage("أدخل يوم راتبك"),
         "salaryHint": MessageLookupByLibrary.simpleMessage("أدخل راتبك الشهري"),
+        "saveChanges": MessageLookupByLibrary.simpleMessage("حفظ التغييرات"),
+        "saveChangesSuccess":
+            MessageLookupByLibrary.simpleMessage("تم حفظ التغييرات بنجاح"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("أدخل دخلك الجانبي"),

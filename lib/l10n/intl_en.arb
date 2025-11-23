@@ -5,6 +5,26 @@
     "@emptyList": {
         "description": "Text displayed when a list is empty"
     },
+    "cancle":"Cancel",
+    "@cancle": {
+        "description": "Button text to cancel an action"
+    },
+    "saveChanges":"Save Changes",
+    "@saveChanges": {
+        "description": "Button text to save changes"
+    },
+    "pickImageTitle":"Tap to Change Profile Image",
+    "@pickImageTitle": {
+        "description": "Title for the image picker dialog"
+    },
+    "changeImageSuccess":"Image changed successfully",
+    "@changeImageSuccess": {
+        "description": "Success message when the image is changed"
+    },
+    "saveChangesSuccess":"Changes saved successfully",
+    "@saveChangesSuccess": {
+        "description": "Success message when changes are saved"
+    },
 
 
 
@@ -154,7 +174,7 @@
     "@Notifications": {
         "description": "Label for the notifications section in settings"
     },
-    "notificationsHint": "Manage your notification preferences",
+    "notificationsHint": "Manage your notification",
     "@notificationsHint": {
         "description": "Subtitle for the notifications section in settings"
     },

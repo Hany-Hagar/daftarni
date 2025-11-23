@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
               ),
         ),
       ],
-      child: BlocBuilder<SettingsCubit, SettingsState>(
+      child: BlocBuilder<SettingsCubit, SettingsStates>(
         builder: (context, state) {
           return ScreenUtilInit(
             designSize: const Size(360, 690),

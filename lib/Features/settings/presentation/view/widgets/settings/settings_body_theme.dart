@@ -13,7 +13,7 @@ class SettingsBodyTheme extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<SettingsCubit, SettingsState>(
+    return BlocBuilder<SettingsCubit, SettingsStates>(
       builder: (context, state) {
         var s = S.of(context);
         final subTitles = [s.lightTheme, s.darkTheme, s.systemTheme];
