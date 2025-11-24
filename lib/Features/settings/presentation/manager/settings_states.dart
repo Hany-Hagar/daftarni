@@ -2,6 +2,8 @@ abstract class SettingsStates {}
 
 class SettingsInitial extends SettingsStates {}
 
+class SetState extends SettingsStates {}
+
 class SetDataState extends SettingsStates {}
 
 class UserImagePickedSuccess extends SettingsStates {}
@@ -15,4 +17,3 @@ class SettingsFailure extends SettingsStates {
 
   SettingsFailure(this.error);
 }
-

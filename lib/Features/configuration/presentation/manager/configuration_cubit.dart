@@ -42,7 +42,7 @@ class ConfigurationCubit extends Cubit<ConfigurationStates> {
         emit(FailureChangeThemeState(errorMessage: failure.errMessage));
       },
       (success) {
-        ServiceLocator.updateDataModel(success.preferences);
+        ServiceLocator.updateDataModel(preferences: success.preferences);
         emit(SuccessChangeThemeState());
       },
     );
@@ -59,7 +59,7 @@ class ConfigurationCubit extends Cubit<ConfigurationStates> {
         emit(FailureChangeLangState(errorMessage: failure.errMessage));
       },
       (success) {
-        ServiceLocator.updateDataModel(success.preferences);
+        ServiceLocator.updateDataModel(preferences: success.preferences);
         log("Language changed to $languageCode successfully");
         emit(SuccessChangeLangState());
       },

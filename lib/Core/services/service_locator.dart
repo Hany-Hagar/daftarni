@@ -2,6 +2,7 @@ import 'dart:async';
 import 'hive_services.dart';
 import 'package:get_it/get_it.dart';
 import '../../features/splash/data/models/data_model.dart';
+import '../../features/splash/data/models/profile_model.dart';
 import '../../features/splash/data/models/preferences_model.dart';
 
 class ServiceLocator {
@@ -29,10 +30,16 @@ class ServiceLocator {
     _controller.add(dataModel);
   }
 
-  static void updateDataModel(PreferencesModel? preferences) {
+  static void updateDataModel({
+    PreferencesModel? preferences,
+    ProfileModel? profile,
+  }) {
     final oldModel = sl<DataModel>();
 
-    final newModel = oldModel.copyWith(preferences: preferences);
+    final newModel = oldModel.copyWith(
+      preferences: preferences,
+      profile: profile,
+    );
 
     if (sl.isRegistered<DataModel>()) {
       sl.unregister<DataModel>();

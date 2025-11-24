@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../manager/settings_cubit.dart';
 import '../../../../../../generated/l10n.dart';
 import '../../../../../../core/widgets/custom_text.dart';
 import '../../../../../../core/widgets/custom_avatar.dart';
@@ -31,19 +32,22 @@ class _Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+    var cubit = SettingsCubit.get(context);
 
     return Stack(
       alignment: AlignmentDirectional.bottomEnd,
       children: [
         CustomAvatar(radius: 80),
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            cubit.setUserImage();
+          },
           child: CircleAvatar(
             radius: 25.r,
             backgroundColor: theme.primaryColor,
             child: Icon(
               Icons.camera_alt_outlined,
-              size: 30,
+              size: 30.r,
               color: Colors.white,
             ),
           ),

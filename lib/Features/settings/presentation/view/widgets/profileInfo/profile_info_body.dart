@@ -15,18 +15,19 @@ class ProfileInfoBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final s = S.of(context);
+    var cubit = SettingsCubit.get(context);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ProfileInfoAvatar(),
         UserForm(
-          salaryController: TextEditingController(),
-          userNameController: TextEditingController(),
-          sideIncomeController: TextEditingController(),
-          salaryDay: 1,
-          onChanged: () {},
-          onChangedDay: (value) {},
+          salaryController: cubit.salaryController,
+          userNameController: cubit.userNameController,
+          sideIncomeController: cubit.sideSalaryController,
+          salaryDay: cubit.salaryDay,
+          onChanged: () => cubit.addValidate(),
+          onChangedDay: (value) => cubit.setSalaryDay(value),
         ),
         SizedBox(height: 20),
         Row(
@@ -38,10 +39,12 @@ class ProfileInfoBody extends StatelessWidget {
                 return Expanded(
                   flex: 3,
                   child: CustomLoadingButton(
+                    isEnabled: !cubit.emptyAddData,
                     isLoading: state is SettingsLoading,
-                    isEnabled: true,
                     title: s.saveChanges,
-                    onTap: () {},
+                    onTap: () {
+                      cubit.saveUserInfo();
+                    },
                   ),
                 );
               },

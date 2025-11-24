@@ -2,7 +2,9 @@ import 'settings_states.dart';
 import 'package:flutter/material.dart';
 import '../../data/repo/settings_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../splash/data/models/data_model.dart';
+import '../../../splash/data/models/profile_model.dart';
 import '../../../../core/services/service_locator.dart';
 
 class SettingsCubit extends Cubit<SettingsStates> {
@@ -15,6 +17,86 @@ class SettingsCubit extends Cubit<SettingsStates> {
   static SettingsCubit get(context) => BlocProvider.of(context);
 
   DataModel get dataModel => ServiceLocator.getDataModel();
+
+  // General Data
+  int salaryDay = 1;
+  bool emptyAddData = true;
+  var salaryController = TextEditingController();
+  var userNameController = TextEditingController();
+  var sideSalaryController = TextEditingController();
+  var emailAddressController = TextEditingController();
+
+  // General Methods
+
+  void setUserInfoControllers() {
+    var profile = dataModel.profile;
+    salaryDay = profile.salaryDay;
+    userNameController.text = profile.userName;
+    salaryController.text = profile.salary.toString();
+    sideSalaryController.text = profile.sideSalary.toString();
+  }
+
+  void setUserImage() {
+    var userImage = ImagePicker().pickImage(source: ImageSource.gallery);
+    userImage
+        .then((value) {
+          if (value != null) {
+            emit(SettingsLoading());
+            var data = settingsRepo.updateProfileImage(imagePath: value.path);
+            data.fold((ifLeft) => emit(SettingsFailure(ifLeft.errMessage)), (
+              ifRight,
+            ) {
+              ServiceLocator.updateDataModel(profile: ifRight.profile);
+              emit(UserImagePickedSuccess());
+            });
+          }
+        })
+        .catchError((error) {
+          emit(SettingsFailure(error.toString()));
+        });
+  }
+
+  void addValidate() {
+    var title = userNameController.text;
+    var value = int.tryParse(salaryController.text) ?? 0;
+    if (title.isEmpty && value == 0) {
+      if (!emptyAddData) {
+        emptyAddData = true;
+        emit(SetState());
+      }
+    } else {
+      if (emptyAddData) {
+        emptyAddData = false;
+        emit(SetState());
+      }
+    }
+  }
+
+  void setSalaryDay(int? value) {
+    salaryDay = value ?? 1;
+    addValidate();
+  }
+
+  void saveUserInfo() {
+    emit(SettingsLoading());
+    var prefile = setProfileData();
+    var data = settingsRepo.updateProfileData(profile: prefile);
+    data.fold((l) => emit(SettingsFailure(l.errMessage)), (r) {
+      ServiceLocator.updateDataModel(profile: r.profile);
+      emit(SettingsSuccess());
+    });
+  }
+
+  ProfileModel setProfileData() {
+    var dataModel = ServiceLocator.getDataModel();
+
+    return dataModel.profile.copyWith(
+      userName: userNameController.text,
+      salary: double.parse(salaryController.text),
+      sideSalary: double.parse(sideSalaryController.text),
+      salaryDay: salaryDay,
+    );
+  }
 
   // Preferences Methods
 
@@ -33,7 +115,7 @@ class SettingsCubit extends Cubit<SettingsStates> {
     result.fold((failure) => emit(SettingsFailure(failure.errMessage)), (
       success,
     ) {
-      ServiceLocator.updateDataModel(success.preferences);
+      ServiceLocator.updateDataModel(preferences: success.preferences);
       emit(SettingsSuccess());
     });
   }
@@ -44,7 +126,7 @@ class SettingsCubit extends Cubit<SettingsStates> {
     result.fold((failure) => emit(SettingsFailure(failure.errMessage)), (
       success,
     ) {
-      ServiceLocator.updateDataModel(success.preferences);
+      ServiceLocator.updateDataModel(preferences: success.preferences);
       emit(SettingsSuccess());
     });
   }
@@ -57,7 +139,7 @@ class SettingsCubit extends Cubit<SettingsStates> {
     result.fold((failure) => emit(SettingsFailure(failure.errMessage)), (
       success,
     ) {
-      ServiceLocator.updateDataModel(success.preferences);
+      ServiceLocator.updateDataModel(preferences: success.preferences);
       emit(SettingsSuccess());
     });
   }

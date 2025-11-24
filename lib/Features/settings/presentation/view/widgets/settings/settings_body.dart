@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'settings_body_notifications.dart';
 import '../../pages/profile_info_view.dart';
 import '../../pages/privacy_police_view.dart';
+import '../../../manager/settings_cubit.dart';
 import '../../../../../../generated/l10n.dart';
 import '../../../../../../core/widgets/custom_text.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -43,11 +44,10 @@ class _Body extends StatelessWidget {
             title: data.profile.userName,
             leadingIcon: Icons.person_outlined,
             iconColor: Color(0xfff86889),
-            onTap:
-                () => NavTo.push(
-                  context: context,
-                  nextPage: const ProfileInfoView(),
-                ),
+            onTap: () {
+              SettingsCubit.get(context).setUserInfoControllers();
+              NavTo.push(context: context, nextPage: const ProfileInfoView());
+            },
           ),
           SizedBox(height: 10.r),
           CustomText(isHead: true, fontSize: 25, title: s.general),

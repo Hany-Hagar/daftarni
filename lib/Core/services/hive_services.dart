@@ -57,6 +57,37 @@ class HiveServices {
     });
   }
 
+  Either<Failure, DataModel> updateProfileImage({required String imagePath}) {
+    final boxResult = _getDataBox();
+    return boxResult.fold((failure) => Left(failure), (box) {
+      try {
+        final data = box.get(dataKey, defaultValue: DataModel.defaultData());
+        final uProfile = data!.profile.copyWith(imagePath: imagePath);
+        final uData = data.copyWith(profile: uProfile);
+        box.put(dataKey, uData);
+        return Right(uData);
+      } catch (e) {
+        return Left(HiveFailure.fromException(e));
+      }
+    });
+  }
+
+  Either<Failure, DataModel> updateProfileData({
+    required ProfileModel profile,
+  }) {
+    final boxResult = _getDataBox();
+    return boxResult.fold((failure) => Left(failure), (box) {
+      try {
+        final data = box.get(dataKey, defaultValue: DataModel.defaultData());
+        final uData = data!.copyWith(profile: profile);
+        box.put(dataKey, uData);
+        return Right(uData);
+      } catch (e) {
+        return Left(HiveFailure.fromException(e));
+      }
+    });
+  }
+
   // Prefernces Functions
 
   Either<Failure, DataModel> changeTheme({
