@@ -1,6 +1,14 @@
 {
     "@@locale": "ar",
-    
+
+    "income":"الدخل",
+    "@income": {
+        "description": "تسمية قسم الدخل"
+    },
+    "expense":"المصروفات",
+    "@expense": {
+        "description": "تسمية قسم المصروفات"
+    },
     "emptyList":"لا توجد عناصر متاحة",
     "@emptyList": {
         "description": "النص المعروض عندما تكون القائمة فارغة"
@@ -148,6 +156,48 @@
         "description": "نص زر الاستمرار في شاشة التوجيه"
     },
 
+
+
+    "hi": "مرحبًا",
+    "@hi": {
+        "description": "تحية المستخدم في شريط التطبيق"
+    },
+    "welcomeBack": "مرحبًا بعودتك",
+    "@welcomeBack": {
+        "description": "نص الترحيب بالعودة للمستخدمين العائدين"
+    },
+    "currentBalance": "الرصيد الحالي",
+    "@currentBalance": {
+        "description": "تسمية الرصيد الحالي في الصفحة الرئيسية"
+    },
+    "viewDetailedReport": "عرض التقرير التفصيلي",
+    "@viewDetailedReport": {
+        "description": "نص زر عرض التقرير التفصيلي في الصفحة الرئيسية"
+    },
+        "quickActions": "الإجراءات السريعة",
+    "@quickActions": {
+        "description": "عنوان قسم الإجراءات السريعة في الصفحة الرئيسية"
+    },
+    "addNewExpense": "إضافة مصروف جديد",
+    "@addNewExpense": {
+        "description": "تسمية إجراء سريع لإضافة مصروف جديد"
+    },
+    "recordIncome": "تسجيل دخل",
+    "@recordIncome": {
+        "description": "تسمية إجراء سريع لتسجيل دخل جديد"
+    },
+    "manageCategories": "إدارة الفئات",
+    "@manageCategories": {
+        "description": "تسمية إجراء سريع لإدارة الفئات"
+    },
+    "recentTransactions": "المعاملات الأخيرة",
+    "@recentTransactions": {
+        "description": "عنوان قسم المعاملات الأخيرة في الصفحة الرئيسية"
+    },
+    "viewAll": "عرض الكل",
+    "@viewAll": {
+        "description": "نص زر عرض جميع المعاملات"
+    },
 
 
     "settings": "الإعدادات",

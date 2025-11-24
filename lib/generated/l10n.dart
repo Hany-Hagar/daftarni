@@ -50,6 +50,26 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `Income`
+  String get income {
+    return Intl.message(
+      'Income',
+      name: 'income',
+      desc: 'Label for the income section',
+      args: [],
+    );
+  }
+
+  /// `Expense`
+  String get expense {
+    return Intl.message(
+      'Expense',
+      name: 'expense',
+      desc: 'تسمية قسم المصروفات',
+      args: [],
+    );
+  }
+
   /// `No items available`
   String get emptyList {
     return Intl.message(
@@ -399,6 +419,106 @@ class S {
       'Continue',
       name: 'continueButton',
       desc: 'Text for the continue button on the onboarding screen',
+      args: [],
+    );
+  }
+
+  /// `Hi`
+  String get hi {
+    return Intl.message(
+      'Hi',
+      name: 'hi',
+      desc: 'Greeting text',
+      args: [],
+    );
+  }
+
+  /// `Welcome Back`
+  String get welcomeBack {
+    return Intl.message(
+      'Welcome Back',
+      name: 'welcomeBack',
+      desc: 'Welcome back text for returning users',
+      args: [],
+    );
+  }
+
+  /// `Current Balance`
+  String get currentBalance {
+    return Intl.message(
+      'Current Balance',
+      name: 'currentBalance',
+      desc: 'Label for the current balance on the home screen',
+      args: [],
+    );
+  }
+
+  /// `View Detailed Report`
+  String get viewDetailedReport {
+    return Intl.message(
+      'View Detailed Report',
+      name: 'viewDetailedReport',
+      desc: 'Text for the button to view detailed report on the home screen',
+      args: [],
+    );
+  }
+
+  /// `Quick Actions`
+  String get quickActions {
+    return Intl.message(
+      'Quick Actions',
+      name: 'quickActions',
+      desc: 'Title for the quick actions section on the home screen',
+      args: [],
+    );
+  }
+
+  /// `Add New Expense`
+  String get addNewExpense {
+    return Intl.message(
+      'Add New Expense',
+      name: 'addNewExpense',
+      desc: 'Label for the add new expense quick action',
+      args: [],
+    );
+  }
+
+  /// `Record Income`
+  String get recordIncome {
+    return Intl.message(
+      'Record Income',
+      name: 'recordIncome',
+      desc: 'Label for the add new income quick action',
+      args: [],
+    );
+  }
+
+  /// `Manage Categories`
+  String get manageCategories {
+    return Intl.message(
+      'Manage Categories',
+      name: 'manageCategories',
+      desc: 'Label for the manage categories quick action',
+      args: [],
+    );
+  }
+
+  /// `Recent Transactions`
+  String get recentTransactions {
+    return Intl.message(
+      'Recent Transactions',
+      name: 'recentTransactions',
+      desc: 'Title for the recent transactions section on the home screen',
+      args: [],
+    );
+  }
+
+  /// `View All`
+  String get viewAll {
+    return Intl.message(
+      'View All',
+      name: 'viewAll',
+      desc: 'Text for the button to view all transactions',
       args: [],
     );
   }

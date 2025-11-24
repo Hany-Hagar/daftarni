@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "SalaryDay": MessageLookupByLibrary.simpleMessage("Salary Day"),
         "SideIncome": MessageLookupByLibrary.simpleMessage("Side Income"),
         "Theme": MessageLookupByLibrary.simpleMessage("Theme"),
+        "addNewExpense":
+            MessageLookupByLibrary.simpleMessage("Add New Expense"),
         "appSettings":
             MessageLookupByLibrary.simpleMessage(" --- App Settings --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("Daftarni"),
@@ -42,9 +44,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "For assistance, please reach out to our support team"),
         "contactUsTitle": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
+        "currentBalance":
+            MessageLookupByLibrary.simpleMessage("Current Balance"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("Dark Theme"),
         "emptyList": MessageLookupByLibrary.simpleMessage("No items available"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
+        "expense": MessageLookupByLibrary.simpleMessage("Expense"),
         "faqAnswer1": MessageLookupByLibrary.simpleMessage(
             "You can restore your data by logging back into your account using the same email and password."),
         "faqAnswer2": MessageLookupByLibrary.simpleMessage(
@@ -61,7 +66,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "----- Frequently Asked Questions -----"),
         "general": MessageLookupByLibrary.simpleMessage("General"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "hi": MessageLookupByLibrary.simpleMessage("Hi"),
+        "income": MessageLookupByLibrary.simpleMessage("Income"),
         "lightTheme": MessageLookupByLibrary.simpleMessage("Light Theme"),
+        "manageCategories":
+            MessageLookupByLibrary.simpleMessage("Manage Categories"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "notSignedIn": MessageLookupByLibrary.simpleMessage("Not Signed In"),
         "notificationsHint":
@@ -117,6 +126,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("3. How We Use Data"),
         "privacySecurityTitle":
             MessageLookupByLibrary.simpleMessage("Privacy and Security"),
+        "quickActions": MessageLookupByLibrary.simpleMessage("Quick Actions"),
+        "recentTransactions":
+            MessageLookupByLibrary.simpleMessage("Recent Transactions"),
+        "recordIncome": MessageLookupByLibrary.simpleMessage("Record Income"),
         "salary": MessageLookupByLibrary.simpleMessage("Salary"),
         "salaryDayHint":
             MessageLookupByLibrary.simpleMessage("Enter your salary day"),
@@ -146,6 +159,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "systemTheme": MessageLookupByLibrary.simpleMessage("System Theme"),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
         "userNameHint":
-            MessageLookupByLibrary.simpleMessage("Enter your user name")
+            MessageLookupByLibrary.simpleMessage("Enter your user name"),
+        "viewAll": MessageLookupByLibrary.simpleMessage("View All"),
+        "viewDetailedReport":
+            MessageLookupByLibrary.simpleMessage("View Detailed Report"),
+        "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back")
       };
 }

@@ -5,7 +5,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../manager/configuration_states.dart';
 import '../../../../../core/widgets/back_ground.dart';
 import '../../../data/repo/configuration_repo_impl.dart';
+import '../../../../../core/utils/navigator_methods.dart';
 import '../../../../../core/services/service_locator.dart';
+import '../../../../layout/presentation/views/layout_view.dart';
 
 class ConfigurationView extends StatelessWidget {
   const ConfigurationView({super.key});
@@ -21,7 +23,9 @@ class ConfigurationView extends StatelessWidget {
           ),
       child: BlocListener<ConfigurationCubit, ConfigurationStates>(
         listener: (context, state) {
-          if (state is SuccessConfiguration) {}
+          if (state is SuccessConfiguration) {
+            NavTo.pushReplacement(context: context, nextPage: LayoutView());
+          }
         },
         child: BackGround(
           top: SizedBox(height: MediaQuery.of(context).padding.top + 5),

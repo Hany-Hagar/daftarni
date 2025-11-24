@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "SalaryDay": MessageLookupByLibrary.simpleMessage("يوم الراتب"),
         "SideIncome": MessageLookupByLibrary.simpleMessage("دخل جانبي"),
         "Theme": MessageLookupByLibrary.simpleMessage("المظهر"),
+        "addNewExpense":
+            MessageLookupByLibrary.simpleMessage("إضافة مصروف جديد"),
         "appSettings":
             MessageLookupByLibrary.simpleMessage(" --- إعدادات التطبيق --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("دفترني"),
@@ -42,10 +44,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "للمساعدة، يرجى التواصل مع فريق الدعم الخاص بنا"),
         "contactUsTitle": MessageLookupByLibrary.simpleMessage("اتصل بنا"),
         "continueButton": MessageLookupByLibrary.simpleMessage("استمر"),
+        "currentBalance": MessageLookupByLibrary.simpleMessage("الرصيد الحالي"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
         "emptyList":
             MessageLookupByLibrary.simpleMessage("لا توجد عناصر متاحة"),
         "english": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
+        "expense": MessageLookupByLibrary.simpleMessage("المصروفات"),
         "faqAnswer1": MessageLookupByLibrary.simpleMessage(
             "يمكنك استعادة بياناتك عن طريق تسجيل الدخول مرة أخرى إلى حسابك باستخدام نفس البريد الإلكتروني وكلمة المرور."),
         "faqAnswer2": MessageLookupByLibrary.simpleMessage(
@@ -62,7 +66,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "----- الأسئلة المتكررة -----"),
         "general": MessageLookupByLibrary.simpleMessage("عامة"),
         "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+        "hi": MessageLookupByLibrary.simpleMessage("مرحبًا"),
+        "income": MessageLookupByLibrary.simpleMessage("الدخل"),
         "lightTheme": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
+        "manageCategories":
+            MessageLookupByLibrary.simpleMessage("إدارة الفئات"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "notSignedIn": MessageLookupByLibrary.simpleMessage("غير مسجل الدخول"),
         "notificationsHint":
@@ -117,6 +125,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "3. كيفية استخدامنا للبيانات الخاصة بك"),
         "privacySecurityTitle":
             MessageLookupByLibrary.simpleMessage("الخصوصية والأمان"),
+        "quickActions":
+            MessageLookupByLibrary.simpleMessage("الإجراءات السريعة"),
+        "recentTransactions":
+            MessageLookupByLibrary.simpleMessage("المعاملات الأخيرة"),
+        "recordIncome": MessageLookupByLibrary.simpleMessage("تسجيل دخل"),
         "salary": MessageLookupByLibrary.simpleMessage("الراتب"),
         "salaryDayHint": MessageLookupByLibrary.simpleMessage("أدخل يوم راتبك"),
         "salaryHint": MessageLookupByLibrary.simpleMessage("أدخل راتبك الشهري"),
@@ -144,6 +157,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "systemTheme": MessageLookupByLibrary.simpleMessage("وضع النظام"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "userNameHint":
-            MessageLookupByLibrary.simpleMessage("أدخل اسم المستخدم الخاص بك")
+            MessageLookupByLibrary.simpleMessage("أدخل اسم المستخدم الخاص بك"),
+        "viewAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
+        "viewDetailedReport":
+            MessageLookupByLibrary.simpleMessage("عرض التقرير التفصيلي"),
+        "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك")
       };
 }

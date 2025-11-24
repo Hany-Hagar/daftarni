@@ -1,6 +1,14 @@
 {
     "@@locale": "en",
 
+    "income":"Income",
+    "@income": {
+        "description": "Label for the income section"
+    },
+    "expense":"Expense",
+    "@expense": {
+        "description": "تسمية قسم المصروفات"
+    },
     "emptyList":"No items available",
     "@emptyList": {
         "description": "Text displayed when a list is empty"
@@ -147,6 +155,50 @@
     "@continueButton": {
         "description": "Text for the continue button on the onboarding screen"
     },
+
+
+
+    "hi": "Hi",
+    "@hi": {
+        "description": "Greeting text"
+    },
+    "welcomeBack": "Welcome Back",
+    "@welcomeBack": {
+        "description": "Welcome back text for returning users"
+    },
+    "currentBalance": "Current Balance",
+    "@currentBalance": {
+        "description": "Label for the current balance on the home screen"
+    },
+    "viewDetailedReport": "View Detailed Report",
+    "@viewDetailedReport": {
+        "description": "Text for the button to view detailed report on the home screen"
+    },
+    "quickActions": "Quick Actions",
+    "@quickActions": {
+        "description": "Title for the quick actions section on the home screen"
+    },
+    "addNewExpense": "Add New Expense",
+    "@addNewExpense": {
+        "description": "Label for the add new expense quick action"
+    },
+    "recordIncome": "Record Income",
+    "@recordIncome": {
+        "description": "Label for the add new income quick action"
+    },
+    "manageCategories": "Manage Categories",
+    "@manageCategories": {
+        "description": "Label for the manage categories quick action"
+    },
+    "recentTransactions": "Recent Transactions",
+    "@recentTransactions": {
+        "description": "Title for the recent transactions section on the home screen"
+    },
+    "viewAll": "View All",
+    "@viewAll": {
+        "description": "Text for the button to view all transactions"
+    },
+
 
 
     
