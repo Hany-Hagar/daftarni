@@ -4,6 +4,7 @@ import '../../../../../Const/app.dart';
 import '../../../../../generated/l10n.dart';
 import '../widgets/privacy/privacy_police_body.dart';
 import '../../../../../core/widgets/custom_text.dart';
+import '../../../../../core/widgets/back_ground.dart';
 import '../../../../../core/widgets/nav_pop_icon.dart';
 
 class PrivacyPoliceView extends StatelessWidget {
@@ -11,13 +12,9 @@ class PrivacyPoliceView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          _Top(),
-          Expanded(child: SingleChildScrollView(child: PrivacyPoliceBody())),
-        ],
-      ),
+    return BackGround(
+      top: _Top(),
+      body: SingleChildScrollView(child: PrivacyPoliceBody()),
     );
   }
 }

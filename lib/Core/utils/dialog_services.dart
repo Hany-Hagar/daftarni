@@ -1,34 +1,38 @@
-import 'package:flutter_iconpicker/Models/configuration.dart';
 import 'package:lottie/lottie.dart';
 import '../widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flex_color_picker/flex_color_picker.dart';
 import 'package:flutter_iconpicker/flutter_iconpicker.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_iconpicker/Models/configuration.dart';
 
 class DialogServices {
-  static showCustomDialog({
+  static Future<T?> showCleanDialog<T>({
     required BuildContext context,
-    double margin = 0.85,
-    Color? backgroundColor,
-    double? height,
     required Widget child,
-    bool barrierDismissible = false,
-  }) async {
-    showDialog(
+    bool barrierDismissible = true,
+  }) {
+    return showDialog(
       context: context,
       barrierDismissible: barrierDismissible,
-      builder:
-          (context) => AlertDialog(
-            content: SizedBox(
-              height: height,
-              width: MediaQuery.of(context).size.width * margin,
-              child: child,
+      barrierColor: Colors.black.withOpacity(0.4),
+      builder: (_) {
+        return Center(
+          child: Material(
+            type: MaterialType.transparency,
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxHeight: MediaQuery.of(context).size.height * 0.9,
+                maxWidth: MediaQuery.of(context).size.width,
+              ),
+              child: SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: child,
+              ),
             ),
-            insetPadding: EdgeInsets.zero,
-            backgroundColor: backgroundColor,
-            contentPadding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 0),
           ),
+        );
+      },
     );
   }
 

@@ -3,24 +3,22 @@ import 'package:dartz/dartz.dart';
 import '../failures/failure.dart';
 import '../failures/hive_failure.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import '../../features/layout/data/models/icon_model.dart';
 import '../../features/splash/data/models/data_model.dart';
 import '../../features/splash/data/models/profile_model.dart';
 import '../../features/splash/data/models/balance_model.dart';
+import '../../features/layout/data/models/category_model.dart';
 import '../../features/splash/data/models/preferences_model.dart';
 
 class HiveServices {
   static Future<void> init() async {
     await Hive.initFlutter();
     Hive.registerAdapter(PreferencesModelAdapter());
+    Hive.registerAdapter(DataModelAdapter());
     Hive.registerAdapter(ProfileModelAdapter());
     Hive.registerAdapter(BalanceModelAdapter());
-    Hive.registerAdapter(DataModelAdapter());
-    // Hive.registerAdapter(UserAdapter());
-    // Hive.registerAdapter(BalanceAdapter());
-    // Hive.registerAdapter(TransactionModelAdapter());
-    // Hive.registerAdapter(CategoryModelAdapter());
-    // Hive.registerAdapter(IconModelAdapter());
-    // Hive.registerAdapter(PreferencesAdapter());
+    Hive.registerAdapter(IconModelAdapter());
+    Hive.registerAdapter(CategoryModelAdapter());
     await Hive.openBox<DataModel>(dataBoxName);
   }
 

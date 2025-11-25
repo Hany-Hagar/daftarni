@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import '../../../../generated/l10n.dart';
+import '../../presentation/views/add_transaction/add_income_view.dart';
+import '../../presentation/views/add_transaction/add_expense_view.dart';
 
 class QuickActionModel {
   final String title;
@@ -24,13 +26,13 @@ List<QuickActionModel> quickActions({required BuildContext context}) {
       title: s.addNewExpense,
       icon: Icons.add,
       color: const Color(0xffee5a24).value,
-      nextPage: SizedBox(),
+      nextPage: AddExpenseView(),
     ),
     QuickActionModel(
       title: s.recordIncome,
       icon: Icons.arrow_downward_outlined,
       color: const Color(0xff17c0eb).value,
-      nextPage: SizedBox(),
+      nextPage: AddIncomeView(),
     ),
 
     QuickActionModel(

@@ -523,6 +523,179 @@ class S {
     );
   }
 
+  /// `Category`
+  String get category {
+    return Intl.message(
+      'Category',
+      name: 'category',
+      desc: 'Label for the category selection',
+      args: [],
+    );
+  }
+
+  /// `Choose Category`
+  String get chooseCategory {
+    return Intl.message(
+      'Choose Category',
+      name: 'chooseCategory',
+      desc: 'Title of the category selection screen',
+      args: [],
+    );
+  }
+
+  /// `Date`
+  String get date {
+    return Intl.message(
+      'Date',
+      name: 'date',
+      desc: 'Label for the date selection',
+      args: [],
+    );
+  }
+
+  /// `Select Date`
+  String get selectDate {
+    return Intl.message(
+      'Select Date',
+      name: 'selectDate',
+      desc: 'Label for the date selection field',
+      args: [],
+    );
+  }
+
+  /// `Notes (Optional)`
+  String get notesOptional {
+    return Intl.message(
+      'Notes (Optional)',
+      name: 'notesOptional',
+      desc: 'Label for the optional notes input field',
+      args: [],
+    );
+  }
+
+  /// `Add Expense`
+  String get addExpenseTitle {
+    return Intl.message(
+      'Add Expense',
+      name: 'addExpenseTitle',
+      desc: 'Button text to add a new expense',
+      args: [],
+    );
+  }
+
+  /// `Manage your spendings smartly`
+  String get addExpenseSubTitle {
+    return Intl.message(
+      'Manage your spendings smartly',
+      name: 'addExpenseSubTitle',
+      desc: 'Subtitle for the add expense screen',
+      args: [],
+    );
+  }
+
+  /// `Enter Expense Amount`
+  String get enterExpenseAmount {
+    return Intl.message(
+      'Enter Expense Amount',
+      name: 'enterExpenseAmount',
+      desc: 'Placeholder text for the expense amount input field',
+      args: [],
+    );
+  }
+
+  /// `Add a brief description or note about this expense ...`
+  String get notesExpenseBrief {
+    return Intl.message(
+      'Add a brief description or note about this expense ...',
+      name: 'notesExpenseBrief',
+      desc:
+          'Placeholder text for the notes input field on the add expense screen',
+      args: [],
+    );
+  }
+
+  /// `✨ Add Expense`
+  String get addExpenseButton {
+    return Intl.message(
+      '✨ Add Expense',
+      name: 'addExpenseButton',
+      desc: 'Button text to confirm adding a new expense',
+      args: [],
+    );
+  }
+
+  /// `Add Income`
+  String get addIncomeTitle {
+    return Intl.message(
+      'Add Income',
+      name: 'addIncomeTitle',
+      desc: 'Button text to add a new income',
+      args: [],
+    );
+  }
+
+  /// `Track your earnings efficiently`
+  String get addIncomeSubTitle {
+    return Intl.message(
+      'Track your earnings efficiently',
+      name: 'addIncomeSubTitle',
+      desc: 'Subtitle for the add income screen',
+      args: [],
+    );
+  }
+
+  /// `Enter Income Amount`
+  String get enterIncomeAmount {
+    return Intl.message(
+      'Enter Income Amount',
+      name: 'enterIncomeAmount',
+      desc: 'Placeholder text for the income amount input field',
+      args: [],
+    );
+  }
+
+  /// `Add a brief description or note about this income ...`
+  String get notesIncomeBrief {
+    return Intl.message(
+      'Add a brief description or note about this income ...',
+      name: 'notesIncomeBrief',
+      desc:
+          'Placeholder text for the notes input field on the add income screen',
+      args: [],
+    );
+  }
+
+  /// `✨ Add Income`
+  String get addIncomeButton {
+    return Intl.message(
+      '✨ Add Income',
+      name: 'addIncomeButton',
+      desc: 'Button text to confirm adding a new income',
+      args: [],
+    );
+  }
+
+  /// `Transaction added successfully`
+  String get addTransactionSuccess {
+    return Intl.message(
+      'Transaction added successfully',
+      name: 'addTransactionSuccess',
+      desc: 'Success message when a transaction is added',
+      args: [],
+    );
+  }
+
+  /// `Insufficient Funds for this expense`
+  String get addExpenseTransactionLowValue {
+    return Intl.message(
+      'Insufficient Funds for this expense',
+      name: 'addExpenseTransactionLowValue',
+      desc:
+          'Error message when trying to add an expense that exceeds the current balance',
+      args: [],
+    );
+  }
+
   /// `Settings`
   String get settings {
     return Intl.message(

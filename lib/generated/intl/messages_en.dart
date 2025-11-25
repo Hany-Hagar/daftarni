@@ -29,15 +29,31 @@ class MessageLookup extends MessageLookupByLibrary {
         "SalaryDay": MessageLookupByLibrary.simpleMessage("Salary Day"),
         "SideIncome": MessageLookupByLibrary.simpleMessage("Side Income"),
         "Theme": MessageLookupByLibrary.simpleMessage("Theme"),
+        "addExpenseButton":
+            MessageLookupByLibrary.simpleMessage("✨ Add Expense"),
+        "addExpenseSubTitle": MessageLookupByLibrary.simpleMessage(
+            "Manage your spendings smartly"),
+        "addExpenseTitle": MessageLookupByLibrary.simpleMessage("Add Expense"),
+        "addExpenseTransactionLowValue": MessageLookupByLibrary.simpleMessage(
+            "Insufficient Funds for this expense"),
+        "addIncomeButton": MessageLookupByLibrary.simpleMessage("✨ Add Income"),
+        "addIncomeSubTitle": MessageLookupByLibrary.simpleMessage(
+            "Track your earnings efficiently"),
+        "addIncomeTitle": MessageLookupByLibrary.simpleMessage("Add Income"),
         "addNewExpense":
             MessageLookupByLibrary.simpleMessage("Add New Expense"),
+        "addTransactionSuccess": MessageLookupByLibrary.simpleMessage(
+            "Transaction added successfully"),
         "appSettings":
             MessageLookupByLibrary.simpleMessage(" --- App Settings --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("Daftarni"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
         "cancle": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "category": MessageLookupByLibrary.simpleMessage("Category"),
         "changeImageSuccess":
             MessageLookupByLibrary.simpleMessage("Image changed successfully"),
+        "chooseCategory":
+            MessageLookupByLibrary.simpleMessage("Choose Category"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("Configure your information"),
         "contactUsHint": MessageLookupByLibrary.simpleMessage(
@@ -47,8 +63,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "currentBalance":
             MessageLookupByLibrary.simpleMessage("Current Balance"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("Dark Theme"),
+        "date": MessageLookupByLibrary.simpleMessage("Date"),
         "emptyList": MessageLookupByLibrary.simpleMessage("No items available"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
+        "enterExpenseAmount":
+            MessageLookupByLibrary.simpleMessage("Enter Expense Amount"),
+        "enterIncomeAmount":
+            MessageLookupByLibrary.simpleMessage("Enter Income Amount"),
         "expense": MessageLookupByLibrary.simpleMessage("Expense"),
         "faqAnswer1": MessageLookupByLibrary.simpleMessage(
             "You can restore your data by logging back into your account using the same email and password."),
@@ -73,6 +94,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Manage Categories"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "notSignedIn": MessageLookupByLibrary.simpleMessage("Not Signed In"),
+        "notesExpenseBrief": MessageLookupByLibrary.simpleMessage(
+            "Add a brief description or note about this expense ..."),
+        "notesIncomeBrief": MessageLookupByLibrary.simpleMessage(
+            "Add a brief description or note about this income ..."),
+        "notesOptional":
+            MessageLookupByLibrary.simpleMessage("Notes (Optional)"),
         "notificationsHint":
             MessageLookupByLibrary.simpleMessage("Manage your notification"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
@@ -138,6 +165,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "saveChanges": MessageLookupByLibrary.simpleMessage("Save Changes"),
         "saveChangesSuccess":
             MessageLookupByLibrary.simpleMessage("Changes saved successfully"),
+        "selectDate": MessageLookupByLibrary.simpleMessage("Select Date"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("Enter your side income"),

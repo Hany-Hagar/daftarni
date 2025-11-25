@@ -29,15 +29,30 @@ class MessageLookup extends MessageLookupByLibrary {
         "SalaryDay": MessageLookupByLibrary.simpleMessage("يوم الراتب"),
         "SideIncome": MessageLookupByLibrary.simpleMessage("دخل جانبي"),
         "Theme": MessageLookupByLibrary.simpleMessage("المظهر"),
+        "addExpenseButton":
+            MessageLookupByLibrary.simpleMessage("✨ إضافة مصروف"),
+        "addExpenseSubTitle":
+            MessageLookupByLibrary.simpleMessage("إدارة مصاريفك بذكاء"),
+        "addExpenseTitle": MessageLookupByLibrary.simpleMessage("إضافة مصروف"),
+        "addExpenseTransactionLowValue": MessageLookupByLibrary.simpleMessage(
+            "المصروف يتجاوز الرصيد الحالي"),
+        "addIncomeButton": MessageLookupByLibrary.simpleMessage("✨ إضافة دخل"),
+        "addIncomeSubTitle":
+            MessageLookupByLibrary.simpleMessage("تتبع أرباحك بكفاءة"),
+        "addIncomeTitle": MessageLookupByLibrary.simpleMessage("إضافة دخل"),
         "addNewExpense":
             MessageLookupByLibrary.simpleMessage("إضافة مصروف جديد"),
+        "addTransactionSuccess":
+            MessageLookupByLibrary.simpleMessage("تمت إضافة المعاملة بنجاح"),
         "appSettings":
             MessageLookupByLibrary.simpleMessage(" --- إعدادات التطبيق --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("دفترني"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
         "cancle": MessageLookupByLibrary.simpleMessage("إلغاء"),
+        "category": MessageLookupByLibrary.simpleMessage("الفئة"),
         "changeImageSuccess":
             MessageLookupByLibrary.simpleMessage("تم تغيير الصورة بنجاح"),
+        "chooseCategory": MessageLookupByLibrary.simpleMessage("اختر الفئة"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("قم بإضافة معلوماتك"),
         "contactUsHint": MessageLookupByLibrary.simpleMessage(
@@ -46,9 +61,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "continueButton": MessageLookupByLibrary.simpleMessage("استمر"),
         "currentBalance": MessageLookupByLibrary.simpleMessage("الرصيد الحالي"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
+        "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
         "emptyList":
             MessageLookupByLibrary.simpleMessage("لا توجد عناصر متاحة"),
         "english": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
+        "enterExpenseAmount":
+            MessageLookupByLibrary.simpleMessage("أدخل مبلغ المصروف"),
+        "enterIncomeAmount":
+            MessageLookupByLibrary.simpleMessage("أدخل مبلغ الدخل"),
         "expense": MessageLookupByLibrary.simpleMessage("المصروفات"),
         "faqAnswer1": MessageLookupByLibrary.simpleMessage(
             "يمكنك استعادة بياناتك عن طريق تسجيل الدخول مرة أخرى إلى حسابك باستخدام نفس البريد الإلكتروني وكلمة المرور."),
@@ -73,6 +93,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("إدارة الفئات"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "notSignedIn": MessageLookupByLibrary.simpleMessage("غير مسجل الدخول"),
+        "notesExpenseBrief": MessageLookupByLibrary.simpleMessage(
+            "أضف وصفًا موجزًا أو ملاحظة حول هذا المصروف ..."),
+        "notesIncomeBrief": MessageLookupByLibrary.simpleMessage(
+            "أضف وصفًا موجزًا أو ملاحظة حول هذا الدخل ..."),
+        "notesOptional":
+            MessageLookupByLibrary.simpleMessage("ملاحظات (اختياري)"),
         "notificationsHint":
             MessageLookupByLibrary.simpleMessage("إدارة تفضيلات الاشعارات"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
@@ -136,6 +162,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "saveChanges": MessageLookupByLibrary.simpleMessage("حفظ التغييرات"),
         "saveChangesSuccess":
             MessageLookupByLibrary.simpleMessage("تم حفظ التغييرات بنجاح"),
+        "selectDate": MessageLookupByLibrary.simpleMessage("اختر التاريخ"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("أدخل دخلك الجانبي"),

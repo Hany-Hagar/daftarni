@@ -200,6 +200,76 @@
     },
 
 
+    "category": "Category",
+    "@category": {
+        "description": "Label for the category selection"
+    },
+    "chooseCategory": "Choose Category",
+    "@chooseCategory": {
+        "description": "Title of the category selection screen"
+    },
+    "date": "Date",
+    "@date": {
+        "description": "Label for the date selection"
+    },
+    "selectDate": "Select Date",
+    "@selectDate": {
+        "description": "Label for the date selection field"
+    },
+    "notesOptional": "Notes (Optional)",
+    "@notesOptional": {
+        "description": "Label for the optional notes input field"
+    },
+    "addExpenseTitle": "Add Expense",
+    "@addExpenseTitle": {
+        "description": "Button text to add a new expense"
+    },
+    "addExpenseSubTitle": "Manage your spendings smartly",
+    "@addExpenseSubTitle": {
+        "description": "Subtitle for the add expense screen"
+    },
+    "enterExpenseAmount": "Enter Expense Amount",
+    "@enterExpenseAmount": {
+        "description": "Placeholder text for the expense amount input field"
+    },
+    "notesExpenseBrief":"Add a brief description or note about this expense ...",
+    "@notesExpenseBrief": {
+        "description": "Placeholder text for the notes input field on the add expense screen"
+    },
+    "addExpenseButton": "✨ Add Expense",
+    "@addExpenseButton": {
+        "description": "Button text to confirm adding a new expense"
+    },
+    "addIncomeTitle": "Add Income",
+    "@addIncomeTitle": {
+        "description": "Button text to add a new income"
+    },
+    "addIncomeSubTitle": "Track your earnings efficiently",
+    "@addIncomeSubTitle": {
+        "description": "Subtitle for the add income screen"
+    },
+    "enterIncomeAmount": "Enter Income Amount",
+    "@enterIncomeAmount": {
+        "description": "Placeholder text for the income amount input field"
+    },
+    "notesIncomeBrief":"Add a brief description or note about this income ...",
+    "@notesIncomeBrief": {
+        "description": "Placeholder text for the notes input field on the add income screen"
+    },
+    "addIncomeButton": "✨ Add Income",
+    "@addIncomeButton": {
+        "description": "Button text to confirm adding a new income"
+    },
+    "addTransactionSuccess":"Transaction added successfully",
+    "@addTransactionSuccess": {
+        "description": "Success message when a transaction is added"
+    },
+    "addExpenseTransactionLowValue" : "Insufficient Funds for this expense",
+    "@addExpenseTransactionLowValue" : {
+        "description": "Error message when trying to add an expense that exceeds the current balance"
+    },
+
+
 
     
     "settings": "Settings",

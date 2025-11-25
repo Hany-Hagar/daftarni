@@ -200,6 +200,78 @@
     },
 
 
+
+    "category": "الفئة",
+    "@category": {
+        "description": "تسمية اختيار الفئة"
+    },
+    "chooseCategory": "اختر الفئة",
+    "@chooseCategory": {
+        "description": "عنوان شاشة اختيار الفئة"
+    },
+    "date": "التاريخ",
+    "@date": {
+        "description": "تسمية اختيار التاريخ"
+    },
+    "selectDate": "اختر التاريخ",
+    "@selectDate": {
+        "description": "تسمية حقل اختيار التاريخ"
+    },
+    "notesOptional": "ملاحظات (اختياري)",
+    "@notesOptional": {
+        "description": "تسمية حقل الملاحظات الاختياري"
+    },
+    "addExpenseTitle": "إضافة مصروف",
+    "@addExpenseTitle": {
+        "description": "نص زر لإضافة مصروف جديد"
+    },
+    "addExpenseSubTitle": "إدارة مصاريفك بذكاء",
+    "@addExpenseSubTitle": {
+        "description": "العنوان الفرعي لشاشة إضافة مصروف"
+    },
+    "enterExpenseAmount": "أدخل مبلغ المصروف",
+    "@enterExpenseAmount": {
+        "description": "نص العنصر النائب لحقل إدخال مبلغ المصروف"
+    },
+    "notesExpenseBrief":"أضف وصفًا موجزًا أو ملاحظة حول هذا المصروف ...",
+    "@notesExpenseBrief": {
+        "description": "نص العنصر النائب لحقل الملاحظات في شاشة إضافة مصروف"
+    },
+    "addExpenseButton": "✨ إضافة مصروف",
+    "@addExpenseButton": {
+        "description": "نص زر لتأكيد إضافة مصروف جديد"
+    },
+    "addIncomeTitle": "إضافة دخل",
+    "@addIncomeTitle": {
+        "description": "نص زر لإضافة دخل جديد"
+    },
+    "addIncomeSubTitle": "تتبع أرباحك بكفاءة",
+    "@addIncomeSubTitle": {
+        "description": "العنوان الفرعي لشاشة إضافة دخل"
+    },
+    "enterIncomeAmount": "أدخل مبلغ الدخل",
+    "@enterIncomeAmount": {
+        "description": "نص العنصر النائب لحقل إدخال مبلغ الدخل"
+    },
+    "notesIncomeBrief":"أضف وصفًا موجزًا أو ملاحظة حول هذا الدخل ...",
+    "@notesIncomeBrief": {
+        "description": "نص العنصر النائب لحقل الملاحظات في شاشة إضافة دخل"
+    },
+    "addIncomeButton": "✨ إضافة دخل",
+    "@addIncomeButton": {
+        "description": "نص زر لتأكيد إضافة دخل جديد"
+    },
+    "addTransactionSuccess":"تمت إضافة المعاملة بنجاح",
+    "@addTransactionSuccess": {
+        "description": "رسالة نجاح عند إضافة معاملة"
+    },
+    "addExpenseTransactionLowValue" : "المصروف يتجاوز الرصيد الحالي",
+    "@addExpenseTransactionLowValue" : {
+        "description": "رسالة خطأ عند محاولة إضافة مصروف يتجاوز الرصيد الحالي"
+    },
+
+
+
     "settings": "الإعدادات",
     "@settings": {
         "description": "عنوان شاشة الإعدادات"
