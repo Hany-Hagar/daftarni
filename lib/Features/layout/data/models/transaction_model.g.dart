@@ -1,47 +1,50 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'data_model.dart';
+part of 'transaction_model.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
 // **************************************************************************
 
-class DataModelAdapter extends TypeAdapter<DataModel> {
+class TransactionModelAdapter extends TypeAdapter<TransactionModel> {
   @override
-  final int typeId = 1;
+  final int typeId = 6;
 
   @override
-  DataModel read(BinaryReader reader) {
+  TransactionModel read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return DataModel(
-      preferences: fields[0] as PreferencesModel,
-      profile: fields[1] as ProfileModel,
-      categories: (fields[2] as List).cast<CategoryModel>(),
-      transactions: (fields[3] as List).cast<TransactionModel>(),
-      isFirstOpen: fields[4] as bool,
-      isLoggedIn: fields[5] as bool,
+    return TransactionModel(
+      userId: fields[0] as String,
+      id: fields[1] as String,
+      type: fields[2] as String,
+      value: fields[3] as double,
+      category: fields[4] as CategoryModel,
+      time: fields[5] as DateTime,
+      notes: fields[6] as String,
     );
   }
 
   @override
-  void write(BinaryWriter writer, DataModel obj) {
+  void write(BinaryWriter writer, TransactionModel obj) {
     writer
-      ..writeByte(6)
+      ..writeByte(7)
       ..writeByte(0)
-      ..write(obj.preferences)
+      ..write(obj.userId)
       ..writeByte(1)
-      ..write(obj.profile)
+      ..write(obj.id)
       ..writeByte(2)
-      ..write(obj.categories)
+      ..write(obj.type)
       ..writeByte(3)
-      ..write(obj.transactions)
+      ..write(obj.value)
       ..writeByte(4)
-      ..write(obj.isFirstOpen)
+      ..write(obj.category)
       ..writeByte(5)
-      ..write(obj.isLoggedIn);
+      ..write(obj.time)
+      ..writeByte(6)
+      ..write(obj.notes);
   }
 
   @override
@@ -50,7 +53,7 @@ class DataModelAdapter extends TypeAdapter<DataModel> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is DataModelAdapter &&
+      other is TransactionModelAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }

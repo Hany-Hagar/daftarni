@@ -1,5 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../widgets/custom_text.dart';
 
@@ -26,7 +27,7 @@ class Toast {
                 decoration: BoxDecoration(
                   color:
                       state
-                          ? Colors.green.withOpacity(0.9)
+                          ? CupertinoColors.activeGreen
                           : Colors.red.withOpacity(0.9),
                   borderRadius: BorderRadius.circular(25),
                 ),
@@ -36,8 +37,8 @@ class Toast {
                     title:
                         message ??
                         (state ? "Success!" : "Something went wrong!"),
-                    fontSize: 14,
-                    fontColor: Theme.of(context).scaffoldBackgroundColor,
+                    fontSize: 20,
+                    fontColor: Colors.white,
                     maxLines: 5,
                   ),
                 ),

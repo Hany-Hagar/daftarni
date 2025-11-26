@@ -13,10 +13,9 @@ class IconModelAdapter extends TypeAdapter<IconModel> {
   @override
   IconModel read(BinaryReader reader) {
     final numOfFields = reader.readByte();
-    final fields = <int, dynamic>{};
-    for (var i = 0; i < numOfFields; i++) {
-      fields[reader.readByte()] = reader.read();
-    }
+    final fields = <int, dynamic>{
+      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
+    };
     return IconModel(
       codePoint: fields[0] as int,
       fontFamily: fields[1] as String?,

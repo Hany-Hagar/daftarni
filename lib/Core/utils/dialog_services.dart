@@ -7,7 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_iconpicker/Models/configuration.dart';
 
 class DialogServices {
-  static Future<T?> showCleanDialog<T>({
+  static showCleanDialog({
     required BuildContext context,
     required Widget child,
     bool barrierDismissible = true,
@@ -39,11 +39,26 @@ class DialogServices {
   static showStateDialog({
     required BuildContext context,
     required DialogState state,
-    required String text,
+    required String message,
   }) async {
     return await showDialog(
       context: context,
-      builder: (context) => _DialogStateBody(state: state, text: text),
+      builder: (context) => _DialogStateBody(state: state, text: message),
+    );
+  }
+
+  static datePicker({
+    required BuildContext context,
+    required DateTime initialDate,
+    required DateTime firstDate,
+    required DateTime lastDate,
+  }) async {
+    return await showDatePicker(
+      context: context,
+      firstDate: firstDate,
+      lastDate: lastDate,
+      initialDate: initialDate,
+      initialEntryMode: DatePickerEntryMode.calendar,
     );
   }
 

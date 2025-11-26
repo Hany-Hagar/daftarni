@@ -24,7 +24,7 @@ class ProfileInfoView extends StatelessWidget {
           DialogServices.showStateDialog(
             context: context,
             state: DialogState.failure,
-            text: state.error,
+            message: state.error,
           );
         }
         if (state is SettingsSuccess) {

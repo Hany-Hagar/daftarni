@@ -21,7 +21,7 @@ class PreferencesModelAdapter extends TypeAdapter<PreferencesModel> {
       languageCode: fields[1] as String,
       themeI: fields[2] as int,
       langI: fields[3] as int,
-      enableNotifications: (fields[4] as bool?) ?? true,
+      enableNotifications: fields[4] as bool,
     );
   }
 

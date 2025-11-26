@@ -1,13 +1,13 @@
 // ignore_for_file: deprecated_member_use
 
 import '../custom_icon.dart';
-import '../../../../../const/app.dart';
+import '../../../../../../const/app.dart';
 import 'package:flutter/material.dart';
-import '../../../../../../generated/l10n.dart';
-import '../../../data/models/quick_action_model.dart';
-import '../../../../../../core/widgets/custom_text.dart';
+import '../../../../../../../generated/l10n.dart';
+import '../../../../data/models/quick_action_model.dart';
+import '../../../../../../../core/widgets/custom_text.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../../core/utils/navigator_methods.dart';
+import '../../../../../../../core/utils/navigator_methods.dart';
 
 class LayoutQuickActions extends StatelessWidget {
   const LayoutQuickActions({super.key});

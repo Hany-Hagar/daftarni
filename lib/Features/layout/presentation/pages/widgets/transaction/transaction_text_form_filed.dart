@@ -1,13 +1,15 @@
 import 'package:glass/glass.dart';
 import 'package:flutter/material.dart';
-import '../../../../../core/widgets/text_form_field.dart';
+import '../../../../../../core/widgets/text_form_field.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TransactionTextFormFiled extends StatelessWidget {
   final double height;
   final String? title;
+  final EdgeInsets? padding;
   final int maxLines;
   final bool readOnly;
+  final IconData? suffixIcon;
   final TextInputType keyboardType;
   final TextEditingController controller;
   final dynamic Function(String?)? onChanged;
@@ -20,6 +22,8 @@ class TransactionTextFormFiled extends StatelessWidget {
     this.maxLines = 1,
     this.height = 42.5,
     required this.title,
+    this.padding,
+    this.suffixIcon,
     this.readOnly = false,
     required this.controller,
     required this.keyboardType,
@@ -37,7 +41,9 @@ class TransactionTextFormFiled extends StatelessWidget {
             maxLines: maxLines,
             readOnly: readOnly,
             controller: controller,
+            suffixIcon: suffixIcon,
             border: InputBorder.none,
+            padding: padding,
             keyboardType: keyboardType,
             onChanged: onChanged,
           ).asGlass(),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/utils/empty.dart';
-import '../../../../../../generated/l10n.dart';
-import '../../../../../../core/widgets/custom_text.dart';
+import '../../../../../../core/utils/empty.dart';
+import '../../../../../../../generated/l10n.dart';
+import '../../../../../../../core/widgets/custom_text.dart';
 
 class LayoutRecentTransactions extends StatelessWidget {
   const LayoutRecentTransactions({super.key});

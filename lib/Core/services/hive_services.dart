@@ -8,6 +8,7 @@ import '../../features/splash/data/models/data_model.dart';
 import '../../features/splash/data/models/profile_model.dart';
 import '../../features/splash/data/models/balance_model.dart';
 import '../../features/layout/data/models/category_model.dart';
+import '../../features/layout/data/models/transaction_model.dart';
 import '../../features/splash/data/models/preferences_model.dart';
 
 class HiveServices {
@@ -19,6 +20,7 @@ class HiveServices {
     Hive.registerAdapter(BalanceModelAdapter());
     Hive.registerAdapter(IconModelAdapter());
     Hive.registerAdapter(CategoryModelAdapter());
+    Hive.registerAdapter(TransactionModelAdapter());
     await Hive.openBox<DataModel>(dataBoxName);
   }
 
@@ -141,6 +143,29 @@ class HiveServices {
           enableNotifications: notificationsEnabled,
         );
         final uData = data.copyWith(preferences: uPreferences);
+        box.put(dataKey, uData);
+        return Right(uData);
+      } catch (e) {
+        return Left(HiveFailure.fromException(e));
+      }
+    });
+  }
+
+  // Transactions Functions
+
+  Either<Failure, DataModel> updateTransactions({
+    required BalanceModel balance,
+    required List<TransactionModel> transactions,
+  }) {
+    final boxResult = _getDataBox();
+    return boxResult.fold((failure) => Left(failure), (box) {
+      try {
+        final data = box.get(dataKey, defaultValue: DataModel.defaultData());
+        final profile = data!.profile.copyWith(balance: balance);
+        final uData = data.copyWith(
+          profile: profile,
+          transactions: transactions,
+        );
         box.put(dataKey, uData);
         return Right(uData);
       } catch (e) {

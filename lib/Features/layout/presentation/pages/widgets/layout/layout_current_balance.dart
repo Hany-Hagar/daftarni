@@ -1,13 +1,15 @@
 // ignore_for_file: deprecated_member_use, unused_element_parameter
 
-import '../../../../../const/app.dart';
 import 'package:flutter/material.dart';
-import '../../../../../const/data.dart';
-import '../../../../../../generated/l10n.dart';
-import '../../../../../../core/widgets/custom_text.dart';
-import '../../../../../../core/widgets/custom_button.dart';
+import '../../../../../../const/app.dart';
+import '../../../../../../const/data.dart';
+import '../../../manager/layout_cubit.dart';
+import '../../../manager/layout_states.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../../../../generated/l10n.dart';
+import '../../../../../../../core/widgets/custom_text.dart';
+import '../../../../../../../core/widgets/custom_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../core/services/service_locator.dart';
 
 class LayoutCurrentBalance extends StatelessWidget {
   const LayoutCurrentBalance({super.key});
@@ -15,30 +17,30 @@ class LayoutCurrentBalance extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var fontColor = Colors.white;
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(16.r),
-        gradient: linearGradient,
-      ),
-      padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          _Top(fontColor: fontColor),
-          SizedBox(height: 10),
-          _Body(fontColor: fontColor),
-          SizedBox(height: 12.h),
-          CustomButton(
-            onPressed: () {},
-            text: S.of(context).viewDetailedReport,
-            backgroundColor: fontColor.withOpacity(0.2),
-            // backgroundColor: Theme.of(
-            //   context,
-            // ).scaffoldBackgroundColor.withOpacity(0.3),
+    return BlocBuilder<LayoutCubit, LayoutStates>(
+      builder:
+          (context, state) => Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16.r),
+              gradient: linearGradient,
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _Top(fontColor: fontColor),
+                SizedBox(height: 10),
+                _Body(fontColor: fontColor),
+                SizedBox(height: 12.h),
+                CustomButton(
+                  onPressed: () {},
+                  text: S.of(context).viewDetailedReport,
+                  backgroundColor: fontColor.withOpacity(0.2),
+                ),
+                SizedBox(height: 6.h),
+              ],
+            ),
           ),
-          SizedBox(height: 6.h),
-        ],
-      ),
     );
   }
 }
@@ -50,7 +52,7 @@ class _Top extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final s = S.of(context);
-    var cubit = ServiceLocator.getDataModel().profile;
+    var cubit = LayoutCubit.get(context).data.profile;
     return ListTile(
       tileColor: Colors.transparent,
       contentPadding: EdgeInsetsDirectional.only(end: 10.w),
@@ -114,7 +116,7 @@ class _BalanceItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var s = S.of(context);
-    var data = ServiceLocator.getDataModel().profile;
+    var data = LayoutCubit.get(context).data.profile;
     var title = isIncomeOperation ? s.income : s.expense;
     var balance = data.balance;
     var value = isIncomeOperation ? balance.income : balance.expense;

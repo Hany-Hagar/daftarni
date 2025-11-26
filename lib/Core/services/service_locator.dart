@@ -4,6 +4,7 @@ import 'package:get_it/get_it.dart';
 import '../../features/splash/data/models/data_model.dart';
 import '../../features/splash/data/models/profile_model.dart';
 import '../../features/splash/data/models/preferences_model.dart';
+import '../../features/layout/data/models/transaction_model.dart';
 
 class ServiceLocator {
   static final sl = GetIt.instance;
@@ -33,12 +34,14 @@ class ServiceLocator {
   static void updateDataModel({
     PreferencesModel? preferences,
     ProfileModel? profile,
+    List<TransactionModel>? transactions,
   }) {
     final oldModel = sl<DataModel>();
 
     final newModel = oldModel.copyWith(
       preferences: preferences,
       profile: profile,
+      transactions: transactions,
     );
 
     if (sl.isRegistered<DataModel>()) {

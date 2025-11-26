@@ -7,7 +7,7 @@ import '../../../../../core/widgets/back_ground.dart';
 import '../../../data/repo/configuration_repo_impl.dart';
 import '../../../../../core/utils/navigator_methods.dart';
 import '../../../../../core/services/service_locator.dart';
-import '../../../../layout/presentation/views/layout_view.dart';
+import '../../../../layout/presentation/pages/views/layout_view.dart';
 
 class ConfigurationView extends StatelessWidget {
   const ConfigurationView({super.key});

@@ -2,13 +2,16 @@
 
 import '../custom_icon.dart';
 import '../custom_skeletonizer.dart';
-import '../../../../../const/app.dart';
+import '../../../../../../const/app.dart';
 import 'package:flutter/material.dart';
-import '../../../../../../const/data.dart';
-import '../../../../../core/utils/empty.dart';
-import '../../../data/models/category_model.dart';
-import '../../../../../../core/widgets/custom_text.dart';
-import '../../../../../core/services/service_locator.dart';
+import '../../../manager/layout_cubit.dart';
+import '../../../manager/layout_states.dart';
+import '../../../../../../../const/data.dart';
+import '../../../../../../core/utils/empty.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../data/models/category_model.dart';
+import '../../../../../../../core/widgets/custom_text.dart';
+import '../../../../../../core/services/service_locator.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SelectCategories extends StatelessWidget {
@@ -17,12 +20,15 @@ class SelectCategories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var loadingCategory = false;
-    return loadingCategory
-        ? const _LoadingItems()
-        : categories.isEmpty
-        ? Empty(state: EState.list)
-        : SelectCategoryItems(categories: categories);
+    return BlocBuilder<LayoutCubit, LayoutStates>(
+      builder: (context, state) {
+        return LayoutCubit.get(context).isLoadingCategory
+            ? const _LoadingItems()
+            : categories.isEmpty
+            ? Empty(state: EState.list)
+            : SelectCategoryItems(categories: categories);
+      },
+    );
   }
 }
 
@@ -46,6 +52,7 @@ class SelectCategoryItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var cubit = LayoutCubit.get(context);
     return GridView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
@@ -53,13 +60,19 @@ class SelectCategoryItems extends StatelessWidget {
       padding: EdgeInsets.zero,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
-        crossAxisSpacing: 12.w,
+        crossAxisSpacing: 10.w,
         mainAxisSpacing: 10.h,
       ),
       itemBuilder:
           (context, index) => GestureDetector(
-            onTap: () {},
-            child: _Item(isSelector: index == 0, model: categories[index]),
+            onTap: () {
+              cubit.setTransactionCategory(index);
+              Navigator.pop(context);
+            },
+            child: _Item(
+              isSelector: index == cubit.transactionCategory,
+              model: categories[index],
+            ),
           ),
     );
   }

@@ -5,8 +5,10 @@ import 'core/services/hive_services.dart';
 import 'core/utils/my_bloc_observer.dart';
 import 'core/services/service_locator.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'features/layout/data/repo/layout_repo_impl.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'features/settings/data/repo/settings_repo_impl.dart';
+import 'features/layout/presentation/manager/layout_cubit.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'features/splash/presentation/views/pages/splash_view.dart';
 import 'features/settings/presentation/manager/settings_cubit.dart';
@@ -28,6 +30,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+        BlocProvider<LayoutCubit>(
+          create:
+              (context) => LayoutCubit(
+                layoutRepo: LayoutRepoImpl(
+                  hiveServices: ServiceLocator.getHiveServices(),
+                ),
+              )..setData(),
+        ),
         BlocProvider<SettingsCubit>(
           create:
               (context) => SettingsCubit(

@@ -1,15 +1,15 @@
-import '../../../../const/app.dart';
+import '../../../../../const/app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import '../widgets/layout/layout_body.dart';
-import '../../../../../generated/l10n.dart';
-import '../../../../../core/widgets/back_ground.dart';
-import '../../../../../core/widgets/custom_text.dart';
-import '../../../../core/services/service_locator.dart';
-import '../../../../../core/widgets/custom_avatar.dart';
-import '../../../../../core/utils/navigator_methods.dart';
+import '../../../../../../generated/l10n.dart';
+import '../../../../../../core/widgets/back_ground.dart';
+import '../../../../../../core/widgets/custom_text.dart';
+import '../../../../../core/services/service_locator.dart';
+import '../../../../../../core/widgets/custom_avatar.dart';
+import '../../../../../../core/utils/navigator_methods.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../settings/presentation/view/pages/settings_view.dart';
+import '../../../../settings/presentation/view/pages/settings_view.dart';
 
 class LayoutView extends StatelessWidget {
   const LayoutView({super.key});

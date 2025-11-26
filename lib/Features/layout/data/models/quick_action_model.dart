@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import '../../../../generated/l10n.dart';
-import '../../presentation/views/add_transaction/add_income_view.dart';
-import '../../presentation/views/add_transaction/add_expense_view.dart';
+import '../../presentation/pages/views/add_transaction/add_income_view.dart';
+import '../../presentation/pages/views/add_transaction/add_expense_view.dart';
 
 class QuickActionModel {
   final String title;

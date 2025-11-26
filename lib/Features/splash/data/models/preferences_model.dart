@@ -31,10 +31,10 @@ class PreferencesModel extends HiveObject {
   factory PreferencesModel.defaultData() {
     return PreferencesModel(
       enableNotifications: true,
-      themeMode: lightTheme,
-      languageCode: enCode,
-      themeI: 0,
-      langI: 0,
+      themeMode: darkTheme,
+      languageCode: arCode,
+      themeI: 1,
+      langI: 1,
     );
   }
 
