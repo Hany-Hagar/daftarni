@@ -13,19 +13,26 @@ import '../../../../data/models/category_model.dart';
 import '../../../../../../../core/widgets/custom_text.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class SelectCategories extends StatelessWidget {
-  final List<CategoryModel> categories;
-  const SelectCategories({super.key, required this.categories});
+class Categories extends StatelessWidget {
+  const Categories({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<LayoutCubit, LayoutStates>(
       builder: (context, state) {
+        var cubit = LayoutCubit.get(context);
+
+        var categories =
+            cubit.searchingOpen
+                ? cubit.searchCategories
+                : cubit.filteringOpen
+                ? cubit.filterCategories
+                : cubit.categories;
         return LayoutCubit.get(context).isLoadingCategory
             ? const _LoadingItems()
             : categories.isEmpty
             ? Empty(state: EState.list)
-            : SelectCategoryItems(categories: categories);
+            : _Categories(categories: categories);
       },
     );
   }
@@ -38,70 +45,52 @@ class _LoadingItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomSkeletonizer(
       enable: true,
-      child: SelectCategoryItems(
+      child: _Categories(
         categories: List.generate(9, (index) => loadingCategoryModel),
       ),
     );
   }
 }
 
-class SelectCategoryItems extends StatelessWidget {
+class _Categories extends StatelessWidget {
   final List<CategoryModel> categories;
-  const SelectCategoryItems({super.key, required this.categories});
+  const _Categories({required this.categories});
 
   @override
   Widget build(BuildContext context) {
-    var cubit = LayoutCubit.get(context);
     return GridView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
       itemCount: categories.length,
-      padding: EdgeInsets.zero,
+      padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
-        crossAxisSpacing: 10.w,
+        crossAxisSpacing: 12.w,
         mainAxisSpacing: 10.h,
       ),
       itemBuilder:
           (context, index) => GestureDetector(
-            onTap: () {
-              cubit.setTransactionCategory(index);
-              Navigator.pop(context);
-            },
-            child: _Item(
-              isSelector: index == cubit.transactionCategory,
-              model: categories[index],
-            ),
+            onTap: () {},
+            child: _Item(model: categories[index]),
           ),
     );
   }
 }
 
 class _Item extends StatelessWidget {
-  final bool isSelector;
   final CategoryModel model;
-  const _Item({required this.isSelector, required this.model});
+  const _Item({required this.model});
 
   @override
   Widget build(BuildContext context) {
-    var langId = LayoutCubit.get(context).data.preferences.langI;
-
+    final cubit = LayoutCubit.get(context);
+    final langId = cubit.data.preferences.langI;
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10.0.w),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8.0),
         boxShadow: defaultBoxShadow,
-        border:
-            isSelector
-                ? Border.all(
-                  color: Color(model.color).withOpacity(0.35),
-                  width: 2.0,
-                )
-                : null,
-        color:
-            isSelector
-                ? Color(model.color).withOpacity(0.3)
-                : Theme.of(context).scaffoldBackgroundColor,
+        borderRadius: BorderRadius.circular(8.0),
+        color: Theme.of(context).scaffoldBackgroundColor,
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

@@ -44,15 +44,23 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("إضافة مصروف جديد"),
         "addTransactionSuccess":
             MessageLookupByLibrary.simpleMessage("تمت إضافة المعاملة بنجاح"),
+        "all": MessageLookupByLibrary.simpleMessage("الكل"),
         "appSettings":
             MessageLookupByLibrary.simpleMessage(" --- إعدادات التطبيق --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("دفترني"),
+        "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
         "cancle": MessageLookupByLibrary.simpleMessage("إلغاء"),
+        "categories": MessageLookupByLibrary.simpleMessage("الفئات"),
+        "categoriesSearchHint":
+            MessageLookupByLibrary.simpleMessage("ابحث في الفئات ..."),
         "category": MessageLookupByLibrary.simpleMessage("الفئة"),
+        "categoryType": MessageLookupByLibrary.simpleMessage("نوع الفئة"),
         "changeImageSuccess":
             MessageLookupByLibrary.simpleMessage("تم تغيير الصورة بنجاح"),
         "chooseCategory": MessageLookupByLibrary.simpleMessage("اختر الفئة"),
+        "clearFilterData":
+            MessageLookupByLibrary.simpleMessage("مسح بيانات الفلتر"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("قم بإضافة معلوماتك"),
         "contactUsHint": MessageLookupByLibrary.simpleMessage(
@@ -162,6 +170,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "saveChanges": MessageLookupByLibrary.simpleMessage("حفظ التغييرات"),
         "saveChangesSuccess":
             MessageLookupByLibrary.simpleMessage("تم حفظ التغييرات بنجاح"),
+        "searchOptions": MessageLookupByLibrary.simpleMessage("خيارات البحث"),
         "selectDate": MessageLookupByLibrary.simpleMessage("اختر التاريخ"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "sideIncomeHint":

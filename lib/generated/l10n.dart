@@ -50,6 +50,46 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `Search Options`
+  String get searchOptions {
+    return Intl.message(
+      'Search Options',
+      name: 'searchOptions',
+      desc: 'Title of the search options screen',
+      args: [],
+    );
+  }
+
+  /// `Clear Filter Data`
+  String get clearFilterData {
+    return Intl.message(
+      'Clear Filter Data',
+      name: 'clearFilterData',
+      desc: 'Button text to clear all filter data',
+      args: [],
+    );
+  }
+
+  /// `Category Type`
+  String get categoryType {
+    return Intl.message(
+      'Category Type',
+      name: 'categoryType',
+      desc: 'Label for the category type selection',
+      args: [],
+    );
+  }
+
+  /// `All`
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      desc: 'Label for the all items filter',
+      args: [],
+    );
+  }
+
   /// `Income`
   String get income {
     return Intl.message(
@@ -76,6 +116,16 @@ class S {
       'No items available',
       name: 'emptyList',
       desc: 'Text displayed when a list is empty',
+      args: [],
+    );
+  }
+
+  /// `Apply`
+  String get apply {
+    return Intl.message(
+      'Apply',
+      name: 'apply',
+      desc: 'Button text to apply filters or changes',
       args: [],
     );
   }
@@ -692,6 +742,26 @@ class S {
       name: 'addExpenseTransactionLowValue',
       desc:
           'Error message when trying to add an expense that exceeds the current balance',
+      args: [],
+    );
+  }
+
+  /// `Categories`
+  String get categories {
+    return Intl.message(
+      'Categories',
+      name: 'categories',
+      desc: 'Title of the categories screen',
+      args: [],
+    );
+  }
+
+  /// `Search Categories ...`
+  String get categoriesSearchHint {
+    return Intl.message(
+      'Search Categories ...',
+      name: 'categoriesSearchHint',
+      desc: 'Placeholder text for the category search input field',
       args: [],
     );
   }

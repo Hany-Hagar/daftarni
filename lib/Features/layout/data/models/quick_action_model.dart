@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import '../../../../generated/l10n.dart';
+import '../../presentation/pages/views/categories_view.dart';
 import '../../presentation/pages/views/add_transaction/add_income_view.dart';
 import '../../presentation/pages/views/add_transaction/add_expense_view.dart';
 
@@ -39,7 +40,7 @@ List<QuickActionModel> quickActions({required BuildContext context}) {
       title: s.manageCategories,
       icon: Icons.sell_outlined,
       color: const Color(0xff8e24aa).value,
-      nextPage: SizedBox(),
+      nextPage: CategoriesView(),
     ),
   ];
 }

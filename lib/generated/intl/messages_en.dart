@@ -44,16 +44,24 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Add New Expense"),
         "addTransactionSuccess": MessageLookupByLibrary.simpleMessage(
             "Transaction added successfully"),
+        "all": MessageLookupByLibrary.simpleMessage("All"),
         "appSettings":
             MessageLookupByLibrary.simpleMessage(" --- App Settings --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("Daftarni"),
+        "apply": MessageLookupByLibrary.simpleMessage("Apply"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
         "cancle": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+        "categoriesSearchHint":
+            MessageLookupByLibrary.simpleMessage("Search Categories ..."),
         "category": MessageLookupByLibrary.simpleMessage("Category"),
+        "categoryType": MessageLookupByLibrary.simpleMessage("Category Type"),
         "changeImageSuccess":
             MessageLookupByLibrary.simpleMessage("Image changed successfully"),
         "chooseCategory":
             MessageLookupByLibrary.simpleMessage("Choose Category"),
+        "clearFilterData":
+            MessageLookupByLibrary.simpleMessage("Clear Filter Data"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("Configure your information"),
         "contactUsHint": MessageLookupByLibrary.simpleMessage(
@@ -165,6 +173,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "saveChanges": MessageLookupByLibrary.simpleMessage("Save Changes"),
         "saveChangesSuccess":
             MessageLookupByLibrary.simpleMessage("Changes saved successfully"),
+        "searchOptions": MessageLookupByLibrary.simpleMessage("Search Options"),
         "selectDate": MessageLookupByLibrary.simpleMessage("Select Date"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "sideIncomeHint":

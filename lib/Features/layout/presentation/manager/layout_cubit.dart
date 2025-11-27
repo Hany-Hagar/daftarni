@@ -45,27 +45,27 @@ class LayoutCubit extends Cubit<LayoutStates> {
   }
 
   void setCategories() {
-    data.categories.forEach((element) {
+    for (var element in data.categories) {
       categories.add(element);
       if (element.type == incomeType) {
         incomeCategories.add(element);
       } else {
         expenseCategories.add(element);
       }
-    });
+    }
     isLoadingCategory = false;
     emit(SetState());
   }
 
   void setTransactions() {
     transactions = data.transactions;
-    data.transactions.forEach((element) {
+    for (var element in data.transactions) {
       if (element.type == incomeType) {
         incomeTransactions.add(element);
       } else {
         expenseTransactions.add(element);
       }
-    });
+    }
     isLoadingTransaction = false;
     emit(SetState());
   }
@@ -171,6 +171,87 @@ class LayoutCubit extends Cubit<LayoutStates> {
     transactionDate = DateTime.now();
     transactionValue.clear();
     transactionBrief.clear();
+    emit(SetState());
+  }
+
+  /// Search Data ///
+  String filterText = "";
+  bool searchingOpen = false;
+  bool filteringOpen = false;
+  int filterCategoryType = 0;
+  var searchText = TextEditingController();
+  List<CategoryModel> searchCategories = [];
+  List<CategoryModel> filterCategories = [];
+
+  /// Categories Methods ///
+  ///
+
+  void serachCategoriesData() {
+    searchState();
+    searchCategories.clear();
+    var langId = data.preferences.langI;
+    var value = searchText.text.toLowerCase();
+    var categoriesData = filteringOpen ? filterCategories : categories;
+    searchCategories =
+        categoriesData
+            .where(
+              (element) => element.title[langId].toLowerCase().contains(value),
+            )
+            .toList();
+    emit(SetState());
+  }
+
+  void searchState() {
+    var value = searchText.text;
+    if (value.isEmpty) {
+      if (searchingOpen) {
+        searchingOpen = false;
+        emit(SetState());
+      }
+    } else {
+      if (!searchingOpen) {
+        searchingOpen = true;
+        emit(SetState());
+      }
+    }
+  }
+
+  void clearSearchData() {
+    searchText.clear();
+    searchCategories.clear();
+    searchingOpen = false;
+    emit(SetState());
+  }
+
+  /// Filter Methods ///
+  void changeFilterType(int type) {
+    filterCategoryType = type;
+    emit(SetState());
+  }
+
+  void filterCategoriesFunc() {
+    filteringOpen = true;
+    filterCategories.clear();
+    switch (filterCategoryType) {
+      case 0:
+        filterCategories = [...categories];
+        break;
+      case 1:
+        filterCategories = [...incomeCategories];
+        break;
+      case 2:
+        filterCategories = [...expenseCategories];
+        break;
+      default:
+    }
+    emit(FilterState());
+  }
+
+  void clearFilterData() {
+    filterText = "";
+    filteringOpen = false;
+    filterCategoryType = 0;
+    filterCategories.clear();
     emit(SetState());
   }
 }

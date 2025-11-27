@@ -4,6 +4,8 @@ class LayoutInitialState extends LayoutStates {}
 
 class SetState extends LayoutStates {}
 
+class FilterState extends LayoutStates {}
+
 class SetDataState extends LayoutStates {}
 
 class LayoutLoading extends LayoutStates {}

@@ -1,6 +1,23 @@
 {
     "@@locale": "ar",
 
+    
+    "searchOptions":"خيارات البحث",
+    "@searchOptions": {
+        "description": "عنوان شاشة خيارات البحث"
+    },
+    "clearFilterData":"مسح بيانات الفلتر",
+    "@clearFilterData": {
+        "description": "نص زر لمسح جميع بيانات المصفاة"
+    },
+    "categoryType":"نوع الفئة",
+    "@categoryType": {
+        "description": "تسمية لاختيار نوع الفئة"
+    },
+    "all":"الكل",
+    "@all": {
+        "description": "تسمية لمرشح جميع العناصر"
+    },
     "income":"الدخل",
     "@income": {
         "description": "تسمية قسم الدخل"
@@ -12,6 +29,10 @@
     "emptyList":"لا توجد عناصر متاحة",
     "@emptyList": {
         "description": "النص المعروض عندما تكون القائمة فارغة"
+    },
+    "apply":"تطبيق",
+    "@apply": {
+        "description": "نص زر تطبيق الفلاتر"
     },
     "cancle":"إلغاء",
     "@cancle": {
@@ -268,6 +289,17 @@
     "addExpenseTransactionLowValue" : "المصروف يتجاوز الرصيد الحالي",
     "@addExpenseTransactionLowValue" : {
         "description": "رسالة خطأ عند محاولة إضافة مصروف يتجاوز الرصيد الحالي"
+    },
+
+
+
+    "categories": "الفئات",
+    "@categories": {
+        "description": "عنوان شاشة الفئات"
+    },
+    "categoriesSearchHint": "ابحث في الفئات ...",
+    "@categoriesSearchHint": {
+        "description": "نص العنصر النائب لحقل البحث في الفئات"
     },
 
 

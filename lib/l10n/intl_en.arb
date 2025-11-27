@@ -1,6 +1,23 @@
 {
     "@@locale": "en",
 
+   
+    "searchOptions":"Search Options",
+    "@searchOptions": {
+        "description": "Title of the search options screen"
+    },
+    "clearFilterData":"Clear Filter Data",
+    "@clearFilterData": {
+        "description": "Button text to clear all filter data"
+    },
+    "categoryType":"Category Type",
+    "@categoryType": {
+        "description": "Label for the category type selection"
+    },
+    "all":"All",
+    "@all": {
+        "description": "Label for the all items filter"
+    },
     "income":"Income",
     "@income": {
         "description": "Label for the income section"
@@ -12,6 +29,10 @@
     "emptyList":"No items available",
     "@emptyList": {
         "description": "Text displayed when a list is empty"
+    },
+    "apply":"Apply",
+    "@apply": {
+        "description": "Button text to apply filters or changes"
     },
     "cancle":"Cancel",
     "@cancle": {
@@ -267,6 +288,17 @@
     "addExpenseTransactionLowValue" : "Insufficient Funds for this expense",
     "@addExpenseTransactionLowValue" : {
         "description": "Error message when trying to add an expense that exceeds the current balance"
+    },
+
+
+
+    "categories": "Categories",
+    "@categories": {
+        "description": "Title of the categories screen"
+    },
+    "categoriesSearchHint": "Search Categories ...",
+    "@categoriesSearchHint": {
+        "description": "Placeholder text for the category search input field"
     },
 
 
