@@ -69,7 +69,7 @@ class AppTheme {
       textTheme: ButtonTextTheme.primary,
     ),
     dialogTheme: const DialogTheme(
-      backgroundColor: Colors.grey,
+      backgroundColor: Color.fromARGB(255, 31, 31, 31),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(16)),
       ),

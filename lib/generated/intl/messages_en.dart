@@ -40,6 +40,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "addIncomeSubTitle": MessageLookupByLibrary.simpleMessage(
             "Track your earnings efficiently"),
         "addIncomeTitle": MessageLookupByLibrary.simpleMessage("Add Income"),
+        "addNewCategory":
+            MessageLookupByLibrary.simpleMessage("Add New Category"),
+        "addNewCategorySubtitle": MessageLookupByLibrary.simpleMessage(
+            "Create a custom category for better expense tracking"),
         "addNewExpense":
             MessageLookupByLibrary.simpleMessage("Add New Expense"),
         "addTransactionSuccess": MessageLookupByLibrary.simpleMessage(
@@ -55,6 +59,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "categoriesSearchHint":
             MessageLookupByLibrary.simpleMessage("Search Categories ..."),
         "category": MessageLookupByLibrary.simpleMessage("Category"),
+        "categoryColor": MessageLookupByLibrary.simpleMessage("Category Color"),
+        "categoryColorHint":
+            MessageLookupByLibrary.simpleMessage("Tap to choose a color"),
+        "categoryIcon": MessageLookupByLibrary.simpleMessage("Category Icon"),
+        "categoryIconHint":
+            MessageLookupByLibrary.simpleMessage("Tap to select an icon"),
+        "categoryName": MessageLookupByLibrary.simpleMessage("Category Name"),
+        "categoryNameHint": MessageLookupByLibrary.simpleMessage(
+            "e.g., Groceries, Transport, Rent ..."),
         "categoryType": MessageLookupByLibrary.simpleMessage("Category Type"),
         "changeImageSuccess":
             MessageLookupByLibrary.simpleMessage("Image changed successfully"),
@@ -62,12 +75,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Choose Category"),
         "clearFilterData":
             MessageLookupByLibrary.simpleMessage("Clear Filter Data"),
+        "close": MessageLookupByLibrary.simpleMessage("Close"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("Configure your information"),
         "contactUsHint": MessageLookupByLibrary.simpleMessage(
             "For assistance, please reach out to our support team"),
         "contactUsTitle": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "continueButton": MessageLookupByLibrary.simpleMessage("Continue"),
+        "createCategoryButton":
+            MessageLookupByLibrary.simpleMessage("✨ Create Category"),
         "currentBalance":
             MessageLookupByLibrary.simpleMessage("Current Balance"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("Dark Theme"),
@@ -96,6 +112,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "general": MessageLookupByLibrary.simpleMessage("General"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
         "hi": MessageLookupByLibrary.simpleMessage("Hi"),
+        "iconPickerTitle": MessageLookupByLibrary.simpleMessage("Pick an Icon"),
         "income": MessageLookupByLibrary.simpleMessage("Income"),
         "lightTheme": MessageLookupByLibrary.simpleMessage("Light Theme"),
         "manageCategories":
@@ -173,8 +190,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "saveChanges": MessageLookupByLibrary.simpleMessage("Save Changes"),
         "saveChangesSuccess":
             MessageLookupByLibrary.simpleMessage("Changes saved successfully"),
+        "searchIcon": MessageLookupByLibrary.simpleMessage("Search icon"),
         "searchOptions": MessageLookupByLibrary.simpleMessage("Search Options"),
         "selectDate": MessageLookupByLibrary.simpleMessage("Select Date"),
+        "selectedIcon":
+            MessageLookupByLibrary.simpleMessage("Selected Icon : "),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("Enter your side income"),

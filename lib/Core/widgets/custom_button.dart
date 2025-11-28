@@ -121,7 +121,11 @@ class CustomButton extends StatelessWidget {
     return icon != null
         ? Padding(
           padding: EdgeInsetsDirectional.only(end: 8.w),
-          child: Icon(icon, size: iconSize ?? 20.sp, color: _setColor(context)),
+          child: Icon(
+            icon,
+            size: iconSize ?? 20.sp,
+            color: _setFontColor(context),
+          ),
         )
         : const SizedBox();
   }

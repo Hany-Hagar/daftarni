@@ -1,7 +1,22 @@
 {
     "@@locale": "ar",
 
-    
+
+    "iconPickerTitle": "اختر أيقونة",
+    "@iconPickerTitle": {
+        "description": "عنوان مربع حوار اختيار الأيقونة"
+    },
+    "searchIcon": "ابحث عن أيقونة",
+    "@searchIcon": {
+        "description": "عنوان مربع حوار اختيار الأيقونة"
+    },
+    "close": "إغلاق",
+    "@close": {
+        "description": "نص زر لإغلاق مربع الحوار"
+    },
+
+
+
     "searchOptions":"خيارات البحث",
     "@searchOptions": {
         "description": "عنوان شاشة خيارات البحث"
@@ -300,6 +315,49 @@
     "categoriesSearchHint": "ابحث في الفئات ...",
     "@categoriesSearchHint": {
         "description": "نص العنصر النائب لحقل البحث في الفئات"
+    },
+
+
+
+    "addNewCategory": "إضافة فئة جديدة",
+    "@addNewCategory": {
+        "description": "عنون شاشة إضافة فئة جديدة"
+    },
+    "addNewCategorySubtitle": "قم بإنشاء فئة مخصصة لتتبع النفقات بشكل أفضل",
+    "@addNewCategorySubtitle": {
+        "description": "العنوان الفرعي لشاشة إضافة فئة جديدة"
+    },
+    "categoryName": "اسم الفئة",
+    "@categoryName": {
+        "description": "تسمية حقل إدخال اسم الفئة"
+    },
+    "categoryNameHint": "مثال: بقالة، نقل، إيجار ...",
+    "@categoryNameHint": {
+        "description": "نص العنصر النائب لحقل إدخال اسم الفئة"
+    },
+    "categoryIcon": "أيقونة الفئة",
+    "@categoryIcon": {
+        "description": "تسمية اختيار أيقونة الفئة"
+    },
+    "selectedIcon": "الأيقونة المحددة :",
+    "@selectedIcon": {
+        "description": "Label for displaying the selected category icon"
+    },
+    "categoryIconHint": "اضغط لاختيار أيقونة",
+    "@categoryIconHint": {
+        "description": "نص العنصر النائب لاختيار أيقونة الفئة"
+    },
+    "categoryColor": "لون الفئة",
+    "@categoryColor": {
+        "description": "تسمية اختيار لون الفئة"
+    },
+    "categoryColorHint": "اضغط لاختيار لون",
+    "@categoryColorHint": {
+        "description": "نص العنصر النائب لاختيار لون الفئة"
+    },
+    "createCategoryButton": "✨ إنشاء فئة",
+    "@createCategoryButton": {
+        "description": "نص زر لإنشاء فئة جديدة"
     },
 
 

@@ -151,6 +151,24 @@ class HiveServices {
     });
   }
 
+  // Categories Functions
+
+  Either<Failure, DataModel> updateCategories({
+    required List<CategoryModel> categories,
+  }) {
+    final boxResult = _getDataBox();
+    return boxResult.fold((failure) => Left(failure), (box) {
+      try {
+        final data = box.get(dataKey, defaultValue: DataModel.defaultData());
+        final uData = data!.copyWith(categories: categories);
+        box.put(dataKey, uData);
+        return Right(uData);
+      } catch (e) {
+        return Left(HiveFailure.fromException(e));
+      }
+    });
+  }
+
   // Transactions Functions
 
   Either<Failure, DataModel> updateTransactions({

@@ -3,6 +3,7 @@ import 'hive_services.dart';
 import 'package:get_it/get_it.dart';
 import '../../features/splash/data/models/data_model.dart';
 import '../../features/splash/data/models/profile_model.dart';
+import '../../features/layout/data/models/category_model.dart';
 import '../../features/splash/data/models/preferences_model.dart';
 import '../../features/layout/data/models/transaction_model.dart';
 
@@ -34,6 +35,7 @@ class ServiceLocator {
   static void updateDataModel({
     PreferencesModel? preferences,
     ProfileModel? profile,
+    List<CategoryModel>? categories,
     List<TransactionModel>? transactions,
   }) {
     final oldModel = sl<DataModel>();
@@ -41,6 +43,7 @@ class ServiceLocator {
     final newModel = oldModel.copyWith(
       preferences: preferences,
       profile: profile,
+      categories: categories,
       transactions: transactions,
     );
 

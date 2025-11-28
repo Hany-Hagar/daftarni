@@ -4,9 +4,8 @@ import 'package:lottie/lottie.dart';
 import '../widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flex_color_picker/flex_color_picker.dart';
-import 'package:flutter_iconpicker/flutter_iconpicker.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_iconpicker/Models/configuration.dart';
+import '../../features/icon_picker/presentation/views/pages/custom_Icon_picker.dart';
 
 class DialogServices {
   static showCleanDialog({
@@ -24,13 +23,10 @@ class DialogServices {
             type: MaterialType.transparency,
             child: ConstrainedBox(
               constraints: BoxConstraints(
-                maxHeight: MediaQuery.of(context).size.height * 0.9,
+                maxHeight: MediaQuery.of(context).size.height * 0.93,
                 maxWidth: MediaQuery.of(context).size.width,
               ),
-              child: SingleChildScrollView(
-                physics: const BouncingScrollPhysics(),
-                child: child,
-              ),
+              child: Column(mainAxisSize: MainAxisSize.min, children: [child]),
             ),
           ),
         );
@@ -46,6 +42,18 @@ class DialogServices {
     return await showDialog(
       context: context,
       builder: (context) => _DialogStateBody(state: state, text: message),
+    );
+  }
+
+  static iconPicker({required BuildContext context}) async {
+    return await showDialog(
+      context: context,
+      builder:
+          (context) => CustomIconPicker(
+            onPressed: (p0) {
+              Navigator.of(context).pop(p0);
+            },
+          ),
     );
   }
 
@@ -69,36 +77,6 @@ class DialogServices {
     required Color color,
   }) async {
     return await showColorPickerDialog(context, color);
-  }
-
-  static showIconPickerDialog({
-    required BuildContext context,
-    bool adaptiveDialog = true,
-    bool barrierDismissible = true,
-    String? title,
-    String? searchHintText,
-    required String closeText,
-  }) async {
-    var theme = Theme.of(context);
-    return await showIconPicker(
-      context,
-      configuration: SinglePickerConfiguration(
-        iconSize: 45.0.r,
-        showTooltips: true,
-        iconColor: Colors.blue,
-        adaptiveDialog: adaptiveDialog,
-        iconPackModes: [IconPack.allMaterial],
-        barrierDismissible: barrierDismissible,
-        backgroundColor: theme.scaffoldBackgroundColor,
-        title: CustomText(
-          isHead: false,
-          title: title ?? "Pick an Icon",
-          fontSize: 25,
-        ),
-        searchHintText: searchHintText ?? "Search Icon ....",
-        closeChild: CustomText(isHead: false, title: closeText, fontSize: 18),
-      ),
-    );
   }
 }
 

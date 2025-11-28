@@ -40,6 +40,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "addIncomeSubTitle":
             MessageLookupByLibrary.simpleMessage("تتبع أرباحك بكفاءة"),
         "addIncomeTitle": MessageLookupByLibrary.simpleMessage("إضافة دخل"),
+        "addNewCategory":
+            MessageLookupByLibrary.simpleMessage("إضافة فئة جديدة"),
+        "addNewCategorySubtitle": MessageLookupByLibrary.simpleMessage(
+            "قم بإنشاء فئة مخصصة لتتبع النفقات بشكل أفضل"),
         "addNewExpense":
             MessageLookupByLibrary.simpleMessage("إضافة مصروف جديد"),
         "addTransactionSuccess":
@@ -55,18 +59,30 @@ class MessageLookup extends MessageLookupByLibrary {
         "categoriesSearchHint":
             MessageLookupByLibrary.simpleMessage("ابحث في الفئات ..."),
         "category": MessageLookupByLibrary.simpleMessage("الفئة"),
+        "categoryColor": MessageLookupByLibrary.simpleMessage("لون الفئة"),
+        "categoryColorHint":
+            MessageLookupByLibrary.simpleMessage("اضغط لاختيار لون"),
+        "categoryIcon": MessageLookupByLibrary.simpleMessage("أيقونة الفئة"),
+        "categoryIconHint":
+            MessageLookupByLibrary.simpleMessage("اضغط لاختيار أيقونة"),
+        "categoryName": MessageLookupByLibrary.simpleMessage("اسم الفئة"),
+        "categoryNameHint":
+            MessageLookupByLibrary.simpleMessage("مثال: بقالة، نقل، إيجار ..."),
         "categoryType": MessageLookupByLibrary.simpleMessage("نوع الفئة"),
         "changeImageSuccess":
             MessageLookupByLibrary.simpleMessage("تم تغيير الصورة بنجاح"),
         "chooseCategory": MessageLookupByLibrary.simpleMessage("اختر الفئة"),
         "clearFilterData":
             MessageLookupByLibrary.simpleMessage("مسح بيانات الفلتر"),
+        "close": MessageLookupByLibrary.simpleMessage("إغلاق"),
         "configureYourInfo":
             MessageLookupByLibrary.simpleMessage("قم بإضافة معلوماتك"),
         "contactUsHint": MessageLookupByLibrary.simpleMessage(
             "للمساعدة، يرجى التواصل مع فريق الدعم الخاص بنا"),
         "contactUsTitle": MessageLookupByLibrary.simpleMessage("اتصل بنا"),
         "continueButton": MessageLookupByLibrary.simpleMessage("استمر"),
+        "createCategoryButton":
+            MessageLookupByLibrary.simpleMessage("✨ إنشاء فئة"),
         "currentBalance": MessageLookupByLibrary.simpleMessage("الرصيد الحالي"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
@@ -95,6 +111,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "general": MessageLookupByLibrary.simpleMessage("عامة"),
         "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "hi": MessageLookupByLibrary.simpleMessage("مرحبًا"),
+        "iconPickerTitle": MessageLookupByLibrary.simpleMessage("اختر أيقونة"),
         "income": MessageLookupByLibrary.simpleMessage("الدخل"),
         "lightTheme": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
         "manageCategories":
@@ -170,8 +187,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "saveChanges": MessageLookupByLibrary.simpleMessage("حفظ التغييرات"),
         "saveChangesSuccess":
             MessageLookupByLibrary.simpleMessage("تم حفظ التغييرات بنجاح"),
+        "searchIcon": MessageLookupByLibrary.simpleMessage("ابحث عن أيقونة"),
         "searchOptions": MessageLookupByLibrary.simpleMessage("خيارات البحث"),
         "selectDate": MessageLookupByLibrary.simpleMessage("اختر التاريخ"),
+        "selectedIcon":
+            MessageLookupByLibrary.simpleMessage("الأيقونة المحددة :"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("أدخل دخلك الجانبي"),

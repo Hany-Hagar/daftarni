@@ -44,8 +44,8 @@ class _Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SizedBox(height: MediaQuery.sizeOf(context).height * 0.22),
         LottieBuilder.asset(
           width: double.infinity,
           height: MediaQuery.sizeOf(context).height * 0.3,

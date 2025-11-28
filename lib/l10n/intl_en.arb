@@ -1,62 +1,73 @@
 {
     "@@locale": "en",
 
-   
-    "searchOptions":"Search Options",
+    "iconPickerTitle": "Pick an Icon",
+    "@iconPickerTitle": {
+        "description": "Hint text for the icon search input field"
+    },
+    "searchIcon": "Search icon",
+    "@searchIcon": {
+        "description": "Title of the icon picker dialog"
+    },
+    "close": "Close",
+    "@close": {
+        "description": "Button text to close the dialog"
+    },
+
+
+
+    "searchOptions": "Search Options",
     "@searchOptions": {
         "description": "Title of the search options screen"
     },
-    "clearFilterData":"Clear Filter Data",
+    "clearFilterData": "Clear Filter Data",
     "@clearFilterData": {
         "description": "Button text to clear all filter data"
     },
-    "categoryType":"Category Type",
+    "categoryType": "Category Type",
     "@categoryType": {
         "description": "Label for the category type selection"
     },
-    "all":"All",
+    "all": "All",
     "@all": {
         "description": "Label for the all items filter"
     },
-    "income":"Income",
+    "income": "Income",
     "@income": {
         "description": "Label for the income section"
     },
-    "expense":"Expense",
+    "expense": "Expense",
     "@expense": {
         "description": "تسمية قسم المصروفات"
     },
-    "emptyList":"No items available",
+    "emptyList": "No items available",
     "@emptyList": {
         "description": "Text displayed when a list is empty"
     },
-    "apply":"Apply",
+    "apply": "Apply",
     "@apply": {
         "description": "Button text to apply filters or changes"
     },
-    "cancle":"Cancel",
+    "cancle": "Cancel",
     "@cancle": {
         "description": "Button text to cancel an action"
     },
-    "saveChanges":"Save Changes",
+    "saveChanges": "Save Changes",
     "@saveChanges": {
         "description": "Button text to save changes"
     },
-    "pickImageTitle":"Tap to Change Profile Image",
+    "pickImageTitle": "Tap to Change Profile Image",
     "@pickImageTitle": {
         "description": "Title for the image picker dialog"
     },
-    "changeImageSuccess":"Image changed successfully",
+    "changeImageSuccess": "Image changed successfully",
     "@changeImageSuccess": {
         "description": "Success message when the image is changed"
     },
-    "saveChangesSuccess":"Changes saved successfully",
+    "saveChangesSuccess": "Changes saved successfully",
     "@saveChangesSuccess": {
         "description": "Success message when changes are saved"
     },
-
-
-
     "appTitle": "Daftarni",
     "@appTitle": {
         "description": "Title of the application"
@@ -97,9 +108,6 @@
     "@getStarted": {
         "description": "Text for the get started button on the onboarding screen"
     },
-
-
-    
     "configureYourInfo": "Configure your information",
     "@configureYourInfo": {
         "description": "Title of the configure your information screen"
@@ -176,9 +184,6 @@
     "@continueButton": {
         "description": "Text for the continue button on the onboarding screen"
     },
-
-
-
     "hi": "Hi",
     "@hi": {
         "description": "Greeting text"
@@ -219,8 +224,6 @@
     "@viewAll": {
         "description": "Text for the button to view all transactions"
     },
-
-
     "category": "Category",
     "@category": {
         "description": "Label for the category selection"
@@ -253,7 +256,7 @@
     "@enterExpenseAmount": {
         "description": "Placeholder text for the expense amount input field"
     },
-    "notesExpenseBrief":"Add a brief description or note about this expense ...",
+    "notesExpenseBrief": "Add a brief description or note about this expense ...",
     "@notesExpenseBrief": {
         "description": "Placeholder text for the notes input field on the add expense screen"
     },
@@ -273,7 +276,7 @@
     "@enterIncomeAmount": {
         "description": "Placeholder text for the income amount input field"
     },
-    "notesIncomeBrief":"Add a brief description or note about this income ...",
+    "notesIncomeBrief": "Add a brief description or note about this income ...",
     "@notesIncomeBrief": {
         "description": "Placeholder text for the notes input field on the add income screen"
     },
@@ -281,17 +284,14 @@
     "@addIncomeButton": {
         "description": "Button text to confirm adding a new income"
     },
-    "addTransactionSuccess":"Transaction added successfully",
+    "addTransactionSuccess": "Transaction added successfully",
     "@addTransactionSuccess": {
         "description": "Success message when a transaction is added"
     },
-    "addExpenseTransactionLowValue" : "Insufficient Funds for this expense",
-    "@addExpenseTransactionLowValue" : {
+    "addExpenseTransactionLowValue": "Insufficient Funds for this expense",
+    "@addExpenseTransactionLowValue": {
         "description": "Error message when trying to add an expense that exceeds the current balance"
     },
-
-
-
     "categories": "Categories",
     "@categories": {
         "description": "Title of the categories screen"
@@ -300,10 +300,46 @@
     "@categoriesSearchHint": {
         "description": "Placeholder text for the category search input field"
     },
-
-
-
-    
+    "addNewCategory": "Add New Category",
+    "@addNewCategory": {
+        "description": "Title of the add new category screen"
+    },
+    "addNewCategorySubtitle": "Create a custom category for better expense tracking",
+    "@addNewCategorySubtitle": {
+        "description": "Subtitle of the add new category screen"
+    },
+    "categoryName": "Category Name",
+    "@categoryName": {
+        "description": "Label for the category name input field"
+    },
+    "categoryNameHint": "e.g., Groceries, Transport, Rent ...",
+    "@categoryNameHint": {
+        "description": "Placeholder text for the category name input field"
+    },
+    "categoryIcon": "Category Icon",
+    "@categoryIcon": {
+        "description": "Label for the category icon selection"
+    },
+    "selectedIcon": "Selected Icon : ",
+    "@selectedIcon": {
+        "description": "Label for displaying the selected category icon"
+    },
+    "categoryIconHint": "Tap to select an icon",
+    "@categoryIconHint": {
+        "description": "Hint text for selecting a category icon"
+    },
+    "categoryColor": "Category Color",
+    "@categoryColor": {
+        "description": "Label for the category color selection"
+    },
+    "categoryColorHint": "Tap to choose a color",
+    "@categoryColorHint": {
+        "description": "Hint text for selecting a category color"
+    },
+    "createCategoryButton": "✨ Create Category",
+    "@createCategoryButton": {
+        "description": "Button text to create a new category"
+    },
     "settings": "Settings",
     "@settings": {
         "description": "Title of the settings screen"
@@ -311,7 +347,7 @@
     "notSignedIn": "Not Signed In",
     "@notSignedIn": {
         "description": "Text displayed when the user is not signed in"
-    }, 
+    },
     "personal": "Personal",
     "@personal": {
         "description": "Label for the personal section in settings"
@@ -348,9 +384,6 @@
     "@supportHint": {
         "description": "Subtitle for the support section in settings"
     },
-
-
-
     "privacySecurityTitle": "Privacy and Security",
     "@privacySecurityTitle": {
         "description": "Title for the privacy and security screen"
@@ -415,9 +448,6 @@
     "@privacySecurityFooter": {
         "description": "Footer text for the privacy and security screen"
     },
-
-
-
     "contactUsTitle": "Contact Us",
     "@contactUsTitle": {
         "description": "Title for the contact us section in support"
@@ -430,7 +460,7 @@
     "@supportPhoneTitle": {
         "description": "Title for the phone call option"
     },
-    "supportPhoneHint":"Press to call the support team",
+    "supportPhoneHint": "Press to call the support team",
     "@supportPhoneHint": {
         "description": "Subtitle for the phone call option"
     },
@@ -450,17 +480,17 @@
     "@supportEmailHint": {
         "description": "Subtitle for the email contact option"
     },
-    "faqTitle":"----- Frequently Asked Questions -----",
+    "faqTitle": "----- Frequently Asked Questions -----",
     "@faqTitle": {
         "description": "Title for the FAQ section in the support page"
     },
-    "faqQuestion1":"How can I restore my data after deleting the app?",
+    "faqQuestion1": "How can I restore my data after deleting the app?",
     "@faqQuestion1": {
         "description": "The first question and answer pair in the FAQ section"
     },
-    "faqAnswer1":"You can restore your data by logging back into your account using the same email and password.",
-      "@faqAnswer1": {
-          "description": "The answer to the first question in the FAQ section"
+    "faqAnswer1": "You can restore your data by logging back into your account using the same email and password.",
+    "@faqAnswer1": {
+        "description": "The answer to the first question in the FAQ section"
     },
     "faqQuestion2": "Can I use the app without creating an account?",
     "@faqQuestion2": {

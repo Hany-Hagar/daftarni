@@ -1,5 +1,6 @@
 import 'layout_repo.dart';
 import 'package:dartz/dartz.dart';
+import '../models/category_model.dart';
 import '../models/transaction_model.dart';
 import '../../../../core/failures/failure.dart';
 import '../../../splash/data/models/data_model.dart';
@@ -18,5 +19,12 @@ class LayoutRepoImpl extends LayoutRepo {
       balance: balance,
       transactions: transactions,
     );
+  }
+
+  @override
+  Future<Either<Failure, DataModel>> updateCategories({
+    required List<CategoryModel> categories,
+  }) async {
+    return hiveServices.updateCategories(categories: categories);
   }
 }

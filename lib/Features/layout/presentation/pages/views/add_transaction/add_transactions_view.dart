@@ -42,7 +42,7 @@ class AddTransactionsView extends StatelessWidget {
     return BlocListener<LayoutCubit, LayoutStates>(
       listener: (context, state) {
         final s = S.of(context);
-        if (state is LayoutSuccess) {
+        if (state is AddDataState) {
           Toast.show(context, state: true, message: s.addTransactionSuccess);
           LayoutCubit.get(context).clearTransactionData();
           Navigator.pop(context);

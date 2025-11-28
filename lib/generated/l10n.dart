@@ -50,6 +50,36 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `Pick an Icon`
+  String get iconPickerTitle {
+    return Intl.message(
+      'Pick an Icon',
+      name: 'iconPickerTitle',
+      desc: 'Hint text for the icon search input field',
+      args: [],
+    );
+  }
+
+  /// `Search icon`
+  String get searchIcon {
+    return Intl.message(
+      'Search icon',
+      name: 'searchIcon',
+      desc: 'Title of the icon picker dialog',
+      args: [],
+    );
+  }
+
+  /// `Close`
+  String get close {
+    return Intl.message(
+      'Close',
+      name: 'close',
+      desc: 'Button text to close the dialog',
+      args: [],
+    );
+  }
+
   /// `Search Options`
   String get searchOptions {
     return Intl.message(
@@ -762,6 +792,106 @@ class S {
       'Search Categories ...',
       name: 'categoriesSearchHint',
       desc: 'Placeholder text for the category search input field',
+      args: [],
+    );
+  }
+
+  /// `Add New Category`
+  String get addNewCategory {
+    return Intl.message(
+      'Add New Category',
+      name: 'addNewCategory',
+      desc: 'Title of the add new category screen',
+      args: [],
+    );
+  }
+
+  /// `Create a custom category for better expense tracking`
+  String get addNewCategorySubtitle {
+    return Intl.message(
+      'Create a custom category for better expense tracking',
+      name: 'addNewCategorySubtitle',
+      desc: 'Subtitle of the add new category screen',
+      args: [],
+    );
+  }
+
+  /// `Category Name`
+  String get categoryName {
+    return Intl.message(
+      'Category Name',
+      name: 'categoryName',
+      desc: 'Label for the category name input field',
+      args: [],
+    );
+  }
+
+  /// `e.g., Groceries, Transport, Rent ...`
+  String get categoryNameHint {
+    return Intl.message(
+      'e.g., Groceries, Transport, Rent ...',
+      name: 'categoryNameHint',
+      desc: 'Placeholder text for the category name input field',
+      args: [],
+    );
+  }
+
+  /// `Category Icon`
+  String get categoryIcon {
+    return Intl.message(
+      'Category Icon',
+      name: 'categoryIcon',
+      desc: 'Label for the category icon selection',
+      args: [],
+    );
+  }
+
+  /// `Selected Icon : `
+  String get selectedIcon {
+    return Intl.message(
+      'Selected Icon : ',
+      name: 'selectedIcon',
+      desc: 'Label for displaying the selected category icon',
+      args: [],
+    );
+  }
+
+  /// `Tap to select an icon`
+  String get categoryIconHint {
+    return Intl.message(
+      'Tap to select an icon',
+      name: 'categoryIconHint',
+      desc: 'Hint text for selecting a category icon',
+      args: [],
+    );
+  }
+
+  /// `Category Color`
+  String get categoryColor {
+    return Intl.message(
+      'Category Color',
+      name: 'categoryColor',
+      desc: 'Label for the category color selection',
+      args: [],
+    );
+  }
+
+  /// `Tap to choose a color`
+  String get categoryColorHint {
+    return Intl.message(
+      'Tap to choose a color',
+      name: 'categoryColorHint',
+      desc: 'Hint text for selecting a category color',
+      args: [],
+    );
+  }
+
+  /// `✨ Create Category`
+  String get createCategoryButton {
+    return Intl.message(
+      '✨ Create Category',
+      name: 'createCategoryButton',
+      desc: 'Button text to create a new category',
       args: [],
     );
   }

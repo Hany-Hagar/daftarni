@@ -1,3 +1,7 @@
+// ignore_for_file: deprecated_member_use
+
+import 'package:daftarni/features/layout/presentation/pages/widgets/List/categories.dart';
+
 import 'layout_states.dart';
 import 'package:intl/intl.dart';
 import '../../../../const/data.dart';
@@ -135,8 +139,11 @@ class LayoutCubit extends Cubit<LayoutStates> {
         profile: r.profile,
         transactions: r.transactions,
       );
-      incomeTransactions.add(transaction);
-      emit(LayoutSuccess());
+      transactions.add(r.transactions.last);
+      isIncome
+          ? incomeTransactions.add(r.transactions.last)
+          : expenseTransactions.add(r.transactions.last);
+      emit(AddDataState());
     });
   }
 
@@ -171,6 +178,89 @@ class LayoutCubit extends Cubit<LayoutStates> {
     transactionDate = DateTime.now();
     transactionValue.clear();
     transactionBrief.clear();
+    emit(SetState());
+  }
+
+  /// Add Category Data ///
+  bool addCategoryValidateD = true;
+  int addCategoryType = 0;
+  String? categoryIconHint;
+  var addCategoryLoading = false;
+  int categoryColor = Colors.blue.value;
+  var categoryTitle = TextEditingController();
+  IconData? categoryIcon;
+
+  /// Add Category Methods ///
+
+  void addCategoryValidateFunc() {
+    var title = categoryTitle.text;
+    if (title.isEmpty || categoryIcon == null) {
+      if (!addCategoryValidateD) {
+        addCategoryValidateD = true;
+        emit(SetState());
+      }
+    } else {
+      if (addCategoryValidateD) {
+        addCategoryValidateD = false;
+        emit(SetState());
+      }
+    }
+  }
+
+  void changeAddCategoryType(int type) {
+    addCategoryType = type;
+    addCategoryValidateFunc();
+    emit(SetState());
+  }
+
+  void changeCategoryIcon(IconData icon, String hint) {
+    categoryIcon = icon;
+    categoryIconHint = hint;
+    addCategoryValidateFunc();
+    emit(SetState());
+  }
+
+  void changeCategoryColor(int color) {
+    categoryColor = color;
+    addCategoryValidateFunc();
+    emit(SetState());
+  }
+
+  void addCategory() async {
+    emit(LayoutLoading());
+    var categoriesData = setCategoryModel();
+    var data = await layoutRepo.updateCategories(categories: categoriesData);
+    data.fold((l) => emit(LayoutFailure(l.errMessage)), (r) {
+      ServiceLocator.updateDataModel(categories: r.categories);
+      categories.add(r.categories.last);
+      if (addCategoryType == 0) {
+        incomeCategories.add(r.categories.last);
+      } else {
+        expenseCategories.add(r.categories.last);
+      }
+      emit(AddDataState());
+    });
+  }
+
+  List<CategoryModel> setCategoryModel() {
+    String type = addCategoryType == 0 ? incomeType : expenseType;
+    var category = CategoryModel.newCategory(
+      icon: categoryIcon!,
+      title: List.generate(2, (index) => categoryTitle.text),
+      type: type,
+      color: categoryColor,
+      userId: data.profile.id,
+    );
+    return [...data.categories, category];
+  }
+
+  void clearAddCategoryData() {
+    addCategoryType = 0;
+    categoryTitle.clear();
+    categoryIcon = null;
+    categoryIconHint = null;
+    addCategoryValidateD = true;
+    categoryColor = Colors.blue.value;
     emit(SetState());
   }
 

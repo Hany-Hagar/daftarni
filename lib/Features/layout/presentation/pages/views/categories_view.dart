@@ -1,3 +1,4 @@
+import 'add_category_view.dart';
 import '../widgets/search_bar.dart';
 import 'package:flutter/material.dart';
 import '../../manager/layout_cubit.dart';
@@ -6,6 +7,7 @@ import '../../manager/layout_states.dart';
 import '../../../../../generated/l10n.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/widgets/back_ground.dart';
+import '../../../../../core/utils/dialog_services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CategoriesView extends StatelessWidget {
@@ -55,7 +57,16 @@ class _CustomFloatingActionButton extends StatelessWidget {
               padding: EdgeInsets.only(bottom: 12.h),
               child: FloatingActionButton(
                 heroTag: "add",
-                onPressed: () {},
+                onPressed: () {
+                  final innerContext =
+                      context; // context هنا هو بتاع الـ inner dialog
+
+                  DialogServices.showCleanDialog(
+                    context: innerContext,
+                    barrierDismissible: false,
+                    child: AddCategoryView(),
+                  );
+                },
                 backgroundColor: theme.primaryColor,
                 child: Icon(Icons.add, size: 28.sp, color: theme.hintColor),
               ),

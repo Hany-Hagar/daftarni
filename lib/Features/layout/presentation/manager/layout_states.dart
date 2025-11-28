@@ -8,6 +8,8 @@ class FilterState extends LayoutStates {}
 
 class SetDataState extends LayoutStates {}
 
+class AddDataState extends LayoutStates {}
+
 class LayoutLoading extends LayoutStates {}
 
 class LayoutSuccess extends LayoutStates {}
