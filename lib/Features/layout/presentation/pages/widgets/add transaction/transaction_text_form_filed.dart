@@ -3,19 +3,20 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/widgets/text_form_field.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class TransactionTextFormFiled extends StatelessWidget {
+class GlassTextFormField extends StatelessWidget {
   final double height;
   final String? title;
   final EdgeInsets? padding;
   final int maxLines;
   final bool readOnly;
+  final IconData? prefixIcon;
   final IconData? suffixIcon;
   final TextInputType keyboardType;
   final TextEditingController controller;
   final dynamic Function(String?)? onChanged;
   final VoidCallback? onTap;
 
-  const TransactionTextFormFiled({
+  const GlassTextFormField({
     super.key,
     this.onTap,
     this.onChanged,
@@ -24,6 +25,7 @@ class TransactionTextFormFiled extends StatelessWidget {
     required this.title,
     this.padding,
     this.suffixIcon,
+    this.prefixIcon,
     this.readOnly = false,
     required this.controller,
     required this.keyboardType,
@@ -41,6 +43,7 @@ class TransactionTextFormFiled extends StatelessWidget {
             maxLines: maxLines,
             readOnly: readOnly,
             controller: controller,
+            prefixIcon: prefixIcon,
             suffixIcon: suffixIcon,
             border: InputBorder.none,
             padding: padding,

@@ -27,7 +27,7 @@ class AddTransactionDate extends StatelessWidget {
         return CustomCard(
           emoji: "📅",
           title: s.date,
-          child: TransactionTextFormFiled(
+          child: GlassTextFormField(
             height: 30.h,
             readOnly: true,
             title: s.selectDate,
@@ -38,7 +38,7 @@ class AddTransactionDate extends StatelessWidget {
               cubit.setTransactionDate(
                 await DialogServices.datePicker(
                   context: context,
-                  initialDate: DateTime.now(),
+                  initialDate: cubit.transactionDate,
                   firstDate: cubit.setFirstData(),
                   lastDate: DateTime.now(),
                 ),

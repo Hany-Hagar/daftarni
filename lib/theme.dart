@@ -24,7 +24,7 @@ class AppTheme {
       buttonColor: Colors.blue,
       textTheme: ButtonTextTheme.primary,
     ),
-    dialogTheme: const DialogTheme(
+    dialogTheme: const DialogThemeData(
       backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(16)),
@@ -68,7 +68,7 @@ class AppTheme {
       buttonColor: Colors.teal,
       textTheme: ButtonTextTheme.primary,
     ),
-    dialogTheme: const DialogTheme(
+    dialogTheme: const DialogThemeData(
       backgroundColor: Color.fromARGB(255, 31, 31, 31),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(16)),

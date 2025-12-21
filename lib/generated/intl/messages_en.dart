@@ -23,12 +23,12 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Language": MessageLookupByLibrary.simpleMessage("Language"),
-        "Notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "Optional": MessageLookupByLibrary.simpleMessage("Optional"),
-        "PrivacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "SalaryDay": MessageLookupByLibrary.simpleMessage("Salary Day"),
         "SideIncome": MessageLookupByLibrary.simpleMessage("Side Income"),
         "Theme": MessageLookupByLibrary.simpleMessage("Theme"),
+        "addCategorySuccess":
+            MessageLookupByLibrary.simpleMessage("Category added successfully"),
         "addExpenseButton":
             MessageLookupByLibrary.simpleMessage("✨ Add Expense"),
         "addExpenseSubTitle": MessageLookupByLibrary.simpleMessage(
@@ -88,7 +88,26 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Current Balance"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("Dark Theme"),
         "date": MessageLookupByLibrary.simpleMessage("Date"),
+        "delete": MessageLookupByLibrary.simpleMessage("Delete"),
+        "deleteDialogContent": MessageLookupByLibrary.simpleMessage(
+            "Are you sure you want to delete this item?"),
+        "deleteDialogTitle":
+            MessageLookupByLibrary.simpleMessage("Delete Confirmation"),
+        "deleteStateFailure":
+            MessageLookupByLibrary.simpleMessage("Delete Failure"),
+        "deleteStateSuccess":
+            MessageLookupByLibrary.simpleMessage("Delete Success"),
+        "editExpenseButton":
+            MessageLookupByLibrary.simpleMessage("✨ Edit Expense"),
+        "editExpenseTitle":
+            MessageLookupByLibrary.simpleMessage("Edit Expense"),
+        "editIncomeButton":
+            MessageLookupByLibrary.simpleMessage("✨ Edit Income"),
+        "editIncomeTitle": MessageLookupByLibrary.simpleMessage("Edit Income"),
+        "editStateSuccess":
+            MessageLookupByLibrary.simpleMessage("Editing Success"),
         "emptyList": MessageLookupByLibrary.simpleMessage("No items available"),
+        "endDate": MessageLookupByLibrary.simpleMessage("End Date"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enterExpenseAmount":
             MessageLookupByLibrary.simpleMessage("Enter Expense Amount"),
@@ -125,6 +144,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Add a brief description or note about this income ..."),
         "notesOptional":
             MessageLookupByLibrary.simpleMessage("Notes (Optional)"),
+        "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "notificationsHint":
             MessageLookupByLibrary.simpleMessage("Manage your notification"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
@@ -144,6 +164,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Personal Information"),
         "pickImageTitle":
             MessageLookupByLibrary.simpleMessage("Tap to Change Profile Image"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "privacyPolicyHint": MessageLookupByLibrary.simpleMessage(
             "Review our privacy practices"),
         "privacyPolicySubtitle":
@@ -199,6 +220,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("Enter your side income"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "startDate": MessageLookupByLibrary.simpleMessage("Start Date"),
         "support": MessageLookupByLibrary.simpleMessage("Support"),
         "supportEmailHint": MessageLookupByLibrary.simpleMessage(
             "Press to send an email to the support team"),
@@ -214,12 +236,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "supportWhatsappTitle":
             MessageLookupByLibrary.simpleMessage("WhatsApp"),
         "systemTheme": MessageLookupByLibrary.simpleMessage("System Theme"),
+        "today": MessageLookupByLibrary.simpleMessage("Today"),
+        "transactions": MessageLookupByLibrary.simpleMessage("Transactions"),
+        "transactionsSearchHint":
+            MessageLookupByLibrary.simpleMessage("Search Transactions ..."),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
         "userNameHint":
             MessageLookupByLibrary.simpleMessage("Enter your user name"),
         "viewAll": MessageLookupByLibrary.simpleMessage("View All"),
         "viewDetailedReport":
             MessageLookupByLibrary.simpleMessage("View Detailed Report"),
-        "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back")
+        "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
+        "yesterday": MessageLookupByLibrary.simpleMessage("Yesterday")
       };
 }

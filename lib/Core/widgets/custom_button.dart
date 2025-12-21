@@ -60,7 +60,7 @@ class CustomButton extends StatelessWidget {
     required this.text,
     this.icon,
     this.iconSize,
-    this.onPressed,
+    required this.onPressed,
     this.fontColor,
     this.borderRadius = const BorderRadius.all(Radius.circular(10)),
   });

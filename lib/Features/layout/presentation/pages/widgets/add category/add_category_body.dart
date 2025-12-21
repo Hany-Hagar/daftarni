@@ -1,7 +1,6 @@
+import 'add_category_body_top.dart';
 import 'add_category_body_icon.dart';
 import 'add_category_body_name.dart';
-import 'add_category_body_top.dart';
-import 'add_category_body_type.dart';
 import 'add_category_body_color.dart';
 import 'package:flutter/material.dart';
 import '../../../manager/layout_cubit.dart';
@@ -12,7 +11,8 @@ import '../../../../../../core/widgets/custom_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AddCategoryBody extends StatelessWidget {
-  const AddCategoryBody({super.key});
+  final bool isIncome;
+  const AddCategoryBody({super.key, required this.isIncome});
 
   @override
   Widget build(BuildContext context) {
@@ -24,17 +24,16 @@ class AddCategoryBody extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         AddCategoryBodyTop(),
-        AddCategoryBodyType(),
         AddCategoryBodyName(),
         AddCategoryBodyIcon(),
         AddCategoryBodyColor(),
         BlocBuilder<LayoutCubit, LayoutStates>(
           builder:
               (context, state) => CustomLoadingButton(
-                isEnabled: !cubit.addCategoryValidateD,
-                isLoading: cubit.addCategoryLoading,
+                isEnabled: !cubit.addingCategoryEmpty,
+                isLoading: cubit.loadingAddCategory,
                 title: s.createCategoryButton,
-                onTap: () => cubit.addCategory(),
+                onTap: () => cubit.addCategory(isIncome: isIncome),
               ),
         ),
       ],

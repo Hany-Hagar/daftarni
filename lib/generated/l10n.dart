@@ -80,6 +80,126 @@ class S {
     );
   }
 
+  /// `Date`
+  String get date {
+    return Intl.message(
+      'Date',
+      name: 'date',
+      desc: 'Label for date selection',
+      args: [],
+    );
+  }
+
+  /// `Select Date`
+  String get selectDate {
+    return Intl.message(
+      'Select Date',
+      name: 'selectDate',
+      desc: 'Label for the date selection field',
+      args: [],
+    );
+  }
+
+  /// `Start Date`
+  String get startDate {
+    return Intl.message(
+      'Start Date',
+      name: 'startDate',
+      desc: 'Label for start date selection',
+      args: [],
+    );
+  }
+
+  /// `End Date`
+  String get endDate {
+    return Intl.message(
+      'End Date',
+      name: 'endDate',
+      desc: 'Label for end date selection',
+      args: [],
+    );
+  }
+
+  /// `Today`
+  String get today {
+    return Intl.message(
+      'Today',
+      name: 'today',
+      desc: 'Label for the today button',
+      args: [],
+    );
+  }
+
+  /// `Yesterday`
+  String get yesterday {
+    return Intl.message(
+      'Yesterday',
+      name: 'yesterday',
+      desc: 'Label for the yesterday button',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message(
+      'Delete',
+      name: 'delete',
+      desc: 'Button text to delete an item',
+      args: [],
+    );
+  }
+
+  /// `Delete Confirmation`
+  String get deleteDialogTitle {
+    return Intl.message(
+      'Delete Confirmation',
+      name: 'deleteDialogTitle',
+      desc: 'Title of the delete confirmation dialog',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to delete this item?`
+  String get deleteDialogContent {
+    return Intl.message(
+      'Are you sure you want to delete this item?',
+      name: 'deleteDialogContent',
+      desc: 'Content of the delete confirmation dialog',
+      args: [],
+    );
+  }
+
+  /// `Delete Success`
+  String get deleteStateSuccess {
+    return Intl.message(
+      'Delete Success',
+      name: 'deleteStateSuccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete Failure`
+  String get deleteStateFailure {
+    return Intl.message(
+      'Delete Failure',
+      name: 'deleteStateFailure',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Editing Success`
+  String get editStateSuccess {
+    return Intl.message(
+      'Editing Success',
+      name: 'editStateSuccess',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Search Options`
   String get searchOptions {
     return Intl.message(
@@ -623,26 +743,6 @@ class S {
     );
   }
 
-  /// `Date`
-  String get date {
-    return Intl.message(
-      'Date',
-      name: 'date',
-      desc: 'Label for the date selection',
-      args: [],
-    );
-  }
-
-  /// `Select Date`
-  String get selectDate {
-    return Intl.message(
-      'Select Date',
-      name: 'selectDate',
-      desc: 'Label for the date selection field',
-      args: [],
-    );
-  }
-
   /// `Notes (Optional)`
   String get notesOptional {
     return Intl.message(
@@ -709,7 +809,7 @@ class S {
     return Intl.message(
       'Add Income',
       name: 'addIncomeTitle',
-      desc: 'Button text to add a new income',
+      desc: 'Title for the add income screen',
       args: [],
     );
   }
@@ -772,6 +872,46 @@ class S {
       name: 'addExpenseTransactionLowValue',
       desc:
           'Error message when trying to add an expense that exceeds the current balance',
+      args: [],
+    );
+  }
+
+  /// `Edit Income`
+  String get editIncomeTitle {
+    return Intl.message(
+      'Edit Income',
+      name: 'editIncomeTitle',
+      desc: 'Title for the add income screen',
+      args: [],
+    );
+  }
+
+  /// `✨ Edit Income`
+  String get editIncomeButton {
+    return Intl.message(
+      '✨ Edit Income',
+      name: 'editIncomeButton',
+      desc: 'Button text to confirm edit income',
+      args: [],
+    );
+  }
+
+  /// `Edit Expense`
+  String get editExpenseTitle {
+    return Intl.message(
+      'Edit Expense',
+      name: 'editExpenseTitle',
+      desc: 'Title for the add income screen',
+      args: [],
+    );
+  }
+
+  /// `✨ Edit Expense`
+  String get editExpenseButton {
+    return Intl.message(
+      '✨ Edit Expense',
+      name: 'editExpenseButton',
+      desc: 'Button text to confirm edit expense',
       args: [],
     );
   }
@@ -896,6 +1036,36 @@ class S {
     );
   }
 
+  /// `Category added successfully`
+  String get addCategorySuccess {
+    return Intl.message(
+      'Category added successfully',
+      name: 'addCategorySuccess',
+      desc: 'Success message when a new category is added',
+      args: [],
+    );
+  }
+
+  /// `Transactions`
+  String get transactions {
+    return Intl.message(
+      'Transactions',
+      name: 'transactions',
+      desc: 'Title of the transactions screen',
+      args: [],
+    );
+  }
+
+  /// `Search Transactions ...`
+  String get transactionsSearchHint {
+    return Intl.message(
+      'Search Transactions ...',
+      name: 'transactionsSearchHint',
+      desc: 'Placeholder text for the transaction search input field',
+      args: [],
+    );
+  }
+
   /// `Settings`
   String get settings {
     return Intl.message(
@@ -947,10 +1117,10 @@ class S {
   }
 
   /// `Notifications`
-  String get Notifications {
+  String get notifications {
     return Intl.message(
       'Notifications',
-      name: 'Notifications',
+      name: 'notifications',
       desc: 'Label for the notifications section in settings',
       args: [],
     );
@@ -967,10 +1137,10 @@ class S {
   }
 
   /// `Privacy Policy`
-  String get PrivacyPolicy {
+  String get privacyPolicy {
     return Intl.message(
       'Privacy Policy',
-      name: 'PrivacyPolicy',
+      name: 'privacyPolicy',
       desc: 'Label for the privacy policy section in settings',
       args: [],
     );

@@ -1,7 +1,7 @@
 import '../custom_icon.dart';
 import 'package:glass/glass.dart';
 import 'package:flutter/material.dart';
-import '../List/select_categories.dart';
+import '../list/categories.dart';
 import '../../../manager/layout_cubit.dart';
 import '../../../manager/layout_states.dart';
 import '../../../../../../generated/l10n.dart';
@@ -13,8 +13,13 @@ import '../../../../../../core/utils/dialog_services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AddTransactionCategory extends StatelessWidget {
+  final bool incomeType;
   final List<CategoryModel> categories;
-  const AddTransactionCategory({super.key, required this.categories});
+  const AddTransactionCategory({
+    super.key,
+    required this.incomeType,
+    required this.categories,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +27,7 @@ class AddTransactionCategory extends StatelessWidget {
     return BlocBuilder<LayoutCubit, LayoutStates>(
       builder: (context, state) {
         var cubit = LayoutCubit.get(context);
-        var category = categories[cubit.transactionCategory];
+        var category = categories[cubit.transactionCategoryIndex];
         var title = category.title[cubit.data.preferences.langI];
         return CustomCard(
           emoji: '🏷️',
@@ -33,7 +38,10 @@ class AddTransactionCategory extends StatelessWidget {
             onTap: () {
               DialogServices.showCleanDialog(
                 context: context,
-                child: _DialogBody(categories: categories),
+                child: _DialogBody(
+                  incomeType: incomeType,
+                  categories: categories,
+                ),
               );
             },
             contentPadding: EdgeInsetsDirectional.only(start: 12.w, end: 6.w),
@@ -65,8 +73,10 @@ var _boder = RoundedRectangleBorder(
 );
 
 class _DialogBody extends StatelessWidget {
+  final bool incomeType;
+
   final List<CategoryModel> categories;
-  const _DialogBody({required this.categories});
+  const _DialogBody({required this.incomeType, required this.categories});
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +87,7 @@ class _DialogBody extends StatelessWidget {
       titleAlign: MainAxisAlignment.center,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),
-        child: SelectCategories(categories: categories),
+        child: Categories(isIncome: incomeType, categories: categories),
       ).asGlass(clipBorderRadius: BorderRadius.circular(12.r)),
     );
   }

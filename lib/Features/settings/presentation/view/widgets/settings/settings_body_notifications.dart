@@ -21,7 +21,7 @@ class SettingsBodyNotifications extends StatelessWidget {
         return SettingsItem(
           contentPadding: EdgeInsetsDirectional.only(start: 14.w, end: 3.w),
           iconColor: const Color(0xfffbb122),
-          title: s.Notifications,
+          title: s.notifications,
           subTitle: s.notificationsHint,
           leadingIcon: Icons.notifications_outlined,
           trailingIcon: Transform.scale(
@@ -31,7 +31,6 @@ class SettingsBodyNotifications extends StatelessWidget {
               onChanged: (value) {
                 changeNotificationsState(context, value);
               },
-              activeColor: Colors.white,
               activeTrackColor: incomeColor,
               inactiveThumbColor: Colors.grey.shade300,
               inactiveTrackColor: Colors.grey.shade700,

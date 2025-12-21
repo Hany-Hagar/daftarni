@@ -22,12 +22,13 @@ class AddTransactionBrief extends StatelessWidget {
     return CustomCard(
       emoji: "📝",
       title: s.notesOptional,
-      child: TransactionTextFormFiled(
+      child: GlassTextFormField(
         maxLines: 3,
         height: 65.h,
         title: brief,
-        controller: cubit.transactionBrief,
         keyboardType: TextInputType.text,
+        controller: cubit.addTransactionBrief,
+        onChanged: (p0) => cubit.addTransactionValidate(),
       ),
     );
   }

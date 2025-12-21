@@ -1,8 +1,9 @@
 // ignore_for_file: deprecated_member_use
 
 import '../custom_icon.dart';
-import '../../../../../../const/app.dart';
 import 'package:flutter/material.dart';
+import '../../../../../../const/app.dart';
+import '../../../manager/layout_cubit.dart';
 import '../../../../../../../generated/l10n.dart';
 import '../../../../data/models/quick_action_model.dart';
 import '../../../../../../../core/widgets/custom_text.dart';
@@ -40,30 +41,14 @@ class _QuickActions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      spacing: 10.h,
-      children: [
-        Row(
-          spacing: 10.w,
-          children: List.generate(
-            2,
-            (index) => Expanded(
-              child: _QuickActionItem(
-                model: quickActions(context: context)[index],
-              ),
-            ),
-          ),
+    return Row(
+      spacing: 10.w,
+      children: List.generate(
+        2,
+        (index) => Expanded(
+          child: _QuickActionItem(model: quickActions(context: context)[index]),
         ),
-        Row(
-          children: [
-            Expanded(
-              child: _QuickActionItem(
-                model: quickActions(context: context).last,
-              ),
-            ),
-          ],
-        ),
-      ],
+      ),
     );
   }
 }
@@ -77,6 +62,7 @@ class _QuickActionItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        LayoutCubit.get(context).clearTransactionData();
         NavTo.push(context: context, nextPage: model.nextPage);
       },
       child: Container(

@@ -34,7 +34,7 @@ class _Top extends StatelessWidget {
           CustomText(
             isHead: true,
             fontSize: 30,
-            title: S.of(context).PrivacyPolicy,
+            title: S.of(context).privacyPolicy,
             fontColor: Colors.white,
           ),
         ],

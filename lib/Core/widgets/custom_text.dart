@@ -14,6 +14,7 @@ class CustomText extends StatelessWidget {
   final TextOverflow? overflow;
   final double? opacity;
   final TextStyle? style;
+  final double textHeight;
 
   const CustomText({
     super.key,
@@ -26,6 +27,7 @@ class CustomText extends StatelessWidget {
     this.overflow,
     this.opacity,
     this.style,
+    this.textHeight = 1.2,
   });
 
   @override
@@ -43,7 +45,7 @@ class CustomText extends StatelessWidget {
       style:
           style ??
           (isHead ? Styles.textStyle800 : Styles.textStyle600).copyWith(
-            height: 1.2,
+            height: textHeight,
             color: baseColor.withOpacity(opacity ?? (isHead ? 1 : 0.66)),
             fontSize: size.sp,
           ),

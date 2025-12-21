@@ -13,6 +13,54 @@
     "@close": {
         "description": "Button text to close the dialog"
     },
+    "date": "Date",
+    "@date": {
+        "description": "Label for date selection"
+    },
+    "selectDate": "Select Date",
+    "@selectDate": {
+        "description": "Label for the date selection field"
+    },
+    "startDate":"Start Date",
+    "@startDate": {
+        "description": "Label for start date selection"
+    },
+    "endDate":"End Date",
+    "@endDate": {
+        "description": "Label for end date selection"
+    },
+    "today": "Today",
+    "@today": {
+        "description": "Label for the today button"
+    },
+    "yesterday": "Yesterday",
+    "@yesterday": {
+        "description": "Label for the yesterday button"
+    },
+    "delete":"Delete",
+    "@delete": {
+        "description": "Button text to delete an item"
+    },
+    "deleteDialogTitle": "Delete Confirmation",
+    "@deleteDialogTitle" : {
+        "description": "Title of the delete confirmation dialog"
+    },
+    "deleteDialogContent": "Are you sure you want to delete this item?",
+    "@deleteDialogContent":{
+        "description": "Content of the delete confirmation dialog"
+    },
+    "deleteStateSuccess": "Delete Success",
+    "@deleteStateSuccess" : {
+        "description": ""
+    },
+    "deleteStateFailure":"Delete Failure",
+    "@deleteStateFailure" : {
+        "description": ""
+    },   
+    "editStateSuccess": "Editing Success",
+    "@editStateSuccess" : {
+        "description": ""
+    },
 
 
 
@@ -68,6 +116,9 @@
     "@saveChangesSuccess": {
         "description": "Success message when changes are saved"
     },
+
+
+
     "appTitle": "Daftarni",
     "@appTitle": {
         "description": "Title of the application"
@@ -108,6 +159,9 @@
     "@getStarted": {
         "description": "Text for the get started button on the onboarding screen"
     },
+
+
+
     "configureYourInfo": "Configure your information",
     "@configureYourInfo": {
         "description": "Title of the configure your information screen"
@@ -184,6 +238,9 @@
     "@continueButton": {
         "description": "Text for the continue button on the onboarding screen"
     },
+
+
+
     "hi": "Hi",
     "@hi": {
         "description": "Greeting text"
@@ -224,6 +281,9 @@
     "@viewAll": {
         "description": "Text for the button to view all transactions"
     },
+
+
+
     "category": "Category",
     "@category": {
         "description": "Label for the category selection"
@@ -231,14 +291,6 @@
     "chooseCategory": "Choose Category",
     "@chooseCategory": {
         "description": "Title of the category selection screen"
-    },
-    "date": "Date",
-    "@date": {
-        "description": "Label for the date selection"
-    },
-    "selectDate": "Select Date",
-    "@selectDate": {
-        "description": "Label for the date selection field"
     },
     "notesOptional": "Notes (Optional)",
     "@notesOptional": {
@@ -266,7 +318,7 @@
     },
     "addIncomeTitle": "Add Income",
     "@addIncomeTitle": {
-        "description": "Button text to add a new income"
+        "description": "Title for the add income screen"
     },
     "addIncomeSubTitle": "Track your earnings efficiently",
     "@addIncomeSubTitle": {
@@ -292,6 +344,27 @@
     "@addExpenseTransactionLowValue": {
         "description": "Error message when trying to add an expense that exceeds the current balance"
     },
+
+
+    "editIncomeTitle": "Edit Income",
+    "@editIncomeTitle": {
+        "description": "Title for the add income screen"
+    },
+    "editIncomeButton": "✨ Edit Income",
+    "@editIncomeButton": {
+        "description": "Button text to confirm edit income"
+    },
+    "editExpenseTitle": "Edit Expense",
+    "@editExpenseTitle": {
+        "description": "Title for the add income screen"
+    },
+    "editExpenseButton": "✨ Edit Expense",
+    "@editExpenseButton": {
+        "description": "Button text to confirm edit expense"
+    },
+
+
+
     "categories": "Categories",
     "@categories": {
         "description": "Title of the categories screen"
@@ -300,6 +373,9 @@
     "@categoriesSearchHint": {
         "description": "Placeholder text for the category search input field"
     },
+
+
+
     "addNewCategory": "Add New Category",
     "@addNewCategory": {
         "description": "Title of the add new category screen"
@@ -340,6 +416,25 @@
     "@createCategoryButton": {
         "description": "Button text to create a new category"
     },
+    "addCategorySuccess": "Category added successfully",
+    "@addCategorySuccess": {
+        "description": "Success message when a new category is added"
+    },
+
+
+
+    "transactions": "Transactions",
+    "@transactions": {
+        "description": "Title of the transactions screen"
+    },
+    "transactionsSearchHint": "Search Transactions ...",
+    "@transactionsSearchHint": {
+        "description": "Placeholder text for the transaction search input field"
+    },
+
+
+
+
     "settings": "Settings",
     "@settings": {
         "description": "Title of the settings screen"
@@ -360,16 +455,16 @@
     "@general": {
         "description": "Label for the general section in settings"
     },
-    "Notifications": "Notifications",
-    "@Notifications": {
+    "notifications": "Notifications",
+    "@notifications": {
         "description": "Label for the notifications section in settings"
     },
     "notificationsHint": "Manage your notification",
     "@notificationsHint": {
         "description": "Subtitle for the notifications section in settings"
     },
-    "PrivacyPolicy": "Privacy Policy",
-    "@PrivacyPolicy": {
+    "privacyPolicy": "Privacy Policy",
+    "@privacyPolicy": {
         "description": "Label for the privacy policy section in settings"
     },
     "privacyPolicyHint": "Review our privacy practices",
@@ -384,6 +479,9 @@
     "@supportHint": {
         "description": "Subtitle for the support section in settings"
     },
+
+
+
     "privacySecurityTitle": "Privacy and Security",
     "@privacySecurityTitle": {
         "description": "Title for the privacy and security screen"
@@ -448,6 +546,9 @@
     "@privacySecurityFooter": {
         "description": "Footer text for the privacy and security screen"
     },
+
+
+
     "contactUsTitle": "Contact Us",
     "@contactUsTitle": {
         "description": "Title for the contact us section in support"

@@ -1,18 +1,21 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:daftarni/features/layout/presentation/pages/widgets/List/categories.dart';
-
 import 'layout_states.dart';
 import 'package:intl/intl.dart';
 import '../../../../const/data.dart';
 import 'package:flutter/material.dart';
+import '../../../../generated/l10n.dart';
 import '../../data/repo/layout_repo.dart';
 import '../../data/models/category_model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../data/models/transaction_model.dart';
+import '../../../../core/widgets/custom_text.dart';
 import '../../../splash/data/models/data_model.dart';
+import '../../../../core/utils/navigator_methods.dart';
 import '../../../splash/data/models/balance_model.dart';
 import '../../../../core/services/service_locator.dart';
+import '../pages/views/add transaction/add_income_view.dart';
+import '../pages/views/add transaction/add_expense_view.dart';
 
 class LayoutCubit extends Cubit<LayoutStates> {
   final LayoutRepo layoutRepo;
@@ -23,13 +26,22 @@ class LayoutCubit extends Cubit<LayoutStates> {
   }
   static LayoutCubit get(context) => BlocProvider.of(context);
 
-  // General Data
+  /// 1. General Variables ///
+  /// 2. General Methods ///
+  /// 3. Add Transaction Data ///
+  /// 4. Add Transaction Methods ///
+  /// 5. Edit Transaction Data ///
+  /// 6. Edit Transaction Method ///
+  /// 7. Delete Transaction Method ///
+  /// 8. Add Category Data ///
+  /// 9. Add Category Methods ///
+
+  /// 1. General Variables ///
+
   DataModel get data => ServiceLocator.getDataModel();
+  bool loadingCategories = true;
+  bool loadingTransactions = true;
 
-  bool isLoadingCategory = true;
-  bool isLoadingTransaction = true;
-
-  // Category Data
   List<CategoryModel> categories = [
     ...incomeCategoriesData,
     ...expenseCategoriesData,
@@ -37,62 +49,116 @@ class LayoutCubit extends Cubit<LayoutStates> {
   List<CategoryModel> incomeCategories = [...incomeCategoriesData];
   List<CategoryModel> expenseCategories = [...expenseCategoriesData];
 
-  // Transaction Data
   List<TransactionModel> transactions = [];
   List<TransactionModel> incomeTransactions = [];
   List<TransactionModel> expenseTransactions = [];
 
-  // General Methods
+  /// 2. General Methods ///
+
   void setData() {
     setCategories();
     setTransactions();
   }
 
   void setCategories() {
+    categories = [...categories, ...data.categories];
     for (var element in data.categories) {
-      categories.add(element);
       if (element.type == incomeType) {
         incomeCategories.add(element);
       } else {
         expenseCategories.add(element);
       }
     }
-    isLoadingCategory = false;
+    loadingCategories = false;
     emit(SetState());
   }
 
   void setTransactions() {
-    transactions = data.transactions;
-    for (var element in data.transactions) {
+    transactions = data.transactions.toList();
+    transactions.sort((a, b) => b.time.compareTo(a.time));
+
+    incomeTransactions.clear();
+    expenseTransactions.clear();
+
+    for (var element in transactions) {
       if (element.type == incomeType) {
         incomeTransactions.add(element);
       } else {
         expenseTransactions.add(element);
       }
     }
-    isLoadingTransaction = false;
+
+    loadingTransactions = false;
     emit(SetState());
   }
-  //// Add Transaction Data ////
 
-  bool emptyAddData = true;
-  int transactionCategory = 0;
+  Widget setTransactionCardValue({
+    required String type,
+    required double value,
+  }) {
+    String valueText;
+    MaterialColor color;
+    if (type == incomeType) {
+      valueText = "+\$$value";
+      color = Colors.green;
+    } else {
+      valueText = "-\$$value";
+      color = Colors.red;
+    }
+    return CustomText(
+      isHead: true,
+      title: valueText,
+      fontColor: color,
+      fontSize: 15,
+    );
+  }
+
+  Widget setTransactionCardTime({required S s, required DateTime time}) {
+    String date = '';
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    final yesterday = today.subtract(const Duration(days: 1));
+    final messageDate = DateTime(time.year, time.month, time.day);
+
+    if (messageDate == today) {
+      date = s.today;
+    } else if (messageDate == yesterday) {
+      date = s.yesterday;
+    } else if (messageDate == yesterday) {
+    } else {
+      date = DateFormat('MMM d, yyyy').format(time);
+    }
+
+    return CustomText(isHead: true, title: date, fontSize: 15);
+  }
+
+  bool isSameDay({required DateTime first, required DateTime secound}) {
+    return first.year == secound.year &&
+        first.month == secound.month &&
+        first.day == secound.day;
+  }
+
+  /// 3. Add Transaction Data ///
+
+  int transactionCategoryIndex = 0;
+  bool loadingAddTransaction = false;
+  bool addingTransactionEmpty = true;
   var transactionDate = DateTime.now();
-  var transactionValue = TextEditingController();
-  var transactionBrief = TextEditingController();
+  var addTransactionValue = TextEditingController();
+  var addTransactionBrief = TextEditingController();
 
-  //// Transaction Methods ////
+  /// 4. Add Transaction Methods ///
 
-  void addValidate() {
-    var value = double.tryParse(transactionValue.text) ?? 0;
+  void addTransactionValidate() {
+    var value = double.tryParse(addTransactionValue.text) ?? 0;
     if (value == 0) {
-      if (!emptyAddData) {
-        emptyAddData = true;
+      if (!addingTransactionEmpty) {
+        addingTransactionEmpty = true;
         emit(SetState());
       }
     } else {
-      if (emptyAddData) {
-        emptyAddData = false;
+      if (addingTransactionEmpty) {
+        addingTransactionEmpty = false;
         emit(SetState());
       }
     }
@@ -108,17 +174,20 @@ class LayoutCubit extends Cubit<LayoutStates> {
   }
 
   void setTransactionCategory(int index) {
-    transactionCategory = index;
+    transactionCategoryIndex = index;
+    addTransactionValidate();
     emit(SetState());
   }
 
   void setTransactionDate(DateTime date) {
     transactionDate = date;
+    addTransactionValidate();
+
     emit(SetState());
   }
 
   void validateValue({required bool isExpense}) {
-    var value = double.parse(transactionValue.text);
+    var value = double.parse(addTransactionValue.text);
     if (isExpense && value > data.profile.balance.currentBalance) {
       emit(LowValueState());
       return;
@@ -139,10 +208,7 @@ class LayoutCubit extends Cubit<LayoutStates> {
         profile: r.profile,
         transactions: r.transactions,
       );
-      transactions.add(r.transactions.last);
-      isIncome
-          ? incomeTransactions.add(r.transactions.last)
-          : expenseTransactions.add(r.transactions.last);
+      addTransactionSorted(transaction);
       emit(AddDataState());
     });
   }
@@ -157,60 +223,243 @@ class LayoutCubit extends Cubit<LayoutStates> {
     return BalanceModel.setData(income: income, expense: expense);
   }
 
-  TransactionModel setTransactionModel({required bool isIncome}) {
+  TransactionModel setTransactionModel({required bool isIncome, String? id}) {
     final category =
         isIncome
-            ? incomeCategories[transactionCategory]
-            : expenseCategories[transactionCategory];
+            ? incomeCategories[transactionCategoryIndex]
+            : expenseCategories[transactionCategoryIndex];
 
-    return TransactionModel.withoutId(
+    return TransactionModel(
+      id: id ?? transactions.length.toString(),
       userId: data.profile.id,
       type: isIncome ? incomeType : expenseType,
-      value: double.parse(transactionValue.text),
+      value: double.parse(addTransactionValue.text),
       category: category,
       time: transactionDate,
-      notes: transactionBrief.text,
+      notes: addTransactionBrief.text,
     );
   }
 
+  void addTransactionSorted(TransactionModel newTransaction) {
+    int index = transactions.indexWhere(
+      (t) => newTransaction.time.isAfter(t.time),
+    );
+    if (index == -1) {
+      transactions.add(newTransaction);
+    } else {
+      transactions.insert(index, newTransaction);
+    }
+    if (newTransaction.type == incomeType) {
+      incomeTransactions.insert(
+        incomeTransactions
+            .indexWhere((t) => newTransaction.time.isAfter(t.time))
+            .clamp(0, incomeTransactions.length),
+        newTransaction,
+      );
+    } else {
+      expenseTransactions.insert(
+        expenseTransactions
+            .indexWhere((t) => newTransaction.time.isAfter(t.time))
+            .clamp(0, expenseTransactions.length),
+        newTransaction,
+      );
+    }
+  }
+
   void clearTransactionData() {
-    transactionCategory = 1;
+    transactionCategoryIndex = 0;
     transactionDate = DateTime.now();
-    transactionValue.clear();
-    transactionBrief.clear();
+    addTransactionValue.clear();
+    addTransactionBrief.clear();
     emit(SetState());
   }
 
-  /// Add Category Data ///
-  bool addCategoryValidateD = true;
-  int addCategoryType = 0;
+  /// 5. Edit Transaction Data ///
+  bool editingIncome = true;
+  late TransactionModel oldEditingTransactionModel;
+
+  /// 6. Edit Transaction Method ///
+
+  void setEditViewData({
+    required BuildContext context,
+    required TransactionModel transaction,
+  }) {
+    loadingAddTransaction = false;
+    addingTransactionEmpty = true;
+    oldEditingTransactionModel = transaction;
+    editingIncome = transaction.category.type == incomeType;
+    var index = setEditTransactionCategoryIndex(category: transaction.category);
+    transactionCategoryIndex = index;
+    transactionDate = transaction.time;
+    addTransactionValue = doubleToController(transaction.value);
+    addTransactionBrief = TextEditingController(text: transaction.notes);
+    if (editingIncome) {
+      NavTo.push(context: context, nextPage: AddIncomeView(isEditing: true));
+    } else {
+      NavTo.push(context: context, nextPage: AddExpenseView(isEditing: true));
+    }
+  }
+
+  int setEditTransactionCategoryIndex({required CategoryModel category}) {
+    var index = 0;
+    if (editingIncome) {
+      index = incomeCategories.indexWhere(
+        (element) => element.id == category.id,
+      );
+    } else {
+      index = expenseCategories.indexWhere(
+        (element) => element.id == category.id,
+      );
+    }
+    return index;
+  }
+
+  TextEditingController doubleToController(double value) {
+    final text =
+        value % 1 == 0 ? value.toInt().toString() : value.toStringAsFixed(2);
+
+    return TextEditingController(text: text);
+  }
+
+  void editTransactons() async {
+    emit((LayoutLoading()));
+    String oldId = oldEditingTransactionModel.id;
+    setEditingTransactions(oldId: oldId);
+    var newTransaction = setTransactionModel(
+      isIncome: editingIncome,
+      id: oldId,
+    );
+    var data = await layoutRepo.updateTransactions(
+      balance: setNewEditingBalanceModel(),
+      transactions: [...transactions, newTransaction],
+    );
+    data.fold(
+      (l) {
+        emit(LayoutFailure(l.errMessage));
+      },
+      (r) {
+        ServiceLocator.updateDataModel(
+          profile: r.profile,
+          transactions: r.transactions,
+        );
+        addTransactionSorted(newTransaction);
+        emit(EditSuccesState());
+        if (filterOpening) {
+          applyFilter(isSorting: true);
+        }
+        if (searchOpening) {
+          search();
+        }
+      },
+    );
+  }
+
+  void setEditingTransactions({required String oldId}) {
+    transactions.removeWhere((element) => element.id == oldId);
+    if (editingIncome) {
+      incomeTransactions.removeWhere((element) => element.id == oldId);
+    } else {
+      expenseTransactions.removeWhere((element) => element.id == oldId);
+    }
+  }
+
+  BalanceModel setNewEditingBalanceModel() {
+    var balanceData = data.profile.balance;
+    var value = double.parse(addTransactionValue.text);
+    if (oldEditingTransactionModel.type == incomeType) {
+      balanceData = balanceData.copyWith(
+        income: (balanceData.income - oldEditingTransactionModel.value) + value,
+      );
+    } else {
+      balanceData = balanceData.copyWith(
+        expense:
+            (balanceData.expense - oldEditingTransactionModel.value) + value,
+      );
+    }
+    var newBalance = BalanceModel.setData(
+      income: balanceData.income,
+      expense: balanceData.expense,
+    );
+    return newBalance;
+  }
+
+  /// 7. Delete Transaction Method ///
+
+  void deleteTransaction(TransactionModel transaction) async {
+    emit((LayoutLoading()));
+    transactions.removeWhere((t) => t.id == transaction.id);
+    var data = await layoutRepo.updateTransactions(
+      balance: setNewDeletingBalanceModel(transaction: transaction),
+      transactions: transactions,
+    );
+    data.fold((l) => emit(LayoutFailure(l.errMessage)), (r) {
+      ServiceLocator.updateDataModel(
+        profile: r.profile,
+        transactions: r.transactions,
+      );
+      transactions = r.transactions;
+      setNewDeletingTransactions(transaction: transaction);
+      emit(DeleteSuccessState());
+    });
+  }
+
+  BalanceModel setNewDeletingBalanceModel({
+    required TransactionModel transaction,
+  }) {
+    var balanceData = data.profile.balance;
+    var value = transaction.value;
+    if (transaction.type == incomeType) {
+      balanceData = balanceData.copyWith(income: (balanceData.income - value));
+    } else {
+      balanceData = balanceData.copyWith(
+        expense: (balanceData.expense - value),
+      );
+    }
+    var newBalance = BalanceModel.setData(
+      income: balanceData.income,
+      expense: balanceData.expense,
+    );
+    return newBalance;
+  }
+
+  void setNewDeletingTransactions({required TransactionModel transaction}) {
+    if (transaction.type == incomeType) {
+      incomeTransactions.removeWhere((t) => t.id == transaction.id);
+    } else {
+      expenseTransactions.removeWhere((t) => t.id == transaction.id);
+    }
+    if (filterOpening) {
+      filterTransactions.removeWhere((t) => t.id == transaction.id);
+    }
+    if (searchOpening) {
+      searchTransactions.removeWhere((t) => t.id == transaction.id);
+    }
+  }
+
+  /// 8. Add Category Data ///
+
+  IconData? categoryIcon;
   String? categoryIconHint;
-  var addCategoryLoading = false;
+  bool loadingAddCategory = false;
+  bool addingCategoryEmpty = false;
   int categoryColor = Colors.blue.value;
   var categoryTitle = TextEditingController();
-  IconData? categoryIcon;
 
-  /// Add Category Methods ///
+  /// 9. Add Category Methods ///
 
   void addCategoryValidateFunc() {
     var title = categoryTitle.text;
     if (title.isEmpty || categoryIcon == null) {
-      if (!addCategoryValidateD) {
-        addCategoryValidateD = true;
+      if (!addingCategoryEmpty) {
+        addingCategoryEmpty = true;
         emit(SetState());
       }
     } else {
-      if (addCategoryValidateD) {
-        addCategoryValidateD = false;
+      if (addingCategoryEmpty) {
+        addingCategoryEmpty = false;
         emit(SetState());
       }
     }
-  }
-
-  void changeAddCategoryType(int type) {
-    addCategoryType = type;
-    addCategoryValidateFunc();
-    emit(SetState());
   }
 
   void changeCategoryIcon(IconData icon, String hint) {
@@ -226,24 +475,27 @@ class LayoutCubit extends Cubit<LayoutStates> {
     emit(SetState());
   }
 
-  void addCategory() async {
+  void addCategory({required bool isIncome}) async {
     emit(LayoutLoading());
-    var categoriesData = setCategoryModel();
+    var categoriesData = setCategoryModel(isIncome: isIncome);
     var data = await layoutRepo.updateCategories(categories: categoriesData);
     data.fold((l) => emit(LayoutFailure(l.errMessage)), (r) {
       ServiceLocator.updateDataModel(categories: r.categories);
       categories.add(r.categories.last);
-      if (addCategoryType == 0) {
+      var index = 0;
+      if (isIncome) {
+        index = incomeCategories.length;
         incomeCategories.add(r.categories.last);
       } else {
+        index = expenseCategories.length;
         expenseCategories.add(r.categories.last);
       }
-      emit(AddDataState());
+      emit(AddCategorySuccesState(index: index));
     });
   }
 
-  List<CategoryModel> setCategoryModel() {
-    String type = addCategoryType == 0 ? incomeType : expenseType;
+  List<CategoryModel> setCategoryModel({required bool isIncome}) {
+    String type = isIncome ? incomeType : expenseType;
     var category = CategoryModel.newCategory(
       icon: categoryIcon!,
       title: List.generate(2, (index) => categoryTitle.text),
@@ -255,93 +507,166 @@ class LayoutCubit extends Cubit<LayoutStates> {
   }
 
   void clearAddCategoryData() {
-    addCategoryType = 0;
     categoryTitle.clear();
     categoryIcon = null;
     categoryIconHint = null;
-    addCategoryValidateD = true;
+    addingCategoryEmpty = true;
     categoryColor = Colors.blue.value;
     emit(SetState());
   }
 
-  /// Search Data ///
-  String filterText = "";
-  bool searchingOpen = false;
-  bool filteringOpen = false;
-  int filterCategoryType = 0;
-  var searchText = TextEditingController();
-  List<CategoryModel> searchCategories = [];
-  List<CategoryModel> filterCategories = [];
+  /// 10. Search Data ///
 
-  /// Categories Methods ///
-  ///
+  bool searchOpening = false;
+  var searchController = TextEditingController();
+  List<TransactionModel> searchTransactions = [];
 
-  void serachCategoriesData() {
-    searchState();
-    searchCategories.clear();
-    var langId = data.preferences.langI;
-    var value = searchText.text.toLowerCase();
-    var categoriesData = filteringOpen ? filterCategories : categories;
-    searchCategories =
-        categoriesData
-            .where(
-              (element) => element.title[langId].toLowerCase().contains(value),
-            )
-            .toList();
-    emit(SetState());
-  }
+  /// 11. Search Methods ///
 
-  void searchState() {
-    var value = searchText.text;
+  void searchChange({required String value}) {
     if (value.isEmpty) {
-      if (searchingOpen) {
-        searchingOpen = false;
+      if (searchOpening) {
+        searchOpening = false;
         emit(SetState());
       }
     } else {
-      if (!searchingOpen) {
-        searchingOpen = true;
+      if (!searchOpening) {
+        searchOpening = true;
         emit(SetState());
       }
     }
   }
 
-  void clearSearchData() {
-    searchText.clear();
-    searchCategories.clear();
-    searchingOpen = false;
+  void search() {
+    String value = searchController.text.trim();
+    searchChange(value: value);
+    searchTransactions.clear();
+    var ttransactions = filterOpening ? filterTransactions : transactions;
+    for (var transaction in ttransactions) {
+      if (transaction.category.title.any(
+            (element) =>
+                element.toLowerCase().trim().contains(value.toLowerCase()),
+          ) ||
+          transaction.notes.toLowerCase().trim().contains(
+            value.toLowerCase(),
+          )) {
+        searchTransactions.add(transaction);
+      }
+    }
     emit(SetState());
   }
 
-  /// Filter Methods ///
-  void changeFilterType(int type) {
-    filterCategoryType = type;
+  void clearSearch() {
+    searchOpening = false;
+    searchController.clear();
     emit(SetState());
   }
 
-  void filterCategoriesFunc() {
-    filteringOpen = true;
-    filterCategories.clear();
-    switch (filterCategoryType) {
+  // 12. Filter Data
+
+  bool filterOpening = false;
+  int filterCategory = 0;
+
+  DateTime generalStartFilterDate = DateTime.now();
+  DateTime generalEndFilterDate = DateTime.now();
+
+  DateTime startFilterDate = DateTime.now();
+  DateTime endFilterDate = DateTime.now();
+  List<TransactionModel> filterTransactions = [];
+
+  // 13.Filter Methods
+
+  void setFilterView() {
+    filterCategory = 0;
+    filterOpening = false;
+    searchOpening = false;
+    searchController.clear();
+    if (transactions.isEmpty) {
+      startFilterDate = DateTime.now();
+      endFilterDate = DateTime.now();
+      generalStartFilterDate = DateTime.now();
+      generalEndFilterDate = DateTime.now();
+    } else {
+      var data = transactions;
+      endFilterDate = data.first.time;
+      startFilterDate = data.last.time;
+      generalEndFilterDate = data.first.time;
+      generalStartFilterDate = data.last.time;
+    }
+  }
+
+  void setFilterCategory({required int index}) {
+    filterCategory = index;
+    emit(SetState());
+  }
+
+  void setFilterDate({required int index, required DateTime date}) {
+    if (index == 0) {
+      startFilterDate = date;
+    } else {
+      endFilterDate = date;
+    }
+    emit(SetState());
+  }
+
+  String setFilterDateTitle({required S s, required DateTime time}) {
+    String date = '';
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    final yesterday = today.subtract(const Duration(days: 1));
+    final messageDate = DateTime(time.year, time.month, time.day);
+
+    if (messageDate == today) {
+      date = s.today;
+    } else if (messageDate == yesterday) {
+      date = s.yesterday;
+    } else if (messageDate == yesterday) {
+    } else {
+      date = DateFormat('MMM d, yyyy').format(time);
+    }
+
+    return date;
+  }
+
+  void applyFilter({bool isSorting = true}) {
+    filterOpening = true;
+    switch (filterCategory) {
       case 0:
-        filterCategories = [...categories];
+        filterTransactions = transactions;
         break;
       case 1:
-        filterCategories = [...incomeCategories];
+        filterTransactions = incomeTransactions;
         break;
       case 2:
-        filterCategories = [...expenseCategories];
+        filterTransactions = expenseTransactions;
         break;
       default:
+        filterTransactions = transactions;
     }
-    emit(FilterState());
+    filterTransactions =
+        filterTransactions.where((element) {
+          final date = element.time;
+
+          final afterStart =
+              isSameDay(first: date, secound: startFilterDate) ||
+              date.isAfter(startFilterDate);
+
+          final beforeEnd =
+              isSameDay(first: date, secound: endFilterDate) ||
+              date.isBefore(endFilterDate);
+
+          return afterStart && beforeEnd;
+        }).toList();
+    if (!isSorting) {
+      filterTransactions.sort((a, b) => b.time.compareTo(a.time));
+    }
+    emit(SetState());
   }
 
-  void clearFilterData() {
-    filterText = "";
-    filteringOpen = false;
-    filterCategoryType = 0;
-    filterCategories.clear();
+  void clearFilter() {
+    setFilterView();
+    filterOpening = false;
+    filterCategory = 0;
     emit(SetState());
   }
 }

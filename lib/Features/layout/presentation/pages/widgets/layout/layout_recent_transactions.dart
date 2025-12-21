@@ -1,7 +1,10 @@
+import '../list/transactions.dart';
 import 'package:flutter/material.dart';
-import '../../../../../../core/utils/empty.dart';
+import '../../../manager/layout_cubit.dart';
 import '../../../../../../../generated/l10n.dart';
+import '../../views/recent_transactions_view.dart';
 import '../../../../../../../core/widgets/custom_text.dart';
+import '../../../../../../core/utils/navigator_methods.dart';
 
 class LayoutRecentTransactions extends StatelessWidget {
   const LayoutRecentTransactions({super.key});
@@ -9,6 +12,7 @@ class LayoutRecentTransactions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var s = S.of(context);
+    var cubit = LayoutCubit.get(context);
     return Column(
       children: [
         Row(
@@ -16,7 +20,13 @@ class LayoutRecentTransactions extends StatelessWidget {
           children: [
             CustomText(isHead: true, title: s.recentTransactions, fontSize: 22),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                cubit.setFilterView();
+                NavTo.push(
+                  context: context,
+                  nextPage: RecentTransactionsView(),
+                );
+              },
               child: CustomText(
                 isHead: true,
                 title: "${s.viewAll} >",
@@ -26,7 +36,8 @@ class LayoutRecentTransactions extends StatelessWidget {
             ),
           ],
         ),
-        Empty(state: EState.home),
+        SizedBox(height: 10),
+        Transactions(recentTransaction: true),
       ],
     );
   }

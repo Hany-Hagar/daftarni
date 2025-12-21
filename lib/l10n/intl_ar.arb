@@ -14,6 +14,55 @@
     "@close": {
         "description": "نص زر لإغلاق مربع الحوار"
     },
+    "date": "التاريخ",
+    "@date": {
+        "description": "تسمية اختيار التاريخ"
+    },
+    "selectDate": "اختر التاريخ",
+    "@selectDate": {
+        "description": "تسمية حقل اختيار التاريخ"
+    },
+    "startDate":"تاريخ البدء",
+    "@startDate": {
+        "description": "تسمية اختيار تاريخ البدء"
+    },
+    "endDate":"تاريخ الانتهاء",
+    "@endDate": {
+        "description": "تسمية اختيار تاريخ الانتهاء"
+    },
+    "today": "اليوم",
+    "@today": {
+        "description": "تسمية لزر اليوم"
+    },
+    "yesterday": "الأمس",
+    "@yesterday": {
+        "description": "تسمية لزر الأمس"
+    },
+    "delete":"حذف",
+    "@delete":{
+        "description": "نص زر لحذف عنصر"
+    },
+    "deleteDialogTitle": "تأكيد الحذف",
+    "@deleteDialogTitle" : {
+        "description": ""
+    },
+    "deleteDialogContent": "هل أنت متأكد أنك تريد الحذف؟",
+    "@deleteDialogContent":{
+        "description": ""
+    },
+    "deleteStateSuccess": "تم الحذف بنجاح",
+     "@deleteStateSuccess" : {
+        "description": ""
+    },
+    "deleteStateFailure":"فشلت عملية الحذف",
+    "@deleteStateFailure" : {
+        "description": ""
+    },
+    "editStateSuccess": "تم التعديل بنجاح",
+    "@editStateSuccess" : {
+        "description": ""
+    },
+
 
 
 
@@ -143,12 +192,12 @@
     "@salaryDayHint": {
         "description": "نص العنصر النائب لحقل إدخال يوم الراتب"
     },
-    "SideIncome": "دخل جانبي",
-    "@SideIncome": {
+    "sideIncome": "دخل جانبي",
+    "@sideIncome": {
         "description": "تسمية حقل إدخال الدخل الجانبي"
     },
-    "Optional": "اختياري",
-    "@Optional": {
+    "optional": "اختياري",
+    "@optional": {
         "description": "تسمية الحقل الاختياري"
     },
     "sideIncomeHint": "أدخل دخلك الجانبي",
@@ -159,8 +208,8 @@
     "@appSettings": {
         "description": "عنوان شاشة الإعدادات"
     },
-    "Theme": "المظهر",
-    "@Theme": {
+    "theme": "المظهر",
+    "@theme": {
         "description": "تسمية قسم اختيار المظهر"
     },
     "lightTheme": "الوضع الفاتح",
@@ -210,7 +259,7 @@
     "@viewDetailedReport": {
         "description": "نص زر عرض التقرير التفصيلي في الصفحة الرئيسية"
     },
-        "quickActions": "الإجراءات السريعة",
+    "quickActions": "الإجراءات السريعة",
     "@quickActions": {
         "description": "عنوان قسم الإجراءات السريعة في الصفحة الرئيسية"
     },
@@ -244,14 +293,6 @@
     "chooseCategory": "اختر الفئة",
     "@chooseCategory": {
         "description": "عنوان شاشة اختيار الفئة"
-    },
-    "date": "التاريخ",
-    "@date": {
-        "description": "تسمية اختيار التاريخ"
-    },
-    "selectDate": "اختر التاريخ",
-    "@selectDate": {
-        "description": "تسمية حقل اختيار التاريخ"
     },
     "notesOptional": "ملاحظات (اختياري)",
     "@notesOptional": {
@@ -307,6 +348,24 @@
     },
 
 
+    "editIncomeTitle": "تعديل الدخل",
+    "@editIncomeTitle": {
+        "description": "العنوان الرئيسي لشاشة تعديل دخل"
+    },
+    "editIncomeButton": "✨ تعديل الدخل",
+    "@editIncomeButton": {
+        "description": "نص زر لتأكيد تعديل الدخل"
+    },
+    "editExpenseTitle": "تعديل المصروف",
+    "@editExpenseTitle": {
+        "description": "العنوان الرئيسي لشاشة تعديل المصروف"
+    },
+    "editExpenseButton": "✨ تعديل المصروف",
+    "@editExpenseButton": {
+        "description": "نص زر لتأكيد تعديل مصروف"
+    },
+
+
 
     "categories": "الفئات",
     "@categories": {
@@ -359,6 +418,19 @@
     "@createCategoryButton": {
         "description": "نص زر لإنشاء فئة جديدة"
     },
+    "addCategorySuccess": "تمت إضافة الفئة بنجاح",
+    "@addCategorySuccess": {
+        "description": "رسالة النجاح عند إضافة فئة جديدة"
+    },
+
+    "transactions": "المعاملات",
+    "@transactions": {
+        "description": "عنوان شاشة المعاملات"
+    },
+    "transactionsSearchHint": "ابحث في المعاملات ...",
+    "@transactionsSearchHint": {
+        "description": "نص العنصر النائب لحقل البحث في المعاملات"
+    },
 
 
 
@@ -382,16 +454,16 @@
     "@general": {
         "description": "تسمية القسم العام في الإعدادات"
     },
-    "Notifications": "الإشعارات",
-    "@Notifications": {
+    "notifications": "الإشعارات",
+    "@notifications": {
         "description": "تسمية قسم الإشعارات في الإعدادات"
     },
     "notificationsHint":"إدارة تفضيلات الاشعارات",
     "@notificationsHint": {
         "description": "العنوان الفرعي لقسم الإشعارات في الإعدادات"
     },
-    "PrivacyPolicy": "سياسة الخصوصية",
-    "@PrivacyPolicy": {
+    "privacyPolicy": "سياسة الخصوصية",
+    "@privacyPolicy": {
         "description": "تسمية قسم سياسة الخصوصية في الإعدادات"
     },
     "privacyPolicyHint":"راجع ممارسات الخصوصية ",

@@ -168,6 +168,10 @@ class _CustomProgress extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
+    var color =
+        progress > 1
+            ? const Color.fromARGB(192, 244, 67, 54)
+            : const Color.fromARGB(189, 52, 199, 89);
     return Stack(
       alignment: Alignment.center,
       children: [
@@ -178,7 +182,7 @@ class _CustomProgress extends StatelessWidget {
         CircularProgressIndicator(
           value: progress,
           strokeWidth: (size + 8).r,
-          color: const Color.fromARGB(189, 52, 199, 89),
+          color: color,
           backgroundColor: fontColor.withOpacity(0.2),
         ),
         CustomText(

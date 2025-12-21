@@ -11,7 +11,7 @@ import '../../../../../../core/widgets/custom_text.dart';
 import '../../../../../../core/widgets/nav_pop_icon.dart';
 import '../../../../../../core/utils/dialog_services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../widgets/transaction/add_transaction_body.dart';
+import '../../widgets/add transaction/add_transaction_body.dart';
 
 class AddTransactionsView extends StatelessWidget {
   final bool isIncome;
@@ -21,7 +21,7 @@ class AddTransactionsView extends StatelessWidget {
   final String amountTitle;
   final List<CategoryModel> categories;
   final String buttonTitle;
-
+  final bool isEditing;
   const AddTransactionsView({
     super.key,
     required this.isIncome,
@@ -31,14 +31,11 @@ class AddTransactionsView extends StatelessWidget {
     required this.categories,
     required this.amountTitle,
     required this.buttonTitle,
+    required this.isEditing,
   });
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      LayoutCubit.get(context).clearTransactionData();
-    });
-
     return BlocListener<LayoutCubit, LayoutStates>(
       listener: (context, state) {
         final s = S.of(context);
@@ -71,6 +68,7 @@ class AddTransactionsView extends StatelessWidget {
             categories: categories,
             amountTitle: amountTitle,
             buttonTitle: buttonTitle,
+            isEditing: isEditing,
           ),
         ),
       ),

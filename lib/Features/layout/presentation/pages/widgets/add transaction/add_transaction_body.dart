@@ -18,6 +18,7 @@ class AddTransactionBody extends StatelessWidget {
   final String amountTitle;
   final List<CategoryModel> categories;
   final String buttonTitle;
+  final bool isEditing;
   const AddTransactionBody({
     super.key,
     required this.isIncome,
@@ -25,6 +26,7 @@ class AddTransactionBody extends StatelessWidget {
     required this.amountTitle,
     required this.categories,
     required this.buttonTitle,
+    required this.isEditing,
   });
 
   @override
@@ -34,7 +36,7 @@ class AddTransactionBody extends StatelessWidget {
       children: [
         SizedBox(height: 10.h),
         AddTransactionValue(amountTitle: amountTitle),
-        AddTransactionCategory(categories: categories),
+        AddTransactionCategory(incomeType: isIncome, categories: categories),
         AddTransactionDate(),
         AddTransactionBrief(brief: brief),
         BlocBuilder<LayoutCubit, LayoutStates>(
@@ -42,10 +44,14 @@ class AddTransactionBody extends StatelessWidget {
               (context, state) => Padding(
                 padding: EdgeInsets.all(10.h),
                 child: CustomLoadingButton(
-                  isEnabled: !LayoutCubit.get(context).emptyAddData,
-                  isLoading: false,
+                  isLoading: cubit.loadingAddTransaction,
+                  isEnabled: !cubit.addingTransactionEmpty,
                   title: buttonTitle,
-                  onTap: () => cubit.validateValue(isExpense: !isIncome),
+                  onTap:
+                      () =>
+                          isEditing
+                              ? cubit.editTransactons()
+                              : cubit.validateValue(isExpense: !isIncome),
                 ),
               ),
         ),

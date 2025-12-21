@@ -59,7 +59,7 @@ class _Body extends StatelessWidget {
           SettingsBodyNotifications(),
           SizedBox(height: 10.r),
           SettingsItem(
-            title: s.PrivacyPolicy,
+            title: s.privacyPolicy,
             subTitle: s.privacyPolicyHint,
             iconColor: Color(0xff22c3a1),
             leadingIcon: Icons.person_outlined,

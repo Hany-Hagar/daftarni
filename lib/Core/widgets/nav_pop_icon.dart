@@ -22,7 +22,7 @@ class NavPopIcon extends StatelessWidget {
       backgroundColor: theme.scaffoldBackgroundColor,
       mini: mini ?? true,
       onPressed: () {
-        NavTo.pop(context: context);
+        NavTo.pop(context);
         onPressed?.call();
       },
       child: Icon(

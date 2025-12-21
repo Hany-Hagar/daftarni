@@ -84,7 +84,7 @@ class _SalaryDay extends StatelessWidget {
     return SizedBox(
       height: 43.h,
       child: DropdownButtonFormField<int>(
-        value: salaryDay,
+        initialValue: salaryDay,
         menuMaxHeight: 250,
         decoration: InputDecoration(
           filled: true,

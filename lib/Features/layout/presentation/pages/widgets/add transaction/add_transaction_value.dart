@@ -25,10 +25,10 @@ class AddTransactionValue extends StatelessWidget {
         cursorHeight: 50.h,
         border: InputBorder.none,
         textAlign: TextAlign.center,
-        controller: cubit.transactionValue,
+        controller: cubit.addTransactionValue,
         keyboardType: TextInputType.number,
         backgroundColor: Colors.transparent,
-        onChanged: (p0) => cubit.addValidate(),
+        onChanged: (p0) => cubit.addTransactionValidate(),
         padding: EdgeInsets.only(bottom: 12.h),
         inputStyle: Styles.textStyle700.copyWith(
           fontSize: 60.sp,

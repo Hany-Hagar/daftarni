@@ -23,12 +23,9 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Language": MessageLookupByLibrary.simpleMessage("اللغة"),
-        "Notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
-        "Optional": MessageLookupByLibrary.simpleMessage("اختياري"),
-        "PrivacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "SalaryDay": MessageLookupByLibrary.simpleMessage("يوم الراتب"),
-        "SideIncome": MessageLookupByLibrary.simpleMessage("دخل جانبي"),
-        "Theme": MessageLookupByLibrary.simpleMessage("المظهر"),
+        "addCategorySuccess":
+            MessageLookupByLibrary.simpleMessage("تمت إضافة الفئة بنجاح"),
         "addExpenseButton":
             MessageLookupByLibrary.simpleMessage("✨ إضافة مصروف"),
         "addExpenseSubTitle":
@@ -86,8 +83,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "currentBalance": MessageLookupByLibrary.simpleMessage("الرصيد الحالي"),
         "darkTheme": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
         "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
+        "delete": MessageLookupByLibrary.simpleMessage("حذف"),
+        "deleteDialogContent": MessageLookupByLibrary.simpleMessage(
+            "هل أنت متأكد أنك تريد الحذف؟"),
+        "deleteDialogTitle":
+            MessageLookupByLibrary.simpleMessage("تأكيد الحذف"),
+        "deleteStateFailure":
+            MessageLookupByLibrary.simpleMessage("فشلت عملية الحذف"),
+        "deleteStateSuccess":
+            MessageLookupByLibrary.simpleMessage("تم الحذف بنجاح"),
+        "editExpenseButton":
+            MessageLookupByLibrary.simpleMessage("✨ تعديل المصروف"),
+        "editExpenseTitle":
+            MessageLookupByLibrary.simpleMessage("تعديل المصروف"),
+        "editIncomeButton":
+            MessageLookupByLibrary.simpleMessage("✨ تعديل الدخل"),
+        "editIncomeTitle": MessageLookupByLibrary.simpleMessage("تعديل الدخل"),
+        "editStateSuccess":
+            MessageLookupByLibrary.simpleMessage("تم التعديل بنجاح"),
         "emptyList":
             MessageLookupByLibrary.simpleMessage("لا توجد عناصر متاحة"),
+        "endDate": MessageLookupByLibrary.simpleMessage("تاريخ الانتهاء"),
         "english": MessageLookupByLibrary.simpleMessage("الإنجليزية"),
         "enterExpenseAmount":
             MessageLookupByLibrary.simpleMessage("أدخل مبلغ المصروف"),
@@ -124,6 +140,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "أضف وصفًا موجزًا أو ملاحظة حول هذا الدخل ..."),
         "notesOptional":
             MessageLookupByLibrary.simpleMessage("ملاحظات (اختياري)"),
+        "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
         "notificationsHint":
             MessageLookupByLibrary.simpleMessage("إدارة تفضيلات الاشعارات"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
@@ -142,6 +159,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "personalInfo": MessageLookupByLibrary.simpleMessage("معلومات شخصية"),
         "pickImageTitle": MessageLookupByLibrary.simpleMessage(
             "اضغط لتغيير صورة الملف الشخصي"),
+        "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "privacyPolicyHint":
             MessageLookupByLibrary.simpleMessage("راجع ممارسات الخصوصية "),
         "privacyPolicySubtitle": MessageLookupByLibrary.simpleMessage(
@@ -196,6 +214,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sideIncomeHint":
             MessageLookupByLibrary.simpleMessage("أدخل دخلك الجانبي"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "startDate": MessageLookupByLibrary.simpleMessage("تاريخ البدء"),
         "support": MessageLookupByLibrary.simpleMessage("الدعم"),
         "supportEmailHint": MessageLookupByLibrary.simpleMessage(
             "اضغط لإرسال بريد إلكتروني إلى فريق الدعم"),
@@ -211,12 +230,17 @@ class MessageLookup extends MessageLookupByLibrary {
             "اضغط للدردشة مع فريق الدعم على واتساب"),
         "supportWhatsappTitle": MessageLookupByLibrary.simpleMessage("واتساب"),
         "systemTheme": MessageLookupByLibrary.simpleMessage("وضع النظام"),
+        "today": MessageLookupByLibrary.simpleMessage("اليوم"),
+        "transactions": MessageLookupByLibrary.simpleMessage("المعاملات"),
+        "transactionsSearchHint":
+            MessageLookupByLibrary.simpleMessage("ابحث في المعاملات ..."),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "userNameHint":
             MessageLookupByLibrary.simpleMessage("أدخل اسم المستخدم الخاص بك"),
         "viewAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
         "viewDetailedReport":
             MessageLookupByLibrary.simpleMessage("عرض التقرير التفصيلي"),
-        "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك")
+        "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
+        "yesterday": MessageLookupByLibrary.simpleMessage("الأمس")
       };
 }

@@ -50,7 +50,7 @@ class NavTo {
     );
   }
 
-  static void pop({required BuildContext context}) {
+  static void pop(BuildContext context) {
     FocusScope.of(context).unfocus();
     Navigator.pop(context);
   }

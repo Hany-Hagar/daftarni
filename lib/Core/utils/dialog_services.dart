@@ -1,7 +1,11 @@
 // ignore_for_file: deprecated_member_use
 
+import 'styles.dart';
+import 'navigator_methods.dart';
+import '../../generated/l10n.dart';
 import 'package:lottie/lottie.dart';
 import '../widgets/custom_text.dart';
+import '../widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flex_color_picker/flex_color_picker.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -43,6 +47,31 @@ class DialogServices {
       context: context,
       builder: (context) => _DialogStateBody(state: state, text: message),
     );
+  }
+
+  static void showDeleteDialog({
+    required BuildContext context,
+    required Function() onTap,
+  }) {
+    showDialog(
+      context: context,
+      barrierDismissible: true,
+      barrierColor: Colors.black.withOpacity(0.4),
+      builder:
+          (context) => Dialog(
+            insetPadding: EdgeInsets.all(10),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(12.r),
+                  child: _DeleteBody(onPressed: onTap),
+                ),
+              ],
+            ),
+          ),
+    );
+    //  showCleanDialog(context: context, child: _DeleteBody(onPressed: onTap));
   }
 
   static iconPicker({required BuildContext context}) async {
@@ -141,6 +170,59 @@ class _DialogStateBody extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class _DeleteBody extends StatelessWidget {
+  final Function() onPressed;
+  const _DeleteBody({required this.onPressed});
+
+  @override
+  Widget build(BuildContext context) {
+    final s = S.of(context);
+    return Column(
+      children: [
+        SizedBox(height: 8.h),
+        Container(
+          padding: EdgeInsets.all(10.r),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: const Color.fromARGB(79, 255, 139, 128),
+          ),
+          child: Center(
+            child: Icon(Icons.warning, color: Colors.redAccent, size: 30.r),
+          ),
+        ),
+        SizedBox(height: 10.h),
+        CustomText(isHead: true, title: s.deleteDialogTitle, fontSize: 17),
+        SizedBox(height: 5.h),
+        CustomText(isHead: true, title: s.deleteDialogContent, fontSize: 17),
+        SizedBox(height: 20.h),
+        Row(
+          children: [
+            Expanded(
+              child: CustomButton(
+                icon: Icons.delete,
+                text: s.delete,
+                onPressed: onPressed,
+                backgroundColor: Styles.green,
+              ),
+            ),
+            SizedBox(width: 12.w),
+            Expanded(
+              child: CustomButton(
+                text: s.close,
+                icon: Icons.close,
+                backgroundColor: Styles.red,
+                onPressed: () {
+                  NavTo.pop(context);
+                },
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
