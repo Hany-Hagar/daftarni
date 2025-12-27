@@ -49,11 +49,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "addTransactionSuccess": MessageLookupByLibrary.simpleMessage(
             "Transaction added successfully"),
         "all": MessageLookupByLibrary.simpleMessage("All"),
+        "amount": MessageLookupByLibrary.simpleMessage("Amount"),
+        "analysisReportTitle": MessageLookupByLibrary.simpleMessage(
+            "Transactions Analysis Report"),
+        "analysisReportViewTitle":
+            MessageLookupByLibrary.simpleMessage("Transactions Report"),
         "appSettings":
             MessageLookupByLibrary.simpleMessage(" --- App Settings --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("Daftarni"),
         "apply": MessageLookupByLibrary.simpleMessage("Apply"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
+        "balanceAnalysis":
+            MessageLookupByLibrary.simpleMessage("Balance Analysis"),
         "cancle": MessageLookupByLibrary.simpleMessage("Cancel"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
         "categoriesSearchHint":
@@ -128,6 +135,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Can I permanently delete my account?"),
         "faqTitle": MessageLookupByLibrary.simpleMessage(
             "----- Frequently Asked Questions -----"),
+        "from": MessageLookupByLibrary.simpleMessage("From"),
         "general": MessageLookupByLibrary.simpleMessage("General"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
         "hi": MessageLookupByLibrary.simpleMessage("Hi"),
@@ -136,8 +144,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "lightTheme": MessageLookupByLibrary.simpleMessage("Light Theme"),
         "manageCategories":
             MessageLookupByLibrary.simpleMessage("Manage Categories"),
+        "monthlyReportButton":
+            MessageLookupByLibrary.simpleMessage("View Monthly Report"),
+        "monthlyReportTitle": MessageLookupByLibrary.simpleMessage(
+            "Monthly Transactions Report for "),
+        "monthlyReportViewTitle":
+            MessageLookupByLibrary.simpleMessage("Monthly Transactions Report"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "notSignedIn": MessageLookupByLibrary.simpleMessage("Not Signed In"),
+        "notes": MessageLookupByLibrary.simpleMessage("Notes"),
         "notesExpenseBrief": MessageLookupByLibrary.simpleMessage(
             "Add a brief description or note about this expense ..."),
         "notesIncomeBrief": MessageLookupByLibrary.simpleMessage(
@@ -236,8 +251,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "supportWhatsappTitle":
             MessageLookupByLibrary.simpleMessage("WhatsApp"),
         "systemTheme": MessageLookupByLibrary.simpleMessage("System Theme"),
+        "to": MessageLookupByLibrary.simpleMessage("To"),
         "today": MessageLookupByLibrary.simpleMessage("Today"),
+        "total": MessageLookupByLibrary.simpleMessage("Total"),
         "transactions": MessageLookupByLibrary.simpleMessage("Transactions"),
+        "transactionsAnalysis":
+            MessageLookupByLibrary.simpleMessage("Transactions Analysis"),
         "transactionsSearchHint":
             MessageLookupByLibrary.simpleMessage("Search Transactions ..."),
         "userName": MessageLookupByLibrary.simpleMessage("User Name"),
@@ -245,7 +264,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter your user name"),
         "viewAll": MessageLookupByLibrary.simpleMessage("View All"),
         "viewDetailedReport":
-            MessageLookupByLibrary.simpleMessage("View Detailed Report"),
+            MessageLookupByLibrary.simpleMessage("View Monthly Report"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back"),
         "yesterday": MessageLookupByLibrary.simpleMessage("Yesterday")
       };

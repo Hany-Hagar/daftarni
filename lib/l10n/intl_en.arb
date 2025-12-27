@@ -13,6 +13,10 @@
     "@close": {
         "description": "Button text to close the dialog"
     },
+    "amount": "Amount",
+    "@amount": {
+        "description": "Label for the amount input field"
+    },
     "date": "Date",
     "@date": {
         "description": "Label for date selection"
@@ -86,7 +90,7 @@
     },
     "expense": "Expense",
     "@expense": {
-        "description": "تسمية قسم المصروفات"
+        "description": "Label for the expense section"
     },
     "emptyList": "No items available",
     "@emptyList": {
@@ -253,9 +257,9 @@
     "@currentBalance": {
         "description": "Label for the current balance on the home screen"
     },
-    "viewDetailedReport": "View Detailed Report",
+    "viewDetailedReport": "View Monthly Report",
     "@viewDetailedReport": {
-        "description": "Text for the button to view detailed report on the home screen"
+        "description": "Text for the button to view monthly report on the home screen"
     },
     "quickActions": "Quick Actions",
     "@quickActions": {
@@ -268,6 +272,10 @@
     "recordIncome": "Record Income",
     "@recordIncome": {
         "description": "Label for the add new income quick action"
+    },
+    "transactionsAnalysis": "Transactions Analysis",
+    "@transactionsAnalysis": {
+        "description": "Label for the transactions analysis quick action"
     },
     "manageCategories": "Manage Categories",
     "@manageCategories": {
@@ -434,6 +442,57 @@
 
 
 
+    "balanceAnalysis": "Balance Analysis",
+    "@balanceAnalysis": {
+        "description": "Title for the balance analysis section"
+    },
+
+
+
+    "notes": "Notes",
+    "@notes": {
+        "description": "Label for the notes section in reports"
+    },
+    "total": "Total",
+    "@total": {
+        "description": "Label for the total field in reports"
+    },
+
+
+
+    "monthlyReportButton": "View Monthly Report",
+    "@monthlyReportButton": {
+        "description": "Text for the button to view monthly report"
+    },
+    "monthlyReportViewTitle": "Monthly Transactions Report",
+    "@monthlyReportViewTitle": {
+        "description": "Title for the monthly report screen"
+    },
+    "monthlyReportTitle": "Monthly Transactions Report for ",
+    "@monthlyReportTitle": {
+        "description": "Title for the monthly report screen"
+    },
+
+
+
+    "analysisReportViewTitle": "Transactions Report",
+    "@analysisReportViewTitle": {
+        "description": "Title for the transactions analysis report screen"
+    },
+    "analysisReportTitle": "Transactions Analysis Report",
+    "@analysisReportTitle": {
+        "description": "Title for the transactions analysis report screen"
+    },
+    "from": "From",
+    "@from": {
+        "description": "Label for the start date in reports"
+    },
+    "to": "To",
+    "@to": {
+        "description": "Label for the end date in reports"
+    },
+
+    
 
     "settings": "Settings",
     "@settings": {
@@ -609,4 +668,7 @@
     "@faqAnswer3": {
         "description": "The answer to the third question in the FAQ section"
     }
+
+
+   
 }

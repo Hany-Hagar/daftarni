@@ -162,7 +162,7 @@ class _Item extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomIcon(color: model.color, icon: model.icon.toIconData),
+            CustomIcon(color: model.color, icon: model.icon.toIconData()),
             SizedBox(height: 10.h),
             CustomText(
               isHead: true,

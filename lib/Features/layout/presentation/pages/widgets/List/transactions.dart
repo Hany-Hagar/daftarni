@@ -36,7 +36,10 @@ class Transactions extends StatelessWidget {
             ? _LoadingTransactionItems()
             : transactions.isEmpty
             ? _EmptyTransactionsItems(recentTransaction: recentTransaction)
-            : _TransactionItems(transactions: transactions);
+            : _TransactionItems(
+              recentTransaction: recentTransaction,
+              transactions: transactions,
+            );
       },
     );
   }
@@ -50,6 +53,7 @@ class _LoadingTransactionItems extends StatelessWidget {
     return CustomSkeletonizer(
       enable: true,
       child: _TransactionItems(
+        recentTransaction: false,
         transactions: List.generate(5, (index) => loadingTransactionModel),
       ),
     );
@@ -67,15 +71,22 @@ class _EmptyTransactionsItems extends StatelessWidget {
 }
 
 class _TransactionItems extends StatelessWidget {
+  final bool recentTransaction;
   final List<TransactionModel> transactions;
-  const _TransactionItems({required this.transactions});
+  const _TransactionItems({
+    required this.transactions,
+    required this.recentTransaction,
+  });
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
-      padding: EdgeInsets.zero,
-      physics: NeverScrollableScrollPhysics(),
+      padding: recentTransaction ? EdgeInsets.zero : EdgeInsets.all(12.r),
+      physics:
+          recentTransaction
+              ? NeverScrollableScrollPhysics()
+              : AlwaysScrollableScrollPhysics(),
       itemCount: transactions.length,
       itemBuilder:
           (context, index) =>
@@ -139,7 +150,7 @@ class _ItemBody extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.r)),
       leading: CustomIcon(
         color: transaction.category.color,
-        icon: transaction.category.icon.toIconData,
+        icon: transaction.category.icon.toIconData(),
       ),
       title: CustomText(
         isHead: true,

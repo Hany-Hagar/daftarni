@@ -15,7 +15,7 @@ class IconModel {
   const IconModel({required this.codePoint, this.fontFamily, this.fontPackage});
 
   /// لتحويل IconModel إلى IconData
-  IconData get toIconData =>
+  IconData toIconData() =>
       IconData(codePoint, fontFamily: fontFamily, fontPackage: fontPackage);
 
   /// تحويل من IconData إلى IconModel

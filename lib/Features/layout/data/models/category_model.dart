@@ -48,7 +48,7 @@ class CategoryModel {
   }
 
   /// Getter بيرجع IconData من IconModel
-  IconData get iconData => icon.toIconData;
+  IconData get iconData => icon.toIconData();
 
   /// Serialize CategoryModel to a Map (used by TransactionModel.toMap).
   Map<String, dynamic> toMap() => {

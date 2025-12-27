@@ -46,11 +46,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "addTransactionSuccess":
             MessageLookupByLibrary.simpleMessage("تمت إضافة المعاملة بنجاح"),
         "all": MessageLookupByLibrary.simpleMessage("الكل"),
+        "amount": MessageLookupByLibrary.simpleMessage("المبلغ"),
+        "analysisReportTitle":
+            MessageLookupByLibrary.simpleMessage("تقرير تحليل العمليات"),
+        "analysisReportViewTitle":
+            MessageLookupByLibrary.simpleMessage("تحليل العمليات"),
         "appSettings":
             MessageLookupByLibrary.simpleMessage(" --- إعدادات التطبيق --- "),
         "appTitle": MessageLookupByLibrary.simpleMessage("دفترني"),
         "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
+        "balanceAnalysis": MessageLookupByLibrary.simpleMessage("تحليل الرصيد"),
         "cancle": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "categories": MessageLookupByLibrary.simpleMessage("الفئات"),
         "categoriesSearchHint":
@@ -124,6 +130,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "هل يمكنني حذف حسابي نهائيًا؟"),
         "faqTitle": MessageLookupByLibrary.simpleMessage(
             "----- الأسئلة المتكررة -----"),
+        "from": MessageLookupByLibrary.simpleMessage("من"),
         "general": MessageLookupByLibrary.simpleMessage("عامة"),
         "getStarted": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "hi": MessageLookupByLibrary.simpleMessage("مرحبًا"),
@@ -132,8 +139,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "lightTheme": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
         "manageCategories":
             MessageLookupByLibrary.simpleMessage("إدارة الفئات"),
+        "monthlyReportButton":
+            MessageLookupByLibrary.simpleMessage("عرض التقرير الشهري"),
+        "monthlyReportTitle":
+            MessageLookupByLibrary.simpleMessage("تقرير  العمليات الشهرية  لـ"),
+        "monthlyReportViewTitle":
+            MessageLookupByLibrary.simpleMessage("تقرير العمليات الشهري "),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "notSignedIn": MessageLookupByLibrary.simpleMessage("غير مسجل الدخول"),
+        "notes": MessageLookupByLibrary.simpleMessage("الملاحظات"),
         "notesExpenseBrief": MessageLookupByLibrary.simpleMessage(
             "أضف وصفًا موجزًا أو ملاحظة حول هذا المصروف ..."),
         "notesIncomeBrief": MessageLookupByLibrary.simpleMessage(
@@ -197,7 +211,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "quickActions":
             MessageLookupByLibrary.simpleMessage("الإجراءات السريعة"),
         "recentTransactions":
-            MessageLookupByLibrary.simpleMessage("المعاملات الأخيرة"),
+            MessageLookupByLibrary.simpleMessage("العمليات الأخيرة"),
         "recordIncome": MessageLookupByLibrary.simpleMessage("تسجيل دخل"),
         "salary": MessageLookupByLibrary.simpleMessage("الراتب"),
         "salaryDayHint": MessageLookupByLibrary.simpleMessage("أدخل يوم راتبك"),
@@ -230,16 +244,20 @@ class MessageLookup extends MessageLookupByLibrary {
             "اضغط للدردشة مع فريق الدعم على واتساب"),
         "supportWhatsappTitle": MessageLookupByLibrary.simpleMessage("واتساب"),
         "systemTheme": MessageLookupByLibrary.simpleMessage("وضع النظام"),
+        "to": MessageLookupByLibrary.simpleMessage("إلى"),
         "today": MessageLookupByLibrary.simpleMessage("اليوم"),
-        "transactions": MessageLookupByLibrary.simpleMessage("المعاملات"),
+        "total": MessageLookupByLibrary.simpleMessage("المجموع"),
+        "transactions": MessageLookupByLibrary.simpleMessage("العمليات"),
+        "transactionsAnalysis":
+            MessageLookupByLibrary.simpleMessage("تحليل العمليات"),
         "transactionsSearchHint":
-            MessageLookupByLibrary.simpleMessage("ابحث في المعاملات ..."),
+            MessageLookupByLibrary.simpleMessage("ابحث في العمليات ..."),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "userNameHint":
             MessageLookupByLibrary.simpleMessage("أدخل اسم المستخدم الخاص بك"),
         "viewAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
         "viewDetailedReport":
-            MessageLookupByLibrary.simpleMessage("عرض التقرير التفصيلي"),
+            MessageLookupByLibrary.simpleMessage("عرض التقرير الشهري"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك"),
         "yesterday": MessageLookupByLibrary.simpleMessage("الأمس")
       };

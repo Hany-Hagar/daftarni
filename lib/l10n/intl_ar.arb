@@ -14,6 +14,10 @@
     "@close": {
         "description": "نص زر لإغلاق مربع الحوار"
     },
+    "amount": "المبلغ",
+    "@amount": {
+        "description": "تسمية حقل إدخال المبلغ"
+    },
     "date": "التاريخ",
     "@date": {
         "description": "تسمية اختيار التاريخ"
@@ -255,7 +259,7 @@
     "@currentBalance": {
         "description": "تسمية الرصيد الحالي في الصفحة الرئيسية"
     },
-    "viewDetailedReport": "عرض التقرير التفصيلي",
+    "viewDetailedReport": "عرض التقرير الشهري",
     "@viewDetailedReport": {
         "description": "نص زر عرض التقرير التفصيلي في الصفحة الرئيسية"
     },
@@ -271,17 +275,21 @@
     "@recordIncome": {
         "description": "تسمية إجراء سريع لتسجيل دخل جديد"
     },
+    "transactionsAnalysis": "تحليل العمليات",
+    "@transactionsAnalysis": {
+        "description": "تسمية إجراء سريع لتحليل العمليات"
+    },
     "manageCategories": "إدارة الفئات",
     "@manageCategories": {
         "description": "تسمية إجراء سريع لإدارة الفئات"
     },
-    "recentTransactions": "المعاملات الأخيرة",
+    "recentTransactions": "العمليات الأخيرة",
     "@recentTransactions": {
-        "description": "عنوان قسم المعاملات الأخيرة في الصفحة الرئيسية"
+        "description": "عنوان قسم العمليات الأخيرة في الصفحة الرئيسية"
     },
     "viewAll": "عرض الكل",
     "@viewAll": {
-        "description": "نص زر عرض جميع المعاملات"
+        "description": "نص زر عرض جميع العمليات"
     },
 
 
@@ -423,13 +431,65 @@
         "description": "رسالة النجاح عند إضافة فئة جديدة"
     },
 
-    "transactions": "المعاملات",
+    "transactions": "العمليات",
     "@transactions": {
-        "description": "عنوان شاشة المعاملات"
+        "description": "عنوان شاشة العمليات"
     },
-    "transactionsSearchHint": "ابحث في المعاملات ...",
+    "transactionsSearchHint": "ابحث في العمليات ...",
     "@transactionsSearchHint": {
-        "description": "نص العنصر النائب لحقل البحث في المعاملات"
+        "description": "نص العنصر النائب لحقل البحث في العمليات"
+    },
+
+
+
+    "balanceAnalysis": "تحليل الرصيد",
+    "@balanceAnalysis": {
+        "description": "عنوان بطاقة تحليل الرصيد"
+    },
+
+    
+
+    "notes": "الملاحظات",
+    "@notes": {
+        "description": "تسمية حقل الملاحظات في التقارير"
+    },
+    "total": "المجموع",
+    "@total": {
+        "description": "تسمية لحقل الإجمالي في التقارير"
+    },
+
+
+
+    "monthlyReportButton": "عرض التقرير الشهري",
+    "@monthlyReportButton": {
+        "description": "Text for the button to view monthly report"
+    },
+    "monthlyReportViewTitle": "تقرير العمليات الشهري ",
+    "@monthlyReportViewTitle": {
+        "description": "Title for the monthly report screen"
+    },
+    "monthlyReportTitle": "تقرير  العمليات الشهرية  لـ",
+    "@monthlyReportTitle": {
+        "description": "Title for the monthly report screen"
+    },
+
+
+
+    "analysisReportViewTitle": "تحليل العمليات",
+    "@analysisReportViewTitle": {
+        "description": "Title for the transactions analysis report screen"
+    },
+    "analysisReportTitle": "تقرير تحليل العمليات",
+    "@analysisReportTitle": {
+        "description": "عنوان شاشة تقرير تحليل العمليات"
+    },
+    "from": "من",
+    "@from": {
+        "description": "تسمية لتاريخ البدء في التقارير"
+    },
+    "to": "إلى",
+    "@to": {
+        "description": "تسمية لتاريخ الانتهاء في التقارير"
     },
 
 
@@ -608,4 +668,8 @@
     "@faqAnswer3": {
         "description": "الإجابة على السؤال الثالث في قسم الأسئلة المتكررة"
     }
+
+
+
+ 
 }

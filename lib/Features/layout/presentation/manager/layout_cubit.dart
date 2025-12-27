@@ -75,8 +75,8 @@ class LayoutCubit extends Cubit<LayoutStates> {
 
   void setTransactions() {
     transactions = data.transactions.toList();
-    transactions.sort((a, b) => b.time.compareTo(a.time));
-
+    transactions = transactions..sort((a, b) => b.time.compareTo(a.time));
+    ServiceLocator.updateDataModel(transactions: transactions);
     incomeTransactions.clear();
     expenseTransactions.clear();
 

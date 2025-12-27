@@ -1,6 +1,7 @@
 import 'theme.dart';
 import 'generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'core/services/pdf_services.dart';
 import 'core/services/hive_services.dart';
 import 'core/utils/my_bloc_observer.dart';
 import 'core/services/service_locator.dart';
@@ -18,6 +19,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   ServiceLocator.init();
   await HiveServices.init();
+  await PdfServices.init();
   Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }
@@ -25,7 +27,6 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(

@@ -80,6 +80,16 @@ class S {
     );
   }
 
+  /// `Amount`
+  String get amount {
+    return Intl.message(
+      'Amount',
+      name: 'amount',
+      desc: 'Label for the amount input field',
+      args: [],
+    );
+  }
+
   /// `Date`
   String get date {
     return Intl.message(
@@ -255,7 +265,7 @@ class S {
     return Intl.message(
       'Expense',
       name: 'expense',
-      desc: 'تسمية قسم المصروفات',
+      desc: 'Label for the expense section',
       args: [],
     );
   }
@@ -653,12 +663,12 @@ class S {
     );
   }
 
-  /// `View Detailed Report`
+  /// `View Monthly Report`
   String get viewDetailedReport {
     return Intl.message(
-      'View Detailed Report',
+      'View Monthly Report',
       name: 'viewDetailedReport',
-      desc: 'Text for the button to view detailed report on the home screen',
+      desc: 'Text for the button to view monthly report on the home screen',
       args: [],
     );
   }
@@ -689,6 +699,16 @@ class S {
       'Record Income',
       name: 'recordIncome',
       desc: 'Label for the add new income quick action',
+      args: [],
+    );
+  }
+
+  /// `Transactions Analysis`
+  String get transactionsAnalysis {
+    return Intl.message(
+      'Transactions Analysis',
+      name: 'transactionsAnalysis',
+      desc: 'Label for the transactions analysis quick action',
       args: [],
     );
   }
@@ -1062,6 +1082,106 @@ class S {
       'Search Transactions ...',
       name: 'transactionsSearchHint',
       desc: 'Placeholder text for the transaction search input field',
+      args: [],
+    );
+  }
+
+  /// `Balance Analysis`
+  String get balanceAnalysis {
+    return Intl.message(
+      'Balance Analysis',
+      name: 'balanceAnalysis',
+      desc: 'Title for the balance analysis section',
+      args: [],
+    );
+  }
+
+  /// `Notes`
+  String get notes {
+    return Intl.message(
+      'Notes',
+      name: 'notes',
+      desc: 'Label for the notes section in reports',
+      args: [],
+    );
+  }
+
+  /// `Total`
+  String get total {
+    return Intl.message(
+      'Total',
+      name: 'total',
+      desc: 'Label for the total field in reports',
+      args: [],
+    );
+  }
+
+  /// `View Monthly Report`
+  String get monthlyReportButton {
+    return Intl.message(
+      'View Monthly Report',
+      name: 'monthlyReportButton',
+      desc: 'Text for the button to view monthly report',
+      args: [],
+    );
+  }
+
+  /// `Monthly Transactions Report`
+  String get monthlyReportViewTitle {
+    return Intl.message(
+      'Monthly Transactions Report',
+      name: 'monthlyReportViewTitle',
+      desc: 'Title for the monthly report screen',
+      args: [],
+    );
+  }
+
+  /// `Monthly Transactions Report for `
+  String get monthlyReportTitle {
+    return Intl.message(
+      'Monthly Transactions Report for ',
+      name: 'monthlyReportTitle',
+      desc: 'Title for the monthly report screen',
+      args: [],
+    );
+  }
+
+  /// `Transactions Report`
+  String get analysisReportViewTitle {
+    return Intl.message(
+      'Transactions Report',
+      name: 'analysisReportViewTitle',
+      desc: 'Title for the transactions analysis report screen',
+      args: [],
+    );
+  }
+
+  /// `Transactions Analysis Report`
+  String get analysisReportTitle {
+    return Intl.message(
+      'Transactions Analysis Report',
+      name: 'analysisReportTitle',
+      desc: 'Title for the transactions analysis report screen',
+      args: [],
+    );
+  }
+
+  /// `From`
+  String get from {
+    return Intl.message(
+      'From',
+      name: 'from',
+      desc: 'Label for the start date in reports',
+      args: [],
+    );
+  }
+
+  /// `To`
+  String get to {
+    return Intl.message(
+      'To',
+      name: 'to',
+      desc: 'Label for the end date in reports',
       args: [],
     );
   }

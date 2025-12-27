@@ -8,8 +8,10 @@ import '../../../manager/layout_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../../../generated/l10n.dart';
 import '../../../../../../../core/widgets/custom_text.dart';
-import '../../../../../../../core/widgets/custom_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../../../core/utils/navigator_methods.dart';
+import '../../../../../../../core/widgets/custom_button.dart';
+import '../../../../../analysis/presentation/views/pages/download_report_view.dart';
 
 class LayoutCurrentBalance extends StatelessWidget {
   const LayoutCurrentBalance({super.key});
@@ -33,8 +35,13 @@ class LayoutCurrentBalance extends StatelessWidget {
                 _Body(fontColor: fontColor),
                 SizedBox(height: 12.h),
                 CustomButton(
-                  onPressed: () {},
-                  text: S.of(context).viewDetailedReport,
+                  onPressed: () async {
+                    NavTo.push(
+                      context: context,
+                      nextPage: DownloadReportView(),
+                    );
+                  },
+                  text: S.of(context).monthlyReportButton,
                   backgroundColor: fontColor.withOpacity(0.2),
                 ),
                 SizedBox(height: 6.h),

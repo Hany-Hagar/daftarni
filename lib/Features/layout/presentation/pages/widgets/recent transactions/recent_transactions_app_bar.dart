@@ -14,16 +14,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../../core/utils/navigator_methods.dart';
 import '../../../../../../core/widgets/text_form_field.dart';
 
-class CustomSearchAppBar extends StatelessWidget {
+class RecentTransactionsAppBar extends StatelessWidget {
   final String title;
   final String searchHint;
-  final Function()? applyPressed;
 
-  const CustomSearchAppBar({
+  const RecentTransactionsAppBar({
     super.key,
     required this.title,
     required this.searchHint,
-    required this.applyPressed,
   });
 
   @override
@@ -39,7 +37,7 @@ class CustomSearchAppBar extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: MediaQuery.of(context).padding.top + 5.h),
-          _Top(title: title, filteredApplyFunc: applyPressed),
+          _Top(title: title),
           SizedBox(height: 10.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 4.w),
@@ -62,9 +60,8 @@ class CustomSearchAppBar extends StatelessWidget {
 
 class _Top extends StatelessWidget {
   final String title;
-  final Function()? filteredApplyFunc;
 
-  const _Top({required this.title, required this.filteredApplyFunc});
+  const _Top({required this.title});
 
   @override
   Widget build(BuildContext context) {

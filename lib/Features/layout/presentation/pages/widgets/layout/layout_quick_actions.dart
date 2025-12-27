@@ -41,14 +41,29 @@ class _QuickActions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      spacing: 10.w,
-      children: List.generate(
-        2,
-        (index) => Expanded(
-          child: _QuickActionItem(model: quickActions(context: context)[index]),
+    return Column(
+      children: [
+        Row(
+          spacing: 10.w,
+          children: List.generate(
+            2,
+            (index) => Expanded(
+              child: _QuickActionItem(
+                model: quickActions(context: context)[index],
+              ),
+            ),
+          ),
         ),
-      ),
+
+        SizedBox(height: 10.h),
+
+        SizedBox(
+          width: double.infinity,
+          child: _QuickActionItem(
+            model: quickActions(context: context)[2], // Analysis مثلا
+          ),
+        ),
+      ],
     );
   }
 }
