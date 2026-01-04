@@ -1,0 +1,698 @@
+{
+    "@@locale": "ar",
+
+
+    "iconPickerTitle": "اختر أيقونة",
+    "@iconPickerTitle": {
+        "description": "عنوان مربع حوار اختيار الأيقونة"
+    },
+    "searchIcon": "ابحث عن أيقونة",
+    "@searchIcon": {
+        "description": "عنوان مربع حوار اختيار الأيقونة"
+    },
+    "close": "إغلاق",
+    "@close": {
+        "description": "نص زر لإغلاق مربع الحوار"
+    },
+    "amount": "المبلغ",
+    "@amount": {
+        "description": "تسمية حقل إدخال المبلغ"
+    },
+    "date": "التاريخ",
+    "@date": {
+        "description": "تسمية اختيار التاريخ"
+    },
+    "selectDate": "اختر التاريخ",
+    "@selectDate": {
+        "description": "تسمية حقل اختيار التاريخ"
+    },
+    "startDate":"تاريخ البدء",
+    "@startDate": {
+        "description": "تسمية اختيار تاريخ البدء"
+    },
+    "endDate":"تاريخ الانتهاء",
+    "@endDate": {
+        "description": "تسمية اختيار تاريخ الانتهاء"
+    },
+    "today": "اليوم",
+    "@today": {
+        "description": "تسمية لزر اليوم"
+    },
+    "yesterday": "الأمس",
+    "@yesterday": {
+        "description": "تسمية لزر الأمس"
+    },
+    "delete":"حذف",
+    "@delete":{
+        "description": "نص زر لحذف عنصر"
+    },
+    "deleteDialogTitle": "تأكيد الحذف",
+    "@deleteDialogTitle" : {
+        "description": ""
+    },
+    "deleteDialogContent": "هل أنت متأكد أنك تريد الحذف؟",
+    "@deleteDialogContent":{
+        "description": ""
+    },
+    "deleteStateSuccess": "تم الحذف بنجاح",
+     "@deleteStateSuccess" : {
+        "description": ""
+    },
+    "deleteStateFailure":"فشلت عملية الحذف",
+    "@deleteStateFailure" : {
+        "description": ""
+    },
+    "editStateSuccess": "تم التعديل بنجاح",
+    "@editStateSuccess" : {
+        "description": ""
+    },
+
+
+
+
+    "searchOptions":"خيارات البحث",
+    "@searchOptions": {
+        "description": "عنوان شاشة خيارات البحث"
+    },
+    "clearFilterData":"مسح بيانات الفلتر",
+    "@clearFilterData": {
+        "description": "نص زر لمسح جميع بيانات المصفاة"
+    },
+    "categoryType":"نوع الفئة",
+    "@categoryType": {
+        "description": "تسمية لاختيار نوع الفئة"
+    },
+    "all":"الكل",
+    "@all": {
+        "description": "تسمية لمرشح جميع العناصر"
+    },
+    "income":"الدخل",
+    "@income": {
+        "description": "تسمية قسم الدخل"
+    },
+    "expense":"المصروفات",
+    "@expense": {
+        "description": "تسمية قسم المصروفات"
+    },
+    "emptyList":"لا توجد عناصر متاحة",
+    "@emptyList": {
+        "description": "النص المعروض عندما تكون القائمة فارغة"
+    },
+    "apply":"تطبيق",
+    "@apply": {
+        "description": "نص زر تطبيق الفلاتر"
+    },
+    "cancle":"إلغاء",
+    "@cancle": {
+        "description": "نص زر إلغاء الإجراء"
+    },
+    "saveChanges":"حفظ التغييرات",
+    "@saveChanges": {
+        "description": "نص زر حفظ التغييرات"
+    },
+    "pickImageTitle":"اضغط لتغيير صورة الملف الشخصي",
+    "@pickImageTitle": {
+        "description": "عنوان مربع حوار اختيار الصورة"
+    },    
+    "changeImageSuccess":"تم تغيير الصورة بنجاح",
+    "@changeImageSuccess": {
+        "description": "رسالة النجاح عند تغيير الصورة"
+    },
+    "saveChangesSuccess":"تم حفظ التغييرات بنجاح",
+    "@saveChangesSuccess": {
+        "description": "رسالة النجاح عند حفظ التغييرات"
+    },
+
+
+
+    "save":"حفظ",
+    "@save": {
+        "description": "نص زر الحفظ"
+    },
+    "addStartCurrentBalanceTitle":"رصيدك الحالي",
+    "@addStartCurrentBalanceTitle": {
+        "description": "عنوان ديلوج إضافة الرصيد الحالي"
+    },
+    "addStartCurrentBalanceSubtitle":"قبل ما تبدأ, حابب تضيف الفلوس اللي معاك دلوقتي ؟",
+    "@addStartCurrentBalanceSubtitle": {
+        "description": "العنوان الفرعي لديلوج إضافة الرصيد الحالي"
+    },
+    "addStartCurrentBalanceHint":"أدخل رصيدك الحالي",
+    "@addStartCurrentBalanceHint": {
+        "description": "نص العنصر النائب لحقل إدخال الرصيد الحالي"
+    },
+
+
+
+    "appTitle": "دفترني",
+    "@appTitle": {
+        "description": "عنوان التطبيق"
+    },
+    "skip": "تخطي",
+    "@skip": {
+        "description": "نص زر التخطي في شاشة التوجيه"
+    },
+    "next": "التالي",
+    "@next": {
+        "description": "نص زر التالي في شاشة التوجيه"
+    },
+    "onBoardingTitle1": "مرحبًا بك في مخطط الميزانية",
+    "@onBoardingTitle1": {
+        "description": "عنوان الشاشة الأولى في التوجيه"
+    },
+    "onBoardingSubTitle1": "تحكم في أموالك وادخر من خلال تتبع نفقاتك",
+    "@onBoardingSubTitle1": {
+        "description": "العنوان الفرعي للشاشة الأولى في التوجيه"
+    },
+    "onBoardingTitle2": "وفر المال بسهولة",
+    "@onBoardingTitle2": {
+        "description": "عنوان الشاشة الثانية في التوجيه"
+    },
+    "onBoardingSubTitle2": "قم بإنشاء ميزانيات بسهولة وشاهد اقتراحاتنا بناءً على إنفاقك",
+    "@onBoardingSubTitle2": {
+        "description": "العنوان الفرعي للشاشة الثانية في التوجيه"
+    },
+    "onBoardingTitle3": "تتبع فواتيرك كما لم يحدث من قبل",
+    "@onBoardingTitle3": {
+        "description": "عنوان الشاشة الثالثة في التوجيه"
+    },
+    "onBoardingSubTitle3": "قم بإنشاء ميزانية مخصصة بناءً على دخلك وفواتيرك وأهدافك",
+    "@onBoardingSubTitle3": {
+        "description": "العنوان الفرعي للشاشة الثالثة في التوجيه"
+    },
+    "getStarted": "ابدأ الآن",
+    "@getStarted": {
+        "description": "نص زر ابدأ الآن في شاشة التوجيه"
+    },
+
+
+
+    "configureYourInfo": "قم بإضافة معلوماتك",
+    "@configureYourInfo": {
+        "description": "عنوان شاشة تكوين معلوماتك"
+    },
+    "userName": "اسم المستخدم",
+    "@userName": {
+        "description": "تسمية حقل إدخال اسم المستخدم"
+    },
+    "userNameHint": "أدخل اسم المستخدم الخاص بك",
+    "@userNameHint": {
+        "description": "نص العنصر النائب لحقل إدخال اسم المستخدم"
+    },
+    "salary": "الراتب",
+    "@salary": {
+        "description": "تسمية حقل إدخال الراتب"
+    },
+    "salaryHint": "أدخل راتبك الشهري",
+    "@salaryHint": {
+        "description": "نص العنصر النائب لحقل إدخال الراتب"
+    },
+    "SalaryDay": "يوم الراتب",
+    "@SalaryDay": {
+        "description": "تسمية حقل إدخال يوم الراتب"
+    },
+    "salaryDayHint": "أدخل يوم راتبك",
+    "@salaryDayHint": {
+        "description": "نص العنصر النائب لحقل إدخال يوم الراتب"
+    },
+    "sideIncome": "دخل جانبي",
+    "@sideIncome": {
+        "description": "تسمية حقل إدخال الدخل الجانبي"
+    },
+    "optional": "اختياري",
+    "@optional": {
+        "description": "تسمية الحقل الاختياري"
+    },
+    "sideIncomeHint": "أدخل دخلك الجانبي",
+    "@sideIncomeHint": {
+        "description": "نص العنصر النائب لحقل إدخال الدخل الجانبي"
+    },
+    "appSettings": " --- إعدادات التطبيق --- ",
+    "@appSettings": {
+        "description": "عنوان شاشة الإعدادات"
+    },
+    "theme": "المظهر",
+    "@theme": {
+        "description": "تسمية قسم اختيار المظهر"
+    },
+    "lightTheme": "الوضع الفاتح",
+    "@lightTheme": {
+        "description": "النص الخاص بالوضع الفاتح في إعدادات تخصيص المظهر"
+    },
+    "darkTheme": "الوضع الداكن",
+    "@darkTheme": {
+        "description": "النص الخاص بالوضع الداكن في إعدادات تخصيص المظهر"
+    },
+    "systemTheme": "وضع النظام",
+    "@systemTheme": {
+        "description": "النص الخاص بوضع النظام في إعدادات تخصيص المظهر"
+    },
+    "Language": "اللغة",
+    "@Language": {
+        "description": "تسمية قسم اختيار اللغة"
+    },
+    "arabic": "العربية",
+    "@arabic": {
+        "description": "النص الخاص باللغة العربية في إعدادات اللغة"
+    },
+    "english": "الإنجليزية",
+    "@english": {
+        "description": "النص الخاص باللغة الإنجليزية في إعدادات اللغة"
+    },
+    "continueButton": "استمر",
+    "@continueButton": {
+        "description": "نص زر الاستمرار في شاشة التوجيه"
+    },
+
+
+
+    "hi": "مرحبًا",
+    "@hi": {
+        "description": "تحية المستخدم في شريط التطبيق"
+    },
+    "welcomeBack": "مرحبًا بعودتك",
+    "@welcomeBack": {
+        "description": "نص الترحيب بالعودة للمستخدمين العائدين"
+    },
+    "currentBalance": "الرصيد الحالي",
+    "@currentBalance": {
+        "description": "تسمية الرصيد الحالي في الصفحة الرئيسية"
+    },
+    "viewDetailedReport": "عرض التقرير الشهري",
+    "@viewDetailedReport": {
+        "description": "نص زر عرض التقرير التفصيلي في الصفحة الرئيسية"
+    },
+    "quickActions": "الإجراءات السريعة",
+    "@quickActions": {
+        "description": "عنوان قسم الإجراءات السريعة في الصفحة الرئيسية"
+    },
+    "addNewExpense": "إضافة مصروف جديد",
+    "@addNewExpense": {
+        "description": "تسمية إجراء سريع لإضافة مصروف جديد"
+    },
+    "recordIncome": "تسجيل دخل",
+    "@recordIncome": {
+        "description": "تسمية إجراء سريع لتسجيل دخل جديد"
+    },
+    "transactionsAnalysis": "تحليل العمليات",
+    "@transactionsAnalysis": {
+        "description": "تسمية إجراء سريع لتحليل العمليات"
+    },
+    "manageCategories": "إدارة الفئات",
+    "@manageCategories": {
+        "description": "تسمية إجراء سريع لإدارة الفئات"
+    },
+    "recentTransactions": "العمليات الأخيرة",
+    "@recentTransactions": {
+        "description": "عنوان قسم العمليات الأخيرة في الصفحة الرئيسية"
+    },
+    "viewAll": "عرض الكل",
+    "@viewAll": {
+        "description": "نص زر عرض جميع العمليات"
+    },
+
+
+
+    "category": "الفئة",
+    "@category": {
+        "description": "تسمية اختيار الفئة"
+    },
+    "chooseCategory": "اختر الفئة",
+    "@chooseCategory": {
+        "description": "عنوان شاشة اختيار الفئة"
+    },
+    "notesOptional": "ملاحظات (اختياري)",
+    "@notesOptional": {
+        "description": "تسمية حقل الملاحظات الاختياري"
+    },
+    "addExpenseTitle": "إضافة مصروف",
+    "@addExpenseTitle": {
+        "description": "نص زر لإضافة مصروف جديد"
+    },
+    "addExpenseSubTitle": "إدارة مصاريفك بذكاء",
+    "@addExpenseSubTitle": {
+        "description": "العنوان الفرعي لشاشة إضافة مصروف"
+    },
+    "enterExpenseAmount": "أدخل مبلغ المصروف",
+    "@enterExpenseAmount": {
+        "description": "نص العنصر النائب لحقل إدخال مبلغ المصروف"
+    },
+    "notesExpenseBrief":"أضف وصفًا موجزًا أو ملاحظة حول هذا المصروف ...",
+    "@notesExpenseBrief": {
+        "description": "نص العنصر النائب لحقل الملاحظات في شاشة إضافة مصروف"
+    },
+    "addExpenseButton": "✨ إضافة مصروف",
+    "@addExpenseButton": {
+        "description": "نص زر لتأكيد إضافة مصروف جديد"
+    },
+    "addIncomeTitle": "إضافة دخل",
+    "@addIncomeTitle": {
+        "description": "نص زر لإضافة دخل جديد"
+    },
+    "addIncomeSubTitle": "تتبع أرباحك بكفاءة",
+    "@addIncomeSubTitle": {
+        "description": "العنوان الفرعي لشاشة إضافة دخل"
+    },
+    "enterIncomeAmount": "أدخل مبلغ الدخل",
+    "@enterIncomeAmount": {
+        "description": "نص العنصر النائب لحقل إدخال مبلغ الدخل"
+    },
+    "notesIncomeBrief":"أضف وصفًا موجزًا أو ملاحظة حول هذا الدخل ...",
+    "@notesIncomeBrief": {
+        "description": "نص العنصر النائب لحقل الملاحظات في شاشة إضافة دخل"
+    },
+    "addIncomeButton": "✨ إضافة دخل",
+    "@addIncomeButton": {
+        "description": "نص زر لتأكيد إضافة دخل جديد"
+    },
+    "addTransactionSuccess":"تمت إضافة المعاملة بنجاح",
+    "@addTransactionSuccess": {
+        "description": "رسالة نجاح عند إضافة معاملة"
+    },
+    "addExpenseTransactionLowValue" : "المصروف يتجاوز الرصيد الحالي",
+    "@addExpenseTransactionLowValue" : {
+        "description": "رسالة خطأ عند محاولة إضافة مصروف يتجاوز الرصيد الحالي"
+    },
+
+
+    "editIncomeTitle": "تعديل الدخل",
+    "@editIncomeTitle": {
+        "description": "العنوان الرئيسي لشاشة تعديل دخل"
+    },
+    "editIncomeButton": "✨ تعديل الدخل",
+    "@editIncomeButton": {
+        "description": "نص زر لتأكيد تعديل الدخل"
+    },
+    "editExpenseTitle": "تعديل المصروف",
+    "@editExpenseTitle": {
+        "description": "العنوان الرئيسي لشاشة تعديل المصروف"
+    },
+    "editExpenseButton": "✨ تعديل المصروف",
+    "@editExpenseButton": {
+        "description": "نص زر لتأكيد تعديل مصروف"
+    },
+
+
+
+    "categories": "الفئات",
+    "@categories": {
+        "description": "عنوان شاشة الفئات"
+    },
+    "categoriesSearchHint": "ابحث في الفئات ...",
+    "@categoriesSearchHint": {
+        "description": "نص العنصر النائب لحقل البحث في الفئات"
+    },
+
+
+
+    "addNewCategory": "إضافة فئة جديدة",
+    "@addNewCategory": {
+        "description": "عنون شاشة إضافة فئة جديدة"
+    },
+    "addNewCategorySubtitle": "قم بإنشاء فئة مخصصة لتتبع النفقات بشكل أفضل",
+    "@addNewCategorySubtitle": {
+        "description": "العنوان الفرعي لشاشة إضافة فئة جديدة"
+    },
+    "categoryName": "اسم الفئة",
+    "@categoryName": {
+        "description": "تسمية حقل إدخال اسم الفئة"
+    },
+    "categoryNameHint": "مثال: بقالة، نقل، إيجار ...",
+    "@categoryNameHint": {
+        "description": "نص العنصر النائب لحقل إدخال اسم الفئة"
+    },
+    "categoryIcon": "أيقونة الفئة",
+    "@categoryIcon": {
+        "description": "تسمية اختيار أيقونة الفئة"
+    },
+    "selectedIcon": "الأيقونة المحددة :",
+    "@selectedIcon": {
+        "description": "Label for displaying the selected category icon"
+    },
+    "categoryIconHint": "اضغط لاختيار أيقونة",
+    "@categoryIconHint": {
+        "description": "نص العنصر النائب لاختيار أيقونة الفئة"
+    },
+    "categoryColor": "لون الفئة",
+    "@categoryColor": {
+        "description": "تسمية اختيار لون الفئة"
+    },
+    "categoryColorHint": "اضغط لاختيار لون",
+    "@categoryColorHint": {
+        "description": "نص العنصر النائب لاختيار لون الفئة"
+    },
+    "createCategoryButton": "✨ إنشاء فئة",
+    "@createCategoryButton": {
+        "description": "نص زر لإنشاء فئة جديدة"
+    },
+    "addCategorySuccess": "تمت إضافة الفئة بنجاح",
+    "@addCategorySuccess": {
+        "description": "رسالة النجاح عند إضافة فئة جديدة"
+    },
+
+    "transactions": "العمليات",
+    "@transactions": {
+        "description": "عنوان شاشة العمليات"
+    },
+    "transactionsSearchHint": "ابحث في العمليات ...",
+    "@transactionsSearchHint": {
+        "description": "نص العنصر النائب لحقل البحث في العمليات"
+    },
+
+
+
+    "balanceAnalysis": "تحليل الرصيد",
+    "@balanceAnalysis": {
+        "description": "عنوان بطاقة تحليل الرصيد"
+    },
+
+    
+
+    "notes": "الملاحظات",
+    "@notes": {
+        "description": "تسمية حقل الملاحظات في التقارير"
+    },
+    "total": "المجموع",
+    "@total": {
+        "description": "تسمية لحقل الإجمالي في التقارير"
+    },
+    "noDataAvailable": "لا توجد بيانات متاحة",
+    "@noDataAvailable": {
+        "description": "النص المعروض عندما لا تتوفر بيانات في التقارير"
+    },
+
+
+
+    "monthlyReportButton": "عرض التقرير الشهري",
+    "@monthlyReportButton": {
+        "description": "Text for the button to view monthly report"
+    },
+    "monthlyReportViewTitle": "تقرير العمليات الشهري ",
+    "@monthlyReportViewTitle": {
+        "description": "Title for the monthly report screen"
+    },
+    "monthlyReportTitle": "تقرير  العمليات الشهرية  لـ",
+    "@monthlyReportTitle": {
+        "description": "Title for the monthly report screen"
+    },
+
+
+
+    "analysisReportViewTitle": "تحليل العمليات",
+    "@analysisReportViewTitle": {
+        "description": "Title for the transactions analysis report screen"
+    },
+    "analysisReportTitle": "تقرير تحليل العمليات",
+    "@analysisReportTitle": {
+        "description": "عنوان شاشة تقرير تحليل العمليات"
+    },
+    "from": "من",
+    "@from": {
+        "description": "تسمية لتاريخ البدء في التقارير"
+    },
+    "to": "إلى",
+    "@to": {
+        "description": "تسمية لتاريخ الانتهاء في التقارير"
+    },
+
+
+
+    "settings": "الإعدادات",
+    "@settings": {
+        "description": "عنوان شاشة الإعدادات"
+    },
+    "notSignedIn": "غير مسجل الدخول",
+    "@notSignedIn": {
+        "description": "النص المعروض عندما لا يكون المستخدم مسجل الدخول"
+    },
+       "personal": "شخصية",
+    "@personal": {
+        "description": "تسمية القسم الشخصي في الإعدادات"
+    },
+    "personalInfo": "معلومات شخصية",
+    "@personalInfo": {
+        "description": "تسمية قسم المعلومات الشخصية في الإعدادات"
+    },
+    "general": "عامة",
+    "@general": {
+        "description": "تسمية القسم العام في الإعدادات"
+    },
+    "notifications": "الإشعارات",
+    "@notifications": {
+        "description": "تسمية قسم الإشعارات في الإعدادات"
+    },
+    "notificationsHint":"إدارة تفضيلات الاشعارات",
+    "@notificationsHint": {
+        "description": "العنوان الفرعي لقسم الإشعارات في الإعدادات"
+    },
+    "privacyPolicy": "سياسة الخصوصية",
+    "@privacyPolicy": {
+        "description": "تسمية قسم سياسة الخصوصية في الإعدادات"
+    },
+    "privacyPolicyHint":"راجع ممارسات الخصوصية ",
+    "@privacyPolicyHint": {
+        "description": "العنوان الفرعي لقسم سياسة الخصوصية في الإعدادات"
+    },
+    "support": "الدعم",
+    "@support": {
+        "description": "تسمية قسم الدعم في الإعدادات"
+    },
+    "supportHint": "احصل على المساعدة والدعم",
+    "@supportHint": {
+        "description": "العنوان الفرعي لقسم الدعم في الإعدادات"
+    },
+
+
+
+    "privacySecurityTitle": "الخصوصية والأمان",
+    "@privacySecurityTitle": {
+        "description": "عنوان شاشة الخصوصية والأمان"
+    },
+    "privacyPolicySubtitle": "اقرأ سياسة الخصوصية الخاصة بنا",
+    "@privacyPolicySubtitle": {
+        "description": "العنوان الفرعي لقسم سياسة الخصوصية في الإعدادات"
+    },
+    "privacySecurityIntro": "نحن في تطبيق مدير النفقات نقدر خصوصيتك وأمان بياناتك المالية والشخصية. باستخدام التطبيق، فإنك توافق على سياسة الخصوصية التالية:",
+    "@privacySecurityIntro": {
+        "description": "نص المقدمة لشاشة الخصوصية والأمان"
+    },
+    "privacySecurityFirstTitle": "1. البيانات التي نجمعها",
+    "@privacySecurityFirstTitle": {
+        "description": "عنوان القسم الأول من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFirstText": "• المعلومات التي تدخلها يدويًا في التطبيق (مثل النفقات، الفئات، الدخل...)\n• معلومات حساب المستخدم (الاسم، البريد الإلكتروني، كلمة المرور) إذا قمت بإنشاء حساب.\n• نحن لا نجمع أي بيانات أخرى بدون علمك أو موافقتك.",
+    "@privacySecurityFirstText": {
+        "description": "نص القسم الأول من شاشة الخصوصية والأمان"
+    },
+    "privacySecuritySecondTitle": "2. موقع تخزين البيانات",
+    "@privacySecuritySecondTitle": {
+        "description": "عنوان القسم الثاني من شاشة الخصوصية والأمان"
+    },
+    "privacySecuritySecondText": "• إذا لم يكن لديك حساب: يتم تخزين بياناتك محليًا على جهازك فقط.\n• إذا قمت بإنشاء حساب: يتم تخزين نسخة آمنة من بياناتك عبر الإنترنت لتمكين المزامنة والاسترداد من أجهزة أخرى.\n• يتم تشفير البيانات أثناء النقل والتخزين من أجل سلامتك.",
+    "@privacySecuritySecondText": {
+        "description": "نص القسم الثاني من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityThirdTitle": "3. كيفية استخدامنا للبيانات الخاصة بك",
+    "@privacySecurityThirdTitle": {
+        "description": "عنوان القسم الثالث من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityThirdText": "• يتم استخدام بياناتك فقط لعرض وإدارة نفقاتك الشخصية.\n• نحن لا نشارك بياناتك مع أطراف ثالثة.\n• نحن لا نستخدم بياناتك لأغراض الإعلان أو التسويق.",
+    "@privacySecurityThirdText": {
+        "description": "نص القسم الثالث من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFourthTitle": "4. الأمان",
+    "@privacySecurityFourthTitle": {
+        "description": "عنوان القسم الرابع من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFourthText": "• يتم حماية جميع البيانات المخزنة، محليًا أو على الخادم، باستخدام تقنيات التشفير.\n• يمكنك تغيير كلمة المرور في أي وقت من إعدادات الحساب.\n• يمكنك حذف حسابك وجميع البيانات المرتبطة به بشكل دائم.\n• يمكن حماية الوصول إلى التطبيق باستخدام رمز PIN أو بصمة الإصبع (إذا كان مدعومًا).",
+    "@privacySecurityFourthText": {
+        "description": "نص القسم الرابع من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFifthTitle": "5. حقوق المستخدم",
+    "@privacySecurityFifthTitle": {
+        "description": "عنوان القسم الخامس من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFifthText": "• لديك كامل الحقوق للوصول إلى بياناتك وتعديلها أو حذفها.\n• يمكنك استخدام ميزة 'حذف الحساب' لمحو جميع البيانات من التطبيق والخادم بشكل دائم.",
+    "@privacySecurityFifthText": {
+        "description": "نص القسم الخامس من شاشة الخصوصية والأمان"
+    },
+    "privacySecurityContactTitle": "اتصل بنا",
+    "@privacySecurityContactTitle": {
+        "description": "عنوان قسم الاتصال في شاشة الخصوصية والأمان"
+    },
+    "privacySecurityContactText": "إذا كان لديك أي أسئلة بخصوص الخصوصية أو الأمان، يمكنك الاتصال بنا عبر البريد الإلكتروني:\nsupport@yourapp.com",
+    "@privacySecurityContactText": {
+        "description": "نص قسم الاتصال في شاشة الخصوصية والأمان"
+    },
+    "privacySecurityFooter": "مدير نفقات دفترني. جميع الحقوق محفوظة",
+    "@privacySecurityFooter": {
+        "description": "نص التذييل لشاشة الخصوصية والأمان"
+    },
+
+
+
+    "contactUsTitle": "اتصل بنا",
+    "@contactUsTitle": {
+        "description": "عنوان قسم اتصل بنا في الدعم"
+    },
+    "contactUsHint": "للمساعدة، يرجى التواصل مع فريق الدعم الخاص بنا",
+    "@contactUsHint": {
+        "description": "العنوان الفرعي لقسم اتصل بنا في الدعم"
+    },
+    "supportPhoneTitle": "مكالمة هاتفية",
+    "@supportPhoneTitle": {
+        "description": "عنوان خيار المكالمة الهاتفية"
+    },
+    "supportPhoneHint":"اضغط للاتصال بفريق الدعم",
+    "@supportPhoneHint": {
+        "description": "العنوان الفرعي لخيار المكالمة الهاتفية"
+    },
+    "supportWhatsappTitle": "واتساب",
+    "@supportWhatsappTitle": {
+        "description": "عنوان خيار الاتصال عبر واتساب"
+    },
+    "supportWhatsappHint": "اضغط للدردشة مع فريق الدعم على واتساب",
+    "@supportWhatsappHint": {
+        "description": "العنوان الفرعي لخيار الاتصال عبر واتساب"
+    },
+    "supportEmailTitle": "البريد الإلكتروني",
+    "@supportEmailTitle": {
+        "description": "عنوان خيار دعم البريد الإلكتروني"
+    },
+    "supportEmailHint": "اضغط لإرسال بريد إلكتروني إلى فريق الدعم",
+    "@supportEmailHint": {
+        "description": "العنوان الفرعي لخيار دعم البريد الإلكتروني"
+    },
+    "faqTitle":"----- الأسئلة المتكررة -----",
+    "@faqTitle": {
+        "description": "عنوان قسم الأسئلة المتكررة في صفحة الدعم"
+    },
+    "faqQuestion1":"كيف يمكنني استعادة بياناتي بعد حذف التطبيق؟",
+    "@faqQuestion1": {
+        "description": "زوج السؤال والجواب الأول في قسم الأسئلة المتكررة"
+    },
+    "faqAnswer1":"يمكنك استعادة بياناتك عن طريق تسجيل الدخول مرة أخرى إلى حسابك باستخدام نفس البريد الإلكتروني وكلمة المرور.",
+      "@faqAnswer1": {
+          "description": "الإجابة على السؤال الأول في قسم الأسئلة المتكررة"
+    },
+    "faqQuestion2": "هل يمكنني استخدام التطبيق بدون إنشاء حساب؟",
+    "@faqQuestion2": {
+        "description": "زوج السؤال والجواب الثاني في قسم الأسئلة المتكررة"
+    },
+    "faqAnswer2": "نعم، يمكنك استخدام التطبيق بدون حساب، ولكن سيتم حفظ بياناتك فقط على جهازك.",
+    "@faqAnswer2": {
+        "description": "الإجابة على السؤال الثاني في قسم الأسئلة المتكررة"
+    },
+    "faqQuestion3": "هل يمكنني حذف حسابي نهائيًا؟",
+    "@faqQuestion3": {
+        "description": "السؤال الثالث في قسم الأسئلة المتكررة"
+    },
+    "faqAnswer3": "نعم، يمكنك حذف حسابك وجميع بياناتك من الإعدادات > حذف الحساب.",
+    "@faqAnswer3": {
+        "description": "الإجابة على السؤال الثالث في قسم الأسئلة المتكررة"
+    }
+
+
+
+ 
+}

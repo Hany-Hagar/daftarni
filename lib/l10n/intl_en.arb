@@ -1,0 +1,697 @@
+{
+    "@@locale": "en",
+
+    "iconPickerTitle": "Pick an Icon",
+    "@iconPickerTitle": {
+        "description": "Hint text for the icon search input field"
+    },
+    "searchIcon": "Search icon",
+    "@searchIcon": {
+        "description": "Title of the icon picker dialog"
+    },
+    "close": "Close",
+    "@close": {
+        "description": "Button text to close the dialog"
+    },
+    "amount": "Amount",
+    "@amount": {
+        "description": "Label for the amount input field"
+    },
+    "date": "Date",
+    "@date": {
+        "description": "Label for date selection"
+    },
+    "selectDate": "Select Date",
+    "@selectDate": {
+        "description": "Label for the date selection field"
+    },
+    "startDate":"Start Date",
+    "@startDate": {
+        "description": "Label for start date selection"
+    },
+    "endDate":"End Date",
+    "@endDate": {
+        "description": "Label for end date selection"
+    },
+    "today": "Today",
+    "@today": {
+        "description": "Label for the today button"
+    },
+    "yesterday": "Yesterday",
+    "@yesterday": {
+        "description": "Label for the yesterday button"
+    },
+    "delete":"Delete",
+    "@delete": {
+        "description": "Button text to delete an item"
+    },
+    "deleteDialogTitle": "Delete Confirmation",
+    "@deleteDialogTitle" : {
+        "description": "Title of the delete confirmation dialog"
+    },
+    "deleteDialogContent": "Are you sure you want to delete this item?",
+    "@deleteDialogContent":{
+        "description": "Content of the delete confirmation dialog"
+    },
+    "deleteStateSuccess": "Delete Success",
+    "@deleteStateSuccess" : {
+        "description": ""
+    },
+    "deleteStateFailure":"Delete Failure",
+    "@deleteStateFailure" : {
+        "description": ""
+    },   
+    "editStateSuccess": "Editing Success",
+    "@editStateSuccess" : {
+        "description": ""
+    },
+
+
+
+    "searchOptions": "Search Options",
+    "@searchOptions": {
+        "description": "Title of the search options screen"
+    },
+    "clearFilterData": "Clear Filter Data",
+    "@clearFilterData": {
+        "description": "Button text to clear all filter data"
+    },
+    "categoryType": "Category Type",
+    "@categoryType": {
+        "description": "Label for the category type selection"
+    },
+    "all": "All",
+    "@all": {
+        "description": "Label for the all items filter"
+    },
+    "income": "Income",
+    "@income": {
+        "description": "Label for the income section"
+    },
+    "expense": "Expense",
+    "@expense": {
+        "description": "Label for the expense section"
+    },
+    "emptyList": "No items available",
+    "@emptyList": {
+        "description": "Text displayed when a list is empty"
+    },
+    "apply": "Apply",
+    "@apply": {
+        "description": "Button text to apply filters or changes"
+    },
+    "cancle": "Cancel",
+    "@cancle": {
+        "description": "Button text to cancel an action"
+    },
+    "saveChanges": "Save Changes",
+    "@saveChanges": {
+        "description": "Button text to save changes"
+    },
+    "pickImageTitle": "Tap to Change Profile Image",
+    "@pickImageTitle": {
+        "description": "Title for the image picker dialog"
+    },
+    "changeImageSuccess": "Image changed successfully",
+    "@changeImageSuccess": {
+        "description": "Success message when the image is changed"
+    },
+    "saveChangesSuccess": "Changes saved successfully",
+    "@saveChangesSuccess": {
+        "description": "Success message when changes are saved"
+    },
+
+
+
+    "save":"Save",
+    "@save": {
+        "description": "Button text to save an item"
+    },
+    "addStartCurrentBalanceTitle":"Your Current Balance",
+    "@addStartCurrentBalanceTitle": {
+        "description": "Title of the add current balance dialog"
+    },
+    "addStartCurrentBalanceSubtitle":"Before you start, would you like to add the money you currently have?",
+    "@addStartCurrentBalanceSubtitle": {
+        "description": "Subtitle of the add current balance dialog"
+    },
+    "addStartCurrentBalanceHint":"Enter your current balance",
+    "@addStartCurrentBalanceHint": {
+        "description": "Placeholder text for the current balance input field"
+    },
+
+
+
+    "appTitle": "Daftarni",
+    "@appTitle": {
+        "description": "Title of the application"
+    },
+    "skip": "Skip",
+    "@skip": {
+        "description": "Text for the skip button on the onboarding screen"
+    },
+    "next": "Next",
+    "@next": {
+        "description": "Text for the next button on the onboarding screen"
+    },
+    "onBoardingTitle1": "Welcome to Budget Planner",
+    "@onBoardingTitle1": {
+        "description": "Title of the first onboarding screen"
+    },
+    "onBoardingSubTitle1": "Take control of your money and save by tracking your expenses",
+    "@onBoardingSubTitle1": {
+        "description": "Subtitle of the first onboarding screen"
+    },
+    "onBoardingTitle2": "Save money easily",
+    "@onBoardingTitle2": {
+        "description": "Title of the second onboarding screen"
+    },
+    "onBoardingSubTitle2": "Create budgets easily and see our suggestions based on your spending",
+    "@onBoardingSubTitle2": {
+        "description": "Subtitle of the second onboarding screen"
+    },
+    "onBoardingTitle3": "Track your bills like never before",
+    "@onBoardingTitle3": {
+        "description": "Title of the third onboarding screen"
+    },
+    "onBoardingSubTitle3": "Build a custom budget based on your income, bills, and goals",
+    "@onBoardingSubTitle3": {
+        "description": "Subtitle of the third onboarding screen"
+    },
+    "getStarted": "Get Started",
+    "@getStarted": {
+        "description": "Text for the get started button on the onboarding screen"
+    },
+
+
+
+    "configureYourInfo": "Configure your information",
+    "@configureYourInfo": {
+        "description": "Title of the configure your information screen"
+    },
+    "userName": "User Name",
+    "@userName": {
+        "description": "Label for the user name input field"
+    },
+    "userNameHint": "Enter your user name",
+    "@userNameHint": {
+        "description": "Placeholder text for the user name input field"
+    },
+    "salary": "Salary",
+    "@salary": {
+        "description": "Label for the salary input field"
+    },
+    "salaryHint": "Enter your monthly salary",
+    "@salaryHint": {
+        "description": "Placeholder text for the salary input field"
+    },
+    "SalaryDay": "Salary Day",
+    "@SalaryDay": {
+        "description": "Label for the salary day input field"
+    },
+    "salaryDayHint": "Enter your salary day",
+    "@salaryDayHint": {
+        "description": "Placeholder text for the salary day input field"
+    },
+    "SideIncome": "Side Income",
+    "@SideIncome": {
+        "description": "Label for the side income input field"
+    },
+    "Optional": "Optional",
+    "@Optional": {
+        "description": "Label for the optional field"
+    },
+    "sideIncomeHint": "Enter your side income",
+    "@sideIncomeHint": {
+        "description": "Placeholder text for the side income input field"
+    },
+    "appSettings": " --- App Settings --- ",
+    "@appSettings": {
+        "description": "Title of the app settings screen"
+    },
+    "Theme": "Theme",
+    "@Theme": {
+        "description": "Label for the theme selection section"
+    },
+    "lightTheme": "Light Theme",
+    "@lightTheme": {
+        "description": "Label for the light theme option in appearance customization settings"
+    },
+    "darkTheme": "Dark Theme",
+    "@darkTheme": {
+        "description": "Label for the dark theme option in appearance customization settings"
+    },
+    "systemTheme": "System Theme",
+    "@systemTheme": {
+        "description": "Label for the system theme option in appearance customization settings"
+    },
+    "Language": "Language",
+    "@Language": {
+        "description": "Label for the language selection section"
+    },
+    "arabic": "Arabic",
+    "@arabic": {
+        "description": "Text for the Arabic language option in language settings"
+    },
+    "english": "English",
+    "@english": {
+        "description": "Text for the English language option in language settings"
+    },
+    "continueButton": "Continue",
+    "@continueButton": {
+        "description": "Text for the continue button on the onboarding screen"
+    },
+
+
+
+    "hi": "Hi",
+    "@hi": {
+        "description": "Greeting text"
+    },
+    "welcomeBack": "Welcome Back",
+    "@welcomeBack": {
+        "description": "Welcome back text for returning users"
+    },
+    "currentBalance": "Current Balance",
+    "@currentBalance": {
+        "description": "Label for the current balance on the home screen"
+    },
+    "viewDetailedReport": "View Monthly Report",
+    "@viewDetailedReport": {
+        "description": "Text for the button to view monthly report on the home screen"
+    },
+    "quickActions": "Quick Actions",
+    "@quickActions": {
+        "description": "Title for the quick actions section on the home screen"
+    },
+    "addNewExpense": "Add New Expense",
+    "@addNewExpense": {
+        "description": "Label for the add new expense quick action"
+    },
+    "recordIncome": "Record Income",
+    "@recordIncome": {
+        "description": "Label for the add new income quick action"
+    },
+    "transactionsAnalysis": "Transactions Analysis",
+    "@transactionsAnalysis": {
+        "description": "Label for the transactions analysis quick action"
+    },
+    "manageCategories": "Manage Categories",
+    "@manageCategories": {
+        "description": "Label for the manage categories quick action"
+    },
+    "recentTransactions": "Recent Transactions",
+    "@recentTransactions": {
+        "description": "Title for the recent transactions section on the home screen"
+    },
+    "viewAll": "View All",
+    "@viewAll": {
+        "description": "Text for the button to view all transactions"
+    },
+
+
+
+    "category": "Category",
+    "@category": {
+        "description": "Label for the category selection"
+    },
+    "chooseCategory": "Choose Category",
+    "@chooseCategory": {
+        "description": "Title of the category selection screen"
+    },
+    "notesOptional": "Notes (Optional)",
+    "@notesOptional": {
+        "description": "Label for the optional notes input field"
+    },
+    "addExpenseTitle": "Add Expense",
+    "@addExpenseTitle": {
+        "description": "Button text to add a new expense"
+    },
+    "addExpenseSubTitle": "Manage your spendings smartly",
+    "@addExpenseSubTitle": {
+        "description": "Subtitle for the add expense screen"
+    },
+    "enterExpenseAmount": "Enter Expense Amount",
+    "@enterExpenseAmount": {
+        "description": "Placeholder text for the expense amount input field"
+    },
+    "notesExpenseBrief": "Add a brief description or note about this expense ...",
+    "@notesExpenseBrief": {
+        "description": "Placeholder text for the notes input field on the add expense screen"
+    },
+    "addExpenseButton": "✨ Add Expense",
+    "@addExpenseButton": {
+        "description": "Button text to confirm adding a new expense"
+    },
+    "addIncomeTitle": "Add Income",
+    "@addIncomeTitle": {
+        "description": "Title for the add income screen"
+    },
+    "addIncomeSubTitle": "Track your earnings efficiently",
+    "@addIncomeSubTitle": {
+        "description": "Subtitle for the add income screen"
+    },
+    "enterIncomeAmount": "Enter Income Amount",
+    "@enterIncomeAmount": {
+        "description": "Placeholder text for the income amount input field"
+    },
+    "notesIncomeBrief": "Add a brief description or note about this income ...",
+    "@notesIncomeBrief": {
+        "description": "Placeholder text for the notes input field on the add income screen"
+    },
+    "addIncomeButton": "✨ Add Income",
+    "@addIncomeButton": {
+        "description": "Button text to confirm adding a new income"
+    },
+    "addTransactionSuccess": "Transaction added successfully",
+    "@addTransactionSuccess": {
+        "description": "Success message when a transaction is added"
+    },
+    "addExpenseTransactionLowValue": "Insufficient Funds for this expense",
+    "@addExpenseTransactionLowValue": {
+        "description": "Error message when trying to add an expense that exceeds the current balance"
+    },
+
+
+    "editIncomeTitle": "Edit Income",
+    "@editIncomeTitle": {
+        "description": "Title for the add income screen"
+    },
+    "editIncomeButton": "✨ Edit Income",
+    "@editIncomeButton": {
+        "description": "Button text to confirm edit income"
+    },
+    "editExpenseTitle": "Edit Expense",
+    "@editExpenseTitle": {
+        "description": "Title for the add income screen"
+    },
+    "editExpenseButton": "✨ Edit Expense",
+    "@editExpenseButton": {
+        "description": "Button text to confirm edit expense"
+    },
+
+
+
+    "categories": "Categories",
+    "@categories": {
+        "description": "Title of the categories screen"
+    },
+    "categoriesSearchHint": "Search Categories ...",
+    "@categoriesSearchHint": {
+        "description": "Placeholder text for the category search input field"
+    },
+
+
+
+    "addNewCategory": "Add New Category",
+    "@addNewCategory": {
+        "description": "Title of the add new category screen"
+    },
+    "addNewCategorySubtitle": "Create a custom category for better expense tracking",
+    "@addNewCategorySubtitle": {
+        "description": "Subtitle of the add new category screen"
+    },
+    "categoryName": "Category Name",
+    "@categoryName": {
+        "description": "Label for the category name input field"
+    },
+    "categoryNameHint": "e.g., Groceries, Transport, Rent ...",
+    "@categoryNameHint": {
+        "description": "Placeholder text for the category name input field"
+    },
+    "categoryIcon": "Category Icon",
+    "@categoryIcon": {
+        "description": "Label for the category icon selection"
+    },
+    "selectedIcon": "Selected Icon : ",
+    "@selectedIcon": {
+        "description": "Label for displaying the selected category icon"
+    },
+    "categoryIconHint": "Tap to select an icon",
+    "@categoryIconHint": {
+        "description": "Hint text for selecting a category icon"
+    },
+    "categoryColor": "Category Color",
+    "@categoryColor": {
+        "description": "Label for the category color selection"
+    },
+    "categoryColorHint": "Tap to choose a color",
+    "@categoryColorHint": {
+        "description": "Hint text for selecting a category color"
+    },
+    "createCategoryButton": "✨ Create Category",
+    "@createCategoryButton": {
+        "description": "Button text to create a new category"
+    },
+    "addCategorySuccess": "Category added successfully",
+    "@addCategorySuccess": {
+        "description": "Success message when a new category is added"
+    },
+
+
+
+    "transactions": "Transactions",
+    "@transactions": {
+        "description": "Title of the transactions screen"
+    },
+    "transactionsSearchHint": "Search Transactions ...",
+    "@transactionsSearchHint": {
+        "description": "Placeholder text for the transaction search input field"
+    },
+
+
+
+    "balanceAnalysis": "Balance Analysis",
+    "@balanceAnalysis": {
+        "description": "Title for the balance analysis section"
+    },
+
+
+
+    "notes": "Notes",
+    "@notes": {
+        "description": "Label for the notes section in reports"
+    },
+    "total": "Total",
+    "@total": {
+        "description": "Label for the total field in reports"
+    },
+    "noDataAvailable": "No data available",
+    "@noDataAvailable": {
+        "description": "Text displayed when no data is available in reports"
+    },
+
+
+
+    "monthlyReportButton": "View Monthly Report",
+    "@monthlyReportButton": {
+        "description": "Text for the button to view monthly report"
+    },
+    "monthlyReportViewTitle": "Monthly Transactions Report",
+    "@monthlyReportViewTitle": {
+        "description": "Title for the monthly report screen"
+    },
+    "monthlyReportTitle": "Monthly Transactions Report for ",
+    "@monthlyReportTitle": {
+        "description": "Title for the monthly report screen"
+    },
+
+
+
+    "analysisReportViewTitle": "Transactions Report",
+    "@analysisReportViewTitle": {
+        "description": "Title for the transactions analysis report screen"
+    },
+    "analysisReportTitle": "Transactions Analysis Report",
+    "@analysisReportTitle": {
+        "description": "Title for the transactions analysis report screen"
+    },
+    "from": "From",
+    "@from": {
+        "description": "Label for the start date in reports"
+    },
+    "to": "To",
+    "@to": {
+        "description": "Label for the end date in reports"
+    },
+
+    
+
+    "settings": "Settings",
+    "@settings": {
+        "description": "Title of the settings screen"
+    },
+    "notSignedIn": "Not Signed In",
+    "@notSignedIn": {
+        "description": "Text displayed when the user is not signed in"
+    },
+    "personal": "Personal",
+    "@personal": {
+        "description": "Label for the personal section in settings"
+    },
+    "personalInfo": "Personal Information",
+    "@personalInfo": {
+        "description": "Label for the personal information section in settings"
+    },
+    "general": "General",
+    "@general": {
+        "description": "Label for the general section in settings"
+    },
+    "notifications": "Notifications",
+    "@notifications": {
+        "description": "Label for the notifications section in settings"
+    },
+    "notificationsHint": "Manage your notification",
+    "@notificationsHint": {
+        "description": "Subtitle for the notifications section in settings"
+    },
+    "privacyPolicy": "Privacy Policy",
+    "@privacyPolicy": {
+        "description": "Label for the privacy policy section in settings"
+    },
+    "privacyPolicyHint": "Review our privacy practices",
+    "@privacyPolicyHint": {
+        "description": "Subtitle for the privacy policy section in settings"
+    },
+    "support": "Support",
+    "@support": {
+        "description": "Label for the support section in settings"
+    },
+    "supportHint": "Get help and support",
+    "@supportHint": {
+        "description": "Subtitle for the support section in settings"
+    },
+
+
+
+    "privacySecurityTitle": "Privacy and Security",
+    "@privacySecurityTitle": {
+        "description": "Title for the privacy and security screen"
+    },
+    "privacyPolicySubtitle": "Read our privacy policy",
+    "@privacyPolicySubtitle": {
+        "description": "Subtitle for the privacy policy section in settings"
+    },
+    "privacySecurityIntro": "We at the Expense Manager app value your privacy and the security of your financial and personal data. By using the app, you agree to the following privacy policy:",
+    "@privacySecurityIntro": {
+        "description": "Introduction text for the privacy and security screen"
+    },
+    "privacySecurityFirstTitle": "1. Data We Collect",
+    "@privacySecurityFirstTitle": {
+        "description": "Title for the first section of the privacy and security screen"
+    },
+    "privacySecurityFirstText": "• Information you manually enter into the app (such as expenses, categories, income...)\n• User account information (name, email, password) if you create an account.\n• We do not collect any other data without your knowledge or consent.",
+    "@privacySecurityFirstText": {
+        "description": "Text for the first section of the privacy and security screen"
+    },
+    "privacySecuritySecondTitle": "2. Data Storage Location",
+    "@privacySecuritySecondTitle": {
+        "description": "Title for the second section of the privacy and security screen"
+    },
+    "privacySecuritySecondText": "• If you don’t have an account: your data is stored locally on your device only.\n• If you create an account: a secure copy of your data is stored online to enable synchronization and recovery from other devices.\n• Data is encrypted during transfer and storage for your safety.",
+    "@privacySecuritySecondText": {
+        "description": "Text for the second section of the privacy and security screen"
+    },
+    "privacySecurityThirdTitle": "3. How We Use Data",
+    "@privacySecurityThirdTitle": {
+        "description": "Title for the third section of the privacy and security screen"
+    },
+    "privacySecurityThirdText": "• Your data is only used to display and manage your personal expenses.\n• We do not share your data with third parties.\n• We do not use your data for advertising or marketing purposes.",
+    "@privacySecurityThirdText": {
+        "description": "Text for the third section of the privacy and security screen"
+    },
+    "privacySecurityFourthTitle": "4. Security",
+    "@privacySecurityFourthTitle": {
+        "description": "Title for the fourth section of the privacy and security screen"
+    },
+    "privacySecurityFourthText": "• All stored data, locally or on the server, is protected using encryption technologies.\n• You can change your password anytime from account settings.\n• You can permanently delete your account and all related data.\n• App access can be protected using a PIN or fingerprint (if supported).",
+    "@privacySecurityFourthText": {
+        "description": "Text for the fourth section of the privacy and security screen"
+    },
+    "privacySecurityFifthTitle": "5. User Rights",
+    "@privacySecurityFifthTitle": {
+        "description": "Title for the fifth section of the privacy and security screen"
+    },
+    "privacySecurityFifthText": "• You have full rights to access, modify, or delete your data.\n• You can use the 'Delete Account' feature to permanently erase all data from the app and the server.",
+    "@privacySecurityFifthText": {
+        "description": "Text for the fifth section of the privacy and security screen"
+    },
+    "privacySecurityContactTitle": "Contact",
+    "@privacySecurityContactTitle": {
+        "description": "Title for the contact section of the privacy and security screen"
+    },
+    "privacySecurityContactText": "If you have any questions regarding privacy or security, you can contact us via email:\nsupport@yourapp.com",
+    "@privacySecurityContactText": {
+        "description": "Text for the contact section of the privacy and security screen"
+    },
+    "privacySecurityFooter": "Daftarny Expense Manager. All rights reserved",
+    "@privacySecurityFooter": {
+        "description": "Footer text for the privacy and security screen"
+    },
+
+
+
+    "contactUsTitle": "Contact Us",
+    "@contactUsTitle": {
+        "description": "Title for the contact us section in support"
+    },
+    "contactUsHint": "For assistance, please reach out to our support team",
+    "@contactUsHint": {
+        "description": "Subtitle for the contact us section in support"
+    },
+    "supportPhoneTitle": "Phone Call",
+    "@supportPhoneTitle": {
+        "description": "Title for the phone call option"
+    },
+    "supportPhoneHint": "Press to call the support team",
+    "@supportPhoneHint": {
+        "description": "Subtitle for the phone call option"
+    },
+    "supportWhatsappTitle": "WhatsApp",
+    "@supportWhatsappTitle": {
+        "description": "Title for the WhatsApp contact option"
+    },
+    "supportWhatsappHint": "Press to chat with the support team on WhatsApp",
+    "@supportWhatsappHint": {
+        "description": "Subtitle for the WhatsApp contact option"
+    },
+    "supportEmailTitle": "Email Support",
+    "@supportEmailTitle": {
+        "description": "Title for the email contact option"
+    },
+    "supportEmailHint": "Press to send an email to the support team",
+    "@supportEmailHint": {
+        "description": "Subtitle for the email contact option"
+    },
+    "faqTitle": "----- Frequently Asked Questions -----",
+    "@faqTitle": {
+        "description": "Title for the FAQ section in the support page"
+    },
+    "faqQuestion1": "How can I restore my data after deleting the app?",
+    "@faqQuestion1": {
+        "description": "The first question and answer pair in the FAQ section"
+    },
+    "faqAnswer1": "You can restore your data by logging back into your account using the same email and password.",
+    "@faqAnswer1": {
+        "description": "The answer to the first question in the FAQ section"
+    },
+    "faqQuestion2": "Can I use the app without creating an account?",
+    "@faqQuestion2": {
+        "description": "The second question and answer pair in the FAQ section"
+    },
+    "faqAnswer2": "Yes, you can use the app without an account, but your data will be saved only on your device.",
+    "@faqAnswer2": {
+        "description": "The answer to the second question in the FAQ section"
+    },
+    "faqQuestion3": "Can I permanently delete my account?",
+    "@faqQuestion3": {
+        "description": "The third question in the FAQ section"
+    },
+    "faqAnswer3": "Yes, you can delete your account and all your data from Settings > Delete Account.",
+    "@faqAnswer3": {
+        "description": "The answer to the third question in the FAQ section"
+    }
+
+
+   
+}
